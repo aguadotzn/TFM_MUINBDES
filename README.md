@@ -1,4 +1,4 @@
-# TFM_MUINBDES [![License](https://img.shields.io/cocoapods/l/ParticlesLoadingView.svg?style=flat)](http://cocoapods.org/pods/ParticlesLoadingView)
+# TFM_MUINBDES [![License](https://img.shields.io/cocoapods/l/ParticlesLoadingView.svg?style=flat)](LICENSE.md)
 Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Environments](https://www.inf.uva.es/master-online/)
 
 <p align="center">
