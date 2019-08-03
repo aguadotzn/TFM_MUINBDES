@@ -14,19 +14,21 @@ Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Envir
 Development of Big Data environment for the analysis of air pollution levels in Madrid, which allows information to be better exploited from weather stations distributed in different parts of the city. Both the ingestion, processing, exploitation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
 
 ## Data sources
-* Main source [datos.madrid](http://datos.madrid.es.)
+* Main data source: [datos.madrid](http://datos.madrid.es.)
 
-## Technologies (TO-DO)
+## Main Technologies
+* Python 
+* R 
+* Jupyter notebooks 
 
+## Main data visualization software
+* PowerBi
 
 ## Setup (TO-DO)
 Describe how to install
 
 To-do list:
 * Visit the [issues](https://github.com/aguadotzn/mySuitcase/issues) page. 
-
-## Wiki
- Visit the wiki [here](https://github.com/aguadotzn/mySuitcase/wiki). 
  
 ## License
 
