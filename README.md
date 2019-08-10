@@ -24,8 +24,23 @@ Development of Big Data environment for the analysis of air pollution levels in 
 ## Main data visualization software
 * PowerBi
 
-## Setup (TO-DO)
-Describe how to install
+# Suppor from data visualization 
+* Vega
+* Tinybird
+
+## Project structure
+```
+  |--* LICENSE.md
+  |--* README.md
+    |-- code
+        |-- data
+        |-- example1
+    |-- documentation
+        |-- latex
+    |-- information
+        |-- Official Documents
+```
+## Setup 
 
 To-do list:
 * Visit the [issues](https://github.com/aguadotzn/mySuitcase/issues) page. 
