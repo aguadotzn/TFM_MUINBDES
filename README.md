@@ -9,9 +9,12 @@ Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Envir
 
 
 
-
 ## Description
-Development of Big Data environment for the analysis of air pollution levels in Madrid, which allows information to be better exploited from weather stations distributed in different parts of the city. Both the ingestion, processing, exploitation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
+Development of an environment for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited from control stations distributed in different parts of the city. Both the ingestion, processing, explotation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
+
+## Technologies schema
+
+![Schema](/Documentation/images/diagramtech.png)
 
 ## Data sources
 * Main data source: [datos.madrid](http://datos.madrid.es.)
@@ -21,14 +24,16 @@ Development of Big Data environment for the analysis of air pollution levels in 
 * R 
 * Jupyter notebooks 
 
+
 ## Main data visualization software
 * PowerBi
 
-# Suppor from data visualization 
+### Support from data visualization 
 * Vega
 * Tinybird
 
 ## Project structure
+
 ```
   |--* LICENSE.md
   |--* README.md
@@ -40,11 +45,15 @@ Development of Big Data environment for the analysis of air pollution levels in 
     |-- information
         |-- Official Documents
 ```
-## Setup 
 
-To-do list:
-* Visit the [issues](https://github.com/aguadotzn/mySuitcase/issues) page. 
- 
+# Results
+## Madrid control station location
+<iframe width="100%" height="520" frameborder="0" src="https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+## NO2 average for 2018
+![Schema](/Documentation/images/avg2018.gif)
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
