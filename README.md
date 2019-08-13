@@ -7,32 +7,44 @@ Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Envir
   <img width="100" height="180" src="https://www.unileon.es/files/images/ule_color.preview.gif">
 </p>
 
+# Content
+- [Description](https://github.com/aguadotzn/TFM_MUINBDES#description)
+- [Main process schema](https://github.com/aguadotzn/TFM_MUINBDES#Main-process)
+- [Data sources](https://github.com/aguadotzn/TFM_MUINBDES#Data-sources)
+- [Technologies](https://github.com/aguadotzn/TFM_MUINBDES#Technologies)
+- [Folder structure](https://github.com/aguadotzn/TFM_MUINBDES#Folders-structure)
+- [Preview](https://github.com/aguadotzn/TFM_MUINBDES#preview)
+  - [Map](https://github.com/aguadotzn/TFM_MUINBDES#Madrid-control-station-location)
+  - [NO2 2018 average](https://github.com/aguadotzn/TFM_MUINBDES#NO2-average-for-2018)
+- [License](https://github.com/aguadotzn/TFM_MUINBDES#license)
+- [Author](https://github.com/aguadotzn/TFM_MUINBDES#Author)
+
 
 
 ## Description
-Development of an environment for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited from control stations distributed in different parts of the city. Both the ingestion, processing, explotation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
+Development of an environment model for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited from control stations distributed in different parts of the city. Both the ingestion, processing, explotation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
 
-## Technologies schema
+## Main process
 
 ![Schema](/Documentation/images/diagramtech.png)
 
 ## Data sources
 * Main data source: [datos.madrid](http://datos.madrid.es.)
 
-## Main Technologies
-* Python 
-* R 
-* Jupyter notebooks 
+## Technologies
+* Data preparation, cleaning, and transformation
+  * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+  * [R](https://en.wikipedia.org/wiki/R_(programming_language))
+  * [Jupyter notebooks](https://jupyter.org)
+  
+* Main visualization
+  * [Power BI](https://powerbi.microsoft.com/)
+  
+* Other tools
+  * [Vega](http://vega.github.io)
+  * [Tinybird](https://tinybird.co/)
 
-
-## Main data visualization software
-* PowerBi
-
-### Support from data visualization 
-* Vega
-* Tinybird
-
-## Project structure
+## Folder structure
 
 ```
   |--* LICENSE.md
@@ -42,13 +54,16 @@ Development of an environment for the analysis of air pollution/air quality leve
         |-- example1
     |-- documentation
         |-- latex
+        |-- images (for README)
     |-- information
         |-- Official Documents
 ```
 
-# Results
+# Preview
+
 ## Madrid control station location
-<iframe width="100%" height="520" frameborder="0" src="https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+![Schema](/Documentation/images/cartoDBestaciones.png)
+You can interact with the map [here](https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed).
 
 ## NO2 average for 2018
 ![Schema](/Documentation/images/avg2018.gif)
@@ -59,5 +74,6 @@ Development of an environment for the analysis of air pollution/air quality leve
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 Copyright (c) 2019 Adrián.
 
-## Contact
-Created by [@aguadotzn](https://www.aguadotzn.com) - feel free to contact me!
+## Author
+
+[Adrián Aguado](https://www.aguadotzn.com) - feel free to contact me!
