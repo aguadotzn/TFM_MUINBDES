@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains official documentation by Madrid City Council and Spanish government about pollution protocolos. Also contains documentation to interpret the different types of data.
+>This folder contains official documentation by Madrid City Council and Spanish government about pollution protocols. Also contains documentation to interpret the different types of data.
 
 ## Source of the documents
 
