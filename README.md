@@ -52,20 +52,21 @@ Development of an environment model for the analysis of air pollution/air qualit
     |-- code
         |-- data
         |-- example1
-    |-- documentation
+    |-- Documentation
         |-- latex
-        |-- images (for README)
-    |-- information
+        |-- images (README)
+    |-- Information
         |-- Official Documents
 ```
 
 # Preview
 
-## Madrid control station location
+### _Madrid control station location_
 ![Schema](/Documentation/images/cartoDBestaciones.png)
-You can interact with the map [here](https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed).
+You can interact with the map [here](https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed). 
 
-## NO2 average for 2018
+
+### _NO2 average for 2018_
 ![Schema](/Documentation/images/avg2018.gif)
 
 
