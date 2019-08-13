@@ -47,16 +47,30 @@ Development of an environment model for the analysis of air pollution/air qualit
 ## Folder structure
 
 ```
-  |--* LICENSE.md
-  |--* README.md
-    |-- code
+  |-- LICENSE.md
+  |-- README.md (main)
+    |-- Code
         |-- data
-        |-- example1
+          |-- daily_data
+          |-- hourly_data
+        |-- air_quality_stations
+          |-- formatted_data
+        |-- air_quality_python_analysis 
+          |-- formatted_data
+        |-- air_quality_R_analysis
+          |-- formatted_data 
+        |-- README.md (code)
+    |-- Data Visualization
+        |-- Examples
+        |-- README.md (data visualization)
     |-- Documentation
         |-- latex
+        |-- slides (presentation)
         |-- images (README)
+        |-- README.md (documentation)
     |-- Information
         |-- Official Documents
+        |-- README.md (information)
 ```
 
 # Preview
