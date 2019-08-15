@@ -63,6 +63,8 @@ Development of an environment model for the analysis of air pollution/air qualit
     |-- Data Visualization
         |-- Examples
         |-- README.md (data visualization)
+    |-- docs
+        |-- README.md (github pages/landing page of the project)    
     |-- Documentation
         |-- latex
         |-- slides (presentation)
