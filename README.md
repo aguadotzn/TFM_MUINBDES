@@ -40,8 +40,9 @@ Development of an environment model for the analysis of air pollution/air qualit
 * Main visualization
   * [Power BI](https://powerbi.microsoft.com/)
   
-* Other tools
+* Other used tools
   * [Vega](http://vega.github.io)
+  * [DataWrapper](https://www.datawrapper.de/)
   * [Tinybird](https://tinybird.co/)
 
 ## Folder structure
