@@ -73,6 +73,7 @@ Development of an environment model for the analysis of air pollution/air qualit
         |-- README.md (documentation)
     |-- Information
         |-- Official Documents
+        |-- Other Documents
         |-- README.md (information)
 ```
 
