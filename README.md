@@ -1,5 +1,5 @@
 # TFM_MUINBDES [![License](https://img.shields.io/cocoapods/l/ParticlesLoadingView.svg?style=flat)](LICENSE.md)
-Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Environments](https://www.inf.uva.es/master-online/)
+Final thesis of my Master's degree ([Business Intelligence and Big Data in Cyber-Secure Environments](https://www.inf.uva.es/master-online/))
 
 <p align="center">
   <img width="100" height="180" src="https://upload.wikimedia.org/wikipedia/en/7/7b/University_of_Burgos_CoA.png">
@@ -8,12 +8,12 @@ Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Envir
 </p>
 
 # Content
-- [Description](https://github.com/aguadotzn/TFM_MUINBDES#description)
-- [Main process schema](https://github.com/aguadotzn/TFM_MUINBDES#Main-process)
+- [Description](https://github.com/aguadotzn/TFM_MUINBDES#Description)
+- [Main process schema](https://github.com/aguadotzn/TFM_MUINBDES#Main-process-schema)
 - [Data sources](https://github.com/aguadotzn/TFM_MUINBDES#Data-sources)
 - [Technologies](https://github.com/aguadotzn/TFM_MUINBDES#Technologies)
-- [Folder structure](https://github.com/aguadotzn/TFM_MUINBDES#Folders-structure)
-- [Preview](https://github.com/aguadotzn/TFM_MUINBDES#preview)
+- [Folders structure](https://github.com/aguadotzn/TFM_MUINBDES#Folders-structure)
+- [Previews](https://github.com/aguadotzn/TFM_MUINBDES#Previews)
   - [Map](https://github.com/aguadotzn/TFM_MUINBDES#Madrid-control-station-location)
   - [NO2 2018 average](https://github.com/aguadotzn/TFM_MUINBDES#NO2-average-for-2018)
 - [License](https://github.com/aguadotzn/TFM_MUINBDES#license)
@@ -22,9 +22,9 @@ Final thesis of my MsC [Business Intelligence and Big Data in Cyber-Secure Envir
 
 
 ## Description
-Development of an environment model for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited from control stations distributed in different parts of the city. Both the ingestion, processing, explotation and visualization of the data are contemplated, in order to answer analytical questions on the selected subject. 
+Development of an environment model for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited by control stations distributed in different parts of the city. Both the ingestion, processing, exploitation and visualization of the data are contemplated, to answer analytical questions on the selected subject. 
 
-## Main process
+## Main process schema
 
 ![Schema](/Documentation/images/diagramtech.png)
 
@@ -45,42 +45,42 @@ Development of an environment model for the analysis of air pollution/air qualit
   * [DataWrapper](https://www.datawrapper.de/)
   * [Tinybird](https://tinybird.co/)
 
-## Folder structure
+## Folders structure
 
 ```
   |-- LICENSE.md
   |-- README.md (main)
-    |-- Code
-        |-- data
+    |-- 📂Code
+        |📂-- data
           |-- daily_data
           |-- hourly_data
           |-- control_stations_data
-        |-- air_quality_stations
+        |📂-- air_quality_stations
           |-- formatted_data
-        |-- air_quality_python_analysis 
+        |📂-- air_quality_python_analysis 
           |-- formatted_data
-        |-- air_quality_R_analysis
+        |📂-- air_quality_R_analysis
           |-- formatted_data 
         |-- README.md (code)
     |-- Data Visualization
-        |-- Examples
+        |📂-- Examples
         |-- README.md (data visualization)
     |-- docs
         |-- README.md (github pages/landing page of the project)    
     |-- Documentation
-        |-- latex
-        |-- slides (presentation)
-        |-- images (README)
+        |📂-- latex
+        |📂-- slides (presentation)
+        |📂-- images (for the general README)
         |-- README.md (documentation)
     |-- Information
-        |-- Official Documents
-        |-- Other Documents
+        |📂-- Official Documents
+        |📂-- Other Documents
         |-- README.md (information)
 ```
 
-# Preview
+# Previews
 
-### _Madrid control station location_
+### _Madrid control stations location_
 ![Schema](/Documentation/images/cartoDBestaciones.png)
 You can interact with the map [here](https://aguadotzn.carto.com/builder/7a6bc6ca-594c-44ad-8bbe-add7757e0f0d/embed). 
 

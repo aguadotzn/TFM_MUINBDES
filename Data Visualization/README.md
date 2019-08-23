@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains some screenshots as examples (_/examples_ folder) about the most useful data visualization that I made with the code. Also contains the **Power BI** file with the main data visualization. 
+>This folder contains some screenshots as examples (_/examples_ folder) about the most useful data visualization that I made with the code. It also contains the **Power BI** file with the main data visualization. 
 
 ## Prerequisites
 

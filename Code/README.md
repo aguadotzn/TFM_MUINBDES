@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains all the code that involves the project. Mainly programming languages are: _R_ and _Python_. 
+>This folder contains all the code that involves the project. Mainly programming languages are _R_ and _Python_. 
 
 
 ## Author

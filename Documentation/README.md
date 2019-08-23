@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains all the documentation about the thesis. The documentations was wrote in [Latex](https://www.latex-project.org) and it's only available in Spanish.
+>This folder contains all the documentation about the thesis. The documentation is writing with [Latex](https://www.latex-project.org) and it's only available in Spanish.
 
 
 ## Author
