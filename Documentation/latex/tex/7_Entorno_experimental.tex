@@ -1,0 +1,205 @@
+\capitulo{7}{Entorno experimental}
+
+En esta sección se va a exponer de manuscrita el entorno con el que se ha realizado el estudio. Pasaremos por las diferentes fases precisando y señalando los aspectos técnicos de relevancia sobre el proyecto.
+
+
+\section{Esquema}
+
+A modo de introducción se han seguido cuatro partes principales en el desarrollo técnico del proyecto en las que se han utilizado diferentes técnicas. Los siguiente esquemas describen de manera breve la línea a seguir en el proyecto.
+
+   \imagen{diagramtechA}{\footnotesize{Detalle diagrama desarrollo (Partes 1 y 2). Fuente: Elaboración propia.}}
+    \imagen{diagramtechB}{\footnotesize{Detalle diagrama desarrollo (Partes 3 y 4). Fuente: Elaboración propia.}}
+
+\section{Fuente datos origen}
+
+En el presente proyecto se han utilizado \textit{datasets} obtenidos principalmente a través de portales de datos abiertos, siendo esta la principal fuente de datos. Estos portales ponen a disposición pública múltiples sets de datos siguiendo una estrategia basada en cuatro aspectos fundamentales: la apertura de datos, la transparencia, la interacción y la participación de personas y/o empresas. 
+
+El portal de Datos Abiertos del Ayuntamiento de Madrid, se dedica a promover el acceso a los datos del gobierno municipal y trata de impulsar el desarrollo de herramientas creativas para atraer y servir a la ciudadanía de Madrid. 
+Este portal dispone de un amplio catálogo de datos que puede ser descargado a través de un acceso web para el público general (descarga ordinaria) y un \textit{API REST} con el que automatizar y programar el acceso y descarga de los diferentes \textit{datasets}. A través de este portal \cite{portal_datosabiertos_madrid}, es posible descargar un set de datos de calidad del aire con mediciones horarias y diarias desde el año 2001 hasta la actualidad. También existen datos en tiempo real.
+
+Por lo tanto los tres tipos de ficheros que podemos descargar son los siguientes:
+
+\begin{itemize}
+	\item \underline{Datos de calidad del aire horarios}: en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos diarios} por anualidades de 2001 a 2019. 
+	\item \underline{Datos de calidad del aire horarios:} en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos horarios} por anualidades de 2001 a 2019. Los datos horarios de las magnitudes corresponden a la media aritmética de los valores diezminutales que se registran cada hora.
+	\item \underline{Datos de calidad del aire en tiempo real:} En este conjunto de datos se puede obtener la información actualizada en tiempo real.
+\end{itemize}
+
+En el caso concreto del proyecto nos vamos a centrar en los dos primeros. En el caso de los \textbf{datos horarios}, éstos viene comprimidos en un archivo \textit{.zip} y cuando nos los descargamos aparecen divididos por meses. El nombre del archivo esta formado por las tres letras primeras, que corresponden al mes más un guión bajo seguido de dos números \textit{XX}, que identifican al año.
+
+En caso de los \textbf{datos diarios} es similar pero nos proponen el formato de descarga directamente desde la web.
+
+Los principales aspectos a destacar de la fuente de datos serían: 
+\begin{itemize}
+	\item Los ficheros están en texto plano, \textit{.csv} o \textit{.xml} y los campos no se encuentran delimitados.
+	\item Caso\textbf{ datos diarios}: los datos se encuentran almacenados mensualmente y agrupados en ficheros comprimidos por cada año.
+	\item Caso\textbf{ datos horarios}: cada registro contiene los 24 valores horarios de un día, 30 ó 31 filas contiguas corresponden a los valores de los días del mes, repitiéndose con cada magnitud (contaminante) de todas las estaciones que lo miden. Cada fichero contiene un mes de observaciones.
+	\item Se dispone de mediciones de calidad del aire desde el año 2001 hasta la actualidad. 
+	\item Cada campo tiene asignado un determinado número de dígitos. 
+	\item Todos los campos contienen datos numéricos ya sean identificadores o medidas.
+	\item Hay que precisar que las medidas válidas están marcadas con una V y las medidas no válidas están marcadas con una N. tan solo serán validas las que contienen la V.
+\end{itemize}
+
+La siguiente tabla contiene los código de interpretación de los \underline{datos horarios}. Tres apuntes importantes:
+
+\begin{enumerate}
+\item El campo punto de muestreo incluye el código de la estación completo (provincia, municipio y estación) más la magnitud y la técnica de muestreo.
+
+\item H01 corresponde al dato de la 1 de la mañana de ese día, V01 es el código de validación, H02 al de las 2 de la mañana, V02 y así sucesivamente.
+
+\item Únicamente son válidos los datos que llevan el código de validación “V".
+\end{enumerate}
+
+
+%DATOS HORARIOS
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{PROVINCIA}       & \textit{28}              \\ \hline
+			\textbf{MUNICIPIO}       & \textit{79}              \\ \hline
+			\textbf{ESTACION}        & \textit{4}               \\ \hline
+			\textbf{MAGNITUD}        & \textit{1}               \\ \hline
+			\textbf{PUNTO\_MUESTREO} & \textit{28079004\_1\_38} \\ \hline
+			\textbf{ANO}             & \textit{2019}            \\ \hline
+			\textbf{MES}             & \textit{1}               \\ \hline
+			\textbf{DIA}             & \textit{1}               \\ \hline
+			\textbf{H01}             & \textit{23}              \\ \hline
+			\textbf{V01}             & \textit{V}               \\ \hline
+			\textbf{H02}             & \textit{17}              \\ \hline
+			\textbf{V02}             & \textit{V}               \\ \hline
+			\textbf{[...]}             & \textit{[...]}               \\ \hline
+		\end{tabular}
+		\caption{Tabla intérprete valores horarios.}
+	\end{center}
+\end{table}
+
+La siguiente tabla contiene los código de interpretación de los \underline{datos diarios}. Tres apuntes importantes:
+
+\begin{enumerate}
+	\item El campo punto de muestreo incluye el código de la estación completo (provincia, municipio y estación) más la magnitud y la técnica de muestreo.
+	
+	\item D01 corresponde al dato del primer día del mes, D02 al del segundo día y así sucesivamente.
+	
+	\item Únicamente son válidos los datos que llevan el código de validación “V".
+\end{enumerate}
+
+%VALORES DIARIOS
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{PROVINCIA}       & \textit{28}              \\ \hline
+			\textbf{MUNICIPIO}       & \textit{79}              \\ \hline
+			\textbf{ESTACION}        & \textit{4}               \\ \hline
+			\textbf{MAGNITUD}        & \textit{1}               \\ \hline
+			\textbf{PUNTO\_MUESTREO} & \textit{28079004\_1\_38} \\ \hline
+			\textbf{ANO}             & \textit{2019}            \\ \hline
+			\textbf{MES}             & \textit{1}               \\ \hline
+			\textbf{D01}             & \textit{18}              \\ \hline
+			\textbf{V01}             & \textit{V}               \\ \hline
+			\textbf{D02}             & \textit{20}              \\ \hline
+			\textbf{V02}             & \textit{V}               \\ \hline
+			\textbf{[...]}             & \textit{[...]}               \\ \hline
+		\end{tabular}
+	\caption{Tabla intérprete valores diarios.}
+	\end{center}
+\end{table}
+
+
+Como ya hemos nombrado anteriormente, el Sistema de Vigilancia está formado por 24 estaciones remotas automáticas que recogen la información básica para la vigilancia atmosférica. Poseen los analizadores necesarios para la medida correcta de los niveles de gases y de partículas. La localización de las estaciones de control también se encuentra para su libre descarga, este caso se permiten los ficheros \textit{.xls}, \textit{.csv} y \textit{.geo}.  
+
+La tabla para la correcta interpretación de los datos sería la siguiente:
+
+
+
+%TABLA ESTACIONES
+\begin{table}[H]
+			\begin{center}
+	\begin{tabular}{|c|c|c|}
+	
+		\hline
+		\textbf{Código estación} & \textbf{Lugar}       & \textbf{Comentarios}         \\ \hline
+		\textit{28079001}        & Pº. Recoletos        & Baja.- 04/05/2009 (14:00 h.) \\ \hline
+		\textit{28079002}        & Glta. de Carlos V    & Baja.- 04/12/2006 (11:00 h.) \\ \hline
+		\textit{28079003}        & Pza. del Carmen      & * Código desde enero 2011    \\ \hline
+		\textit{28079004}        & Pza. de España       &                              \\ \hline
+		\textit{28079005}        & Barrio del Pilar     & * Código desde enero 2011    \\ \hline
+		\textit{28079006}        & Pza. Dr. Marañón     & Baja.- 27/11/2009 (08:00 h.) \\ \hline
+		\textit{28079007}        & Pza. M. de Salamanca & Baja.- 30/12/2009 (14:00 h.) \\ \hline
+		\textit{28079008}        & Escuelas Aguirre     &                              \\ \hline
+		\textit{28079009}        & Pza. Luca de Tena    & Baja.- 07/12/2009 (08:00 h.) \\ \hline
+		\textit{28079010}        & Cuatro Caminos       & * Código desde enero 2011    \\ \hline
+		\textit{28079011}        & Av. Ramón y Cajal    &                              \\ \hline
+		\textit{28079012}        & Pza. Manuel Becerra  & Baja.- 30/12/2009 (14:00 h.) \\ \hline
+		\textit{28079013}        & Vallecas             & * Código desde enero 2011    \\ \hline
+		\textit{28079014}        & Pza. Fdez. Ladreda   & Baja.- 02/12/2009 (09:00 h.) \\ \hline
+		\textit{28079015}        & Pza. Castilla        & Baja.- 17/10/2008 (11:00 h.) \\ \hline
+		\textit{28079016}        & Arturo Soria         &                              \\ \hline
+		\textit{28079017}        & Villaverde Alto      &                              \\ \hline
+		\textit{28079018}        & C/ Farolillo         &                              \\ \hline
+		\textit{28079019}        & Huerta Castañeda     & Baja.- 30/12/2009 (13:00 h.) \\ \hline
+		\textit{28079020}        & Moratalaz            & * Código desde enero 2011    \\ \hline
+		\textit{28079021}        & Pza. Cristo Rey      & Baja.- 04/12/2009 (14:00 h.) \\ \hline
+		\textit{28079022}        & Pº. Pontones         & Baja.- 20/11/2009 (10:00 h.) \\ \hline
+		\textit{28079023}        & Final C/ Alcalá      & Baja.- 30/12/2009 (14:00 h.) \\ 	\hline
+		\textit{28079024} & Casa de Campo           &                                                                                                  \\ \hline
+		\textit{28079025} & Santa Eugenia           & Baja.- 16/11/2009 (10:00 h.)                                                                     \\ \hline
+		\textit{28079026} & Urb. Embajada (Barajas) & Baja.- 11/01/2010 (09:00 h.)                                                                     \\ \hline
+		\textit{28079027} & Barajas                 &                                                                                                  \\ \hline
+		\textit{28079047} & Méndez Álvaro           & Alta.- 21/12/2009 (00:00 h.)                                                                     \\ \hline
+		\textit{28079048} & Pº. Castellana          & Alta.- 01/06/2010 (00:00 h.)                                                                     \\ \hline
+		\textit{28079049} & Retiro                  & Alta.- 01/01/2010 (00:00 h.)                                                                     \\ \hline
+		\textit{28079050} & Pza. Castilla           & Alta.- 08/02/2010 (00:00 h.)                                                                     \\ \hline
+		\textit{28079054} & Ensanche Vallecas       & Alta.- 11/12/2009 (00:00 h.)                                                                     \\ \hline
+		\textit{28079055} & Urb. Embajada (Barajas) & Alta.- 20/01/2010 (15:00 h.)                                                                     \\ \hline
+		\textit{28079056} & Plaza Elíptica          & Alta.- 18/01/2010 (12:00 h.)                                                                     \\ \hline
+		\textit{28079057} & Sanchinarro             & Alta.- 24/11/2009 (00:00 h.)                                                                     \\ \hline
+		\textit{28079058} & El Pardo                & Alta.- 30/11/2009 (13:00 h.)                                                                     \\ \hline
+		\textit{28079059} & Parque Juan Carlos I    & Alta.- 14/12/2009 (00:00 h.)                                                                     \\ \hline
+		\textit{28079086} & Tres Olivos    & Alta.- 14/01/2010 (13:00 h.)                                                                    \\ \hline
+	
+\end{tabular}
+	\caption{Tabla intérprete estaciones de control.}
+	\end{center}	
+\end{table}
+
+Y para terminar los contaminantes también tiene su tabla para saber interpretarlos de manera correcta.
+
+%TABLA CONTAMINANTES
+\begin{table}[H]
+		\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Magnitud}}     & \textbf{Abreviatura} & \textbf{Unidad} & \multicolumn{2}{c|}{\textbf{Técnica de medida}} \\ \hline
+		01 & \textit{Dióxido de Azufre}             & \ce{SO2}                  & \textmugreek g/m3    & 38               & Fluorescencia ultravioleta         \\ \hline
+		06 & \textit{Monóxido de Carbono}           & \ce{CO}                   & mg/m3   & 48               & Absorción infrarroja               \\ \hline
+		08 & \textit{Dióxido de Nitrógeno}           & \ce{NO2}                   & \textmugreek g/m3           & 48         &  Id.               \\ \hline
+		
+		07 & \textit{Monóxido de Nitrógeno}         & \ce{NO}                   & \textmugreek g/m3           & 08         & Quimioluminiscencia                \\ \hline
+		09 & \textit{Partículas \textless 2.5 \textmugreek m}   & \ce{PM2,5}                & \textmugreek g/m3           & 47         & Microbalanza                       \\ \hline
+		10 & \textit{Partículas \textless 10 \textmugreek m}    & \ce{PM10}                 & \textmugreek g/m3           & 47         & Id.                                \\ \hline
+		12 & \textit{Óxidos de Nitrógeno}           & \ce{NOx}                  & \textmugreek g/m3           & 08         & Quimioluminiscencia                \\ \hline
+		20 & \textit{Tolueno}                       & \ce{TOL}                  & \textmugreek g/m3           & 59         & Gases                              \\ \hline
+		30 & \textit{Benceno}                       & \ce{BEN}                  & \textmugreek g/m3           & 59         & Id.                                \\ \hline
+		35 & \textit{Etilbenceno}                   & \ce{EBE}                  & \textmugreek g/m3           & 59         & Id.                                \\ \hline
+		37 & \textit{Metaxileno}                    & \ce{MXY}                  & \textmugreek g/m3           & 59         & Id.                                \\ \hline
+		38 & \textit{Paraxileno}                    & \ce{PXY}                  & \textmugreek g/m3           & 59         & Id.                                \\ \hline
+		39 & \textit{Ortoxileno}                    & \ce{OXY}                  & \textmugreek g/m3           & 59         & Id.                                \\ \hline
+		42 & \textit{Hidrocarburos totales(hexano)} & \ce{TCH}                  & mg/m3           & 02         & Ionización de llama                \\ \hline
+		43 & \textit{Metano}                        & \ce{CH4}                  & mg/m3           & 02         & Id.                                \\ \hline
+		44 & Hidrocarburos no metánicos             & \ce{NMHC}                & mg/m3           & 02         & Id.                                \\ \hline
+	\end{tabular}
+	\caption{Tabla ínterprete contaminantes.}
+\end{center}	
+\end{table}
+
+
+\section{Exploración de datos}
+Tras conocer, estudiar a fondo los tipos de datos existentes y su correcta interpretación es tiempo de explorarlos. La fase de exploración se ha realizado de diferentes maneras y desde varias perspectivas con la ayuda de diversas herramientas \textit{open source}.
+
+\section{Transformación de datos}
+Tras explorar y entender los datos es hora de transformarlos de acuerdo a nuestros objetivos finales. También aquí se han empleado diferentes lenguajes de programación.
+
+\section{Visualización de datos}
+Una vez que tenemos los datos transformados de manera adecuada ya podemos cargar éstos en nuestra herramienta de visualización principal.

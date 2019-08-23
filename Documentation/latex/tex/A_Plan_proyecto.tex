@@ -1,0 +1,370 @@
+\apendice{Plan de Proyecto Software}
+
+\section{Introducción}\label{introduccion-plan}
+En este capitulo se detalla la planificación del proyecto. Como gestor de tareas se ha utilizado una herramienta llamada \textit{project board}, integrada dentro de Github y descrita en la parte  herramientas que no deja de ser un panel totalmente personalizable en el que realizar un seguimiento de las tareas. 
+
+La planificación temporal del proyecto, o lo que es lo mismo, la elaboración del calendario o programa de tiempos, consiste en una representación gráfica de todas las actividades del proyecto necesarias para producir el resultado final que se desea.
+
+Se han utilizado metodologías ágiles para el desarrollo del proyecto y de este modo, se ha realizado un desarrollo dividido en iteraciones. Terminada una iteración empezaba la siguiente y se agregaban a las tareas planeadas las que no habían sido completado de la iteracción precedente. Las iteraciones del proyecto, los sprints, estaban pensadas para durar unos \textbf{quince días} aproximadamente. No obstante, hay alguna excepción en la que la iteración duró más tiempo, o menos. También existe alguna demora entre algún sprint debido a que tenía demasiada carga de las asignaturas o demasiada carga laboral.
+
+Este primer apéndice se puede dividir a su vez en:
+
+\begin{itemize}
+	\tightlist
+	\item
+	Planificación temporal.
+	\item
+	Estudio de viabilidad.
+\end{itemize} 
+
+
+\section{Planificación temporal}\label{planificacion-temporal}
+Desde el comienzo del proyecto se planteó utilizar una metodología ágil como
+\emph{Scrum} para la gestión del proyecto. Aunque no se ha seguido al 100\% la
+metodología al tratarse de un proyecto académico, sí que se ha aplicado
+en líneas generales una filosofía ágil y metódica. La diferencia fundamental radica en que esta metodología esta pensada para equipos y no para individuos.
+
+El objetivo de la planificación temporal pasan por definir todas las tareas del proyecto para poder distribuir el trabajo a lo largo de la duración prevista del proyecto. El marco de desarrollo seleccionado para la elaboración del proyecto es \textit{Scrum}, caracterizado porque todas las actividades no están planificadas a priori, sino que se van definiendo en cada iteración dependiendo d de su viabilidad y de los objetivos alcanzados hasta el momento.
+
+\subsection{Desarrollo con Scrum}
+
+Scrum es un marco de trabajo que define un conjunto de prácticas y roles, y que puede tomarse como punto de partida para definir el proceso de desarrollo que se ejecutará durante el proyecto. En esta parte vamos a hacer una aproximación a como he alineado yo esos roles durante el desarrollo del proyecto. Indicar que la mayoría de palabras o términos que se utilizan están en inglés dado que el marco se definió de esta manera y casi todo el mundo que utiliza Scrum de manera profesional mantiene la terminología en inglés. De la misma manera yo escribo también el contenido de las tareas en inglés dado que estoy acostumbrado a trabajar en este idioma.
+
+Recordemos que Scrum no define como tal un método o herramienta para llevar el seguimiento del trabajo realizado. Scrum solo propone una serie de buenas prácticas por lo que el seguimiento se puede realizar con una simple hoja de excell, cuaderno o con herramientas de gestión especializadas. Yo he elegido el \textit{project board} de github dentro de mi repositorio del trabajo fin de máster.
+
+Los roles o actores principales en Scrum serían los siguientes: 
+\begin{itemize}	
+	\item \textit{Scrum Master}: su trabajo prioritario es eliminar los obstáculos que impiden que el equipo no alcance el objetivo del \textit{sprint}. Esta persona no es el líder del equipo sino el nexo entre todos ellos. El autor del trabajo asume este rol.
+	\item \textit{Product Owner}: representa a los \textit{stakeholders}\footnote{En toda organización, además de sus propietarios, participan diversos actores claves y grupos sociales que están constituidos por las personas o entes que, de una manera y otra, tienen interés en el desempeño de una empresa porque están relacionadas, bien directa, bien indirectamente, con ella. Fuente Wikipedia. \url{https://es.wikipedia.org/wiki/Parte_interesada_(empresas)}}, se asegura de que el equipo trabaje deforma adecuada desde la perspectiva de éstos. En un entorno real sería el encargado de ecribir historias de usuario, priorizarlas y colocarla en el \textit{Product Backlog}. En este caso que se describe, recordemos en un entorno académico, la universidad sería un buen ejemplo de quién podría desempeñar este papel. Más concretamente el tutor académico del proyecto. De alguna manera se ha seguido esta metodología aunque no he asignado prioridades a las tareas y las iba cogiendo por orden de creación.
+	\item \textit{Team} (equipo): en un entorno real sería el equipo que conforman todos los profesionales de diferentes ramas de conocimiento. El objetivo principal es el de entregar el producto. En este caso autor asume el rol de equipo.
+\end{itemize}
+
+A continuación se describre el ciclo de desarrollo. Al inicio del proyecto el \textit{Product Owne}r debe definir los requisitos que serán los objetivos a cumplir. Éstos quedan reflejados y ordenados por orden de importancia en el \textit{Product Backlog}. Durante los sprints cada uno de estos objetivos serán subdivididos en tareas más pequeñas.
+
+\imagen{backlog}{\footnotesize{Detalle \textit{Product Backlog}.}}
+
+Al inicio de cada Sprint se extraen una serie de tareas de los elementos del \textit{Product Backlog} que conforman el \textit{Sprint Backlog}, las tareas son elegidas por el equipo. Estas tareas deben ser completadas durante el ciclo y no es posible añadir tareas nuevas a este \textit{Sprint} durante el tiempo que se está realizando el mismo.
+
+\begin{itemize}	
+	\item \textit{Product Backlog}: en un entorno real, consistiría en un listado de historias de usuario, obtenidas con el cliente, que se irán incorporando al producto a partir de incrementos sucesivos. En el proyecto descrito aquí éste se ve reflejado en las tareas (\textit{issues} en github) que se van creado a medida que son necesarias. Estás tareas se asignan después a cada sprint.
+	\item \textit{Sprint}: una de las bases de los proyectos ágiles es el desarrollo mediante las iteraciones incrementales. En Scrum a cada iteración se le denomina \textit{Sprint}. En el caso concreto de este trabajo, excepto el último, todos tienen una duración de quince días.
+\end{itemize}
+
+
+A continuación se describen las reuniones que se realizan en el marco de desarrollo de trabajo \textit{Scrum}. 
+\begin{itemize}	
+	\item \textit{Daily Meeting}: se realiza una reunión breve diaria en la que cada miembro del equipo cuenta el estado en el que se encuenta la parte del proyecto que está realizando. En el caso del proyecto que se describe en esta documentación deberá ser una reflexión personal.
+	\item \textit{Planning Meeting}: se realiza al inicio de cada \textit{Sprint} con el objetivo de escoger las tareas necesarias a realizar. Recodemos que se deben escoger del \textit{Product Backlog}.
+	\item \textit{Review Meeting}:  esta reunión se realiza con el cliente al final de cada \textit{Sprint}, suele tener una duración máxima de cuatro horas y se revisa las historias de usuarios que han finalizado y las que no. Además se suele realizar una pequeña demo.
+	\item \textit{Retrospective Meeting}: esta reunión también se realizala finalizar el \textit{Sprint}. Todos los miembros del equipo expresan sus opiniones sobre la iteracción finaliza. El objetivo de esta reunión es realizar una mejora continua del proceso. 
+\end{itemize}
+
+Respecto de las reuniones anteriores, por motivos obvios, la \textit{daily meeting} no se va a considerar dentro del desarrollo de este proyecto con fines académicos. De la misma manera, la \textit{review meeting} tampoco he considerado interesante introducirla. Sin embargo, se van a considerar la \textit{planning}, para ver las tareas a realizar de manera genérica, el \textit{sprint planning} en sí mismo, para fijar las tareas, y la \textit{restrospective meeting}, para ver que hemos aprendido con cada iteracción. En cada uno de los sprints se va a llevar control de cada una de ellas. 
+
+A continuación se describen los diferentes \emph{sprints} que se han realizado de manera detallada. Como hemos dicho en cada uno de ellos se ve tres de las reuniones que son necesarias para un proyecto con este marco de trabajo además de una descripción del \textit{Sprint} y su duración. Asimismo se describe también una parte de antecedentes, que son los meses previos al inicio del proyecto y también un \textit{Sprint 0} donde se comienza a llenar el \textit{Product Backlog}.
+
+%Previo1-----------------------------
+\subsubsection{Mayo/Junio 2019}\label{previo}
+El trabajo fin de máster fue elegido a finales de marzo de 2019. Debido a la intesa carga de trabajo del máster y a que la actividad del autor no se limita únicamente al ámbito académico sino que también desempeña un trabajo a tiempo completo durante la semana, no se pudo empezar a desarrollar una actividad completa hasta el mes de junio. 
+
+Por lo tanto durante el mes de mayo comencé a recopilar información sobre el tema, leer artículos, guardar \textit{links} y descargar algunos \textit{papers}. Durante el mes de junio, la primera quincena, seguí investigando y leyendo sobre el tema aunque ya de manera más frecuente. Durante la segunda quincena, todavía había exámenes del máster, sin embargo, logré sacar alglo más de tiempo y comencé a informarme y a trabajar en el trabajo fin de máster de una manera más intensa. En este período fue también cuando envié la mayoría de correos electrónicos preguntando sobre el tema a modo de consulta sobre la materia, sobre todo en tema de regulación. Desde las administraciones públicas pasando por algunos ex-cargos de medio ambiente, el portavoz de ecologistas en acción y otras personas con influencia dentro del ámbito científico en la disciplina.
+
+\imagen{scrumBoard}{\footnotesize{Detalle \textit{Scrum board}.}}
+
+%Sprint0-----------------------------
+\subsubsection{Sprint 0: 15/06/2019 - 01/07/2019}\label{sprint0}
+\begin{itemize}
+	\item[$\ast$] \underline{Duración}:  15 días
+	\item[$\ast$] \underline{Descripción \textit{Sprint}}: Este primer \textit{Sprint} no se puede considerar como tal, de ahí el número cero, ya que no estaba al cien por cien en el trabajo fin de máster. Mi prioridad eran las asignaturas ya que sin ellas no podría desarrollarlo. Durante estos primeros quince días me dediqué a crear tareas y por tanto a llenar el \textit{backlog}. Si bien es cierto que la mayoría eran tareas como cosas de la documentación, cosas muy obvias sobre el desarrollo o tema académico. Durante la continuación del desarrollo se iba llenando el backlog con nuevas tareas que me iban surgiendo. De la misma manera también mucho tiempo dedicado a leer durante este \textit{Sprint}.
+\end{itemize}
+%Sprint1-----------------------------
+\subsection{Sprint 1: 01/07/2019- 15/07/2019}\label{sprint1}
+\begin{itemize}
+\item[$\ast$] \underline{Duración}:  15 días
+\item[$\ast$] \underline{Descripción \textit{Sprint}}: En este primer \textit{Sprint} efectivo se comienza a trabajar en hacer un criba sobre todo lo investigado, además se comienza también a crear la documentación, repositorios y a hacer un análisis preliminar de los datos con los que vamos a trabajar.
+\end{itemize}
+\begin{enumerate}
+	\item \textbf{\textit{Planning meeting}}
+	\begin{description}
+		\item[Reseña:] La primera reunión se fijan las tareas que se van a realizar este \textit{Sprint} y se concuerda con el tutor académico lo que tenemos en mente para comenzar con el desarrollo.
+	\end{description}
+	\item \textbf{\textit{Sprint planning}}
+	\item[$-$] En esta reunión se establecen la tareas (\textit{user stories}) a desarrollar durante el \textit{Sprint}. 
+	\begin{itemize}
+		\item Crear repositorio.
+		\item Investigar tecnologías principales.
+		\item Analizar datos.
+		\item Discutir propuesta con tutor académico.
+		\item Discutir propuesta con tutor empresa.
+		\item Terminar investigación sobre legislación.
+		\item Terminar investigación científica sobre calidad del aire.
+		\item Documentación: Introducción.
+		\item Documentación: Objetivos.
+	\end{itemize}
+	\item \textbf{\textit{Retrospective meeting}}
+	\begin{itemize}
+		\item ¿Qué ha ido bien?
+		\begin{itemize}
+			\item Toda la parte de investigación tanto sobre legislación como científica.
+			\item Reuniones muy productivas con los tutores para aclarar diversas dudas de índole diferente.
+			\item Comienzo con la memoria de manera constante y paralela a las demás partes.
+		\end{itemize}
+		\item ¿Qué dificultades hemos encontrado?
+		\begin{itemize}
+			\item Debido a la enorme cantidad de información teórica que he recabado me va a ser complicado volcarla toda rápida
+			\item Exiten numerosísimas opciones en cuanto a tecnologías. La oferta en el mercado es muy amplia y ello me crea  incertidumbre al respecto.
+		\end{itemize}
+	\end{itemize}	
+\end{enumerate}
+\imagen{sprint1}{\footnotesize{Detalle Sprint 1.}}
+
+%Sprint2-----------------------------
+\subsection{Sprint 2: 15/07/2019- 31/07/2019}\label{sprint2}
+\begin{itemize}
+\item[$\ast$] \underline{Duración}:  15 días
+\item[$\ast$] \underline{Descripción \textit{Sprint}}: En este segundo \textit{Sprint} se ha enfocado más a comprender, analizar e interpretar toda la información de la que se disponía. Ha sido un sprint de escribir mucho, asimilación y análisis antes de volver a la parte técnica. A veces es necesario tener claro todos los conceptos para saber como avanzar. 
+\end{itemize}
+\begin{enumerate}
+\item \textbf{\textit{Planning meeting}}
+\begin{description}
+	\item[Reseña:] En esta reunión se fijan las tareas que se van a realizar este \textit{Sprint}. Además se añaden algunas nuevas al backlog como las referidas a la parte técnica que se realizarán en scripts sucesivos y que vienen derivadas de las necesidades de éste \textit{Sprint}.
+\end{description}
+\item \textbf{\textit{Sprint planning}}
+	\item[$-$] En esta reunión se establecen la tareas (\textit{user stories}) a desarrollar durante el \textit{Sprint}. 
+\begin{itemize}
+	\item Creación de scripts y arquitectura del TFM.
+	\item Ppreprocesamiento y limpieza de datos.
+	\item Documentación: conceptos teóricos (Big Data).
+	\item Documentación: conceptos teóricos (Legislación).
+	\item Documentación: conceptos teóricos (Método análisis).
+	\item Documentación: conceptos teóricos (Análisis científico).
+
+\end{itemize}
+\item \textbf{\textit{Retrospective meeting}}
+\begin{itemize}
+	\item ¿Qué ha ido bien?
+	\begin{itemize}
+		\item Con este sprint se ha comprendido una de las partes más importantes del trabajo: la parte científica.
+		\item Toda la parte de preprocesamiento de datos.
+	\end{itemize}
+	\item ¿Qué dificultades hemos encontrado?
+	\begin{itemize}
+		\item Debido a la extensión de los conceptos teóricos no he podido progresar todo lo que me hubiera gustado en la parte técnica. Será necesario refactorizar código en \textit{sprints} sucesivos.
+	\end{itemize}
+\end{itemize}	
+\end{enumerate}
+\imagen{sprint2}{\footnotesize{Detalle Sprint 2.}}
+
+%Sprint3-----------------------------
+\subsection{Sprint 3: 31/07/2019 - 15/08/2019}\label{sprint3}
+\begin{itemize}
+	\item[$\ast$] \underline{Duración}:  15 días
+	\item[$\ast$] \underline{Descripción \textit{Sprint}}: Este tercer \textit{Sprint} se ha dirigido más a la parte técnica. Tanto seguir y terminar tareas del \textit{sprint }anterior como en la parte de visualización.
+\end{itemize}
+\begin{enumerate}
+	\item \textbf{\textit{Planning meeting}}
+	\begin{description}
+		\item[Reseña:] En esta reunión he escogido las tareas a realizar en este sprint.
+	\end{description}
+	\item \textbf{\textit{Sprint planning}}
+		\item[$-$] En esta reunión se establecen la tareas (\textit{user stories}) a desarrollar durante el \textit{Sprint}. 
+	\begin{itemize}
+		\item Visualización de datos en \textit{Python}.
+		\item Visualización de datos en \textit{R}.
+		\item Refactorización de código.
+		\item Documentación: aspectos relevantes del desarrollo.
+		\item Documentación: técnicas y herramientas.
+		\item Documentación: trabajos relacionados.
+		\item Enviar copia a tutores de los puntos de la memoria desarrollados en el \textit{sprint} anterior.
+	\end{itemize}
+	\item \textbf{\textit{Retrospective meeting}}
+	\begin{itemize}
+		\item ¿Qué ha ido bien?
+		\begin{itemize}
+			\item Este \textit{sprint} se ha enfocado en trabajar las visualizaciones tanto en \textit{Python} como en \textit{R}. 
+			\item Se ha avanzado mucho en la memoria y además se ha enviado una primera copia a los tutores para su revisión.
+		\end{itemize}
+		\item ¿Qué dificultades hemos encontrado?
+		\begin{itemize}
+			\item Ninguna dificultad destacada. 
+		\end{itemize}
+	\end{itemize}	
+\end{enumerate}
+\imagen{sprint3}{\footnotesize{Detalle Sprint 3.}}
+
+\subsection{Sprint 4: 15/08/2019 - 31/08/2019}\label{sprint4}
+\begin{itemize}
+	\item[$\ast$] \underline{Duración}:  15 días
+	\item[$\ast$] \underline{Descripción \textit{Sprint}}: Este cuarto \textit{Sprint} se ha dirigido más a la parte de la visualización final aunque sin olvidar la documentación.
+\end{itemize}
+\begin{enumerate}
+	\item \textbf{\textit{Planning meeting}}
+	\begin{description}
+		\item[Reseña:] En esta reunión he escogido las tareas a realizar en este \textit{sprint}.
+	\end{description}
+	\item \textbf{\textit{Sprint planning}}
+	\item[$-$] En esta reunión se establecen la tareas (\textit{user stories}) a desarrollar durante el \textit{Sprint}. 
+	\begin{itemize}
+		\item Visualización de datos con PowerBI.
+		\item Investigación de uso de la herramienta software \textit{tinybird}.
+		\item Discusión de resultados.
+		\item Documentación: plan de proyecto software.
+		\item Documentación: entorno experimental.
+		\item Documentación: resultados.
+		\item Enviar segunda copia de la memoria a los tutores
+	\end{itemize}
+	\item \textbf{\textit{Retrospective meeting}}
+	\begin{itemize}
+		\item ¿Qué ha ido bien?
+		\begin{itemize}
+			\item Este \textit{sprint} se ha dirigido a trabajar en la parte de la visualización final.
+			\item Se ha avanzado en la memoria respecto de las partes finales de la misma. 
+			\item Al introducirse una nueva herramienta (tinybird) se ha estado investigando su funcionamiento.
+		\end{itemize}
+		\item ¿Qué dificultades hemos encontrado?
+		\begin{itemize}
+			\item La parte de la visualización final se ha comido demasiado tiempo por lo que todas las tareas de documentación no han podido finalizarse tal y como se esperaba.
+		\end{itemize}
+	\end{itemize}	
+\end{enumerate}
+%\imagen{sprint4}{\footnotesize{Detalle Sprint 4.}}
+
+\subsection{Sprint 5: 31/08/2019- 05/09/2019}\label{sprint5}
+
+
+\section{Estudio de viabilidad}\label{estudio-viabilidad}
+En esta sección se lleva a cabo un estudio para comprobar la viabilidad del proyecto realizado. 
+
+\subsection{Viabilidad económica}\label{viabilidad-economica}
+
+La viabilidad económica es la parte donde lograremos detectar si el proyecto es o no rentable económicamente hablando. Tenemos que tener en cuenta de que se trata de algo \underline{ficticio} ya que a priori es un estudio y de carácter \textit{open source}. Es cierto que podría tener un enfoque económico en modo de herramienta informativa para los ciudadanos.
+
+\subsubsection{Análisis de costes}\label{costes}
+
+Lo subdividiremos en diferentes tipos de costes.
+
+\begin{description}
+	\item[Coste de personal] Se considerará que el proyecto ha sido desarrollado en un periodo de tres meses.  Considerando que se ha trabajado unas 4 horas al día cada semana (algunos días más y otros menos pero esa sería la media), y que el programador, que en este caso es una sola persona, ha percibido un sueldo bruto de 13 \euro /hora, el coste del personal por lo tanto se resume en la siguiente tabla:
+	
+	\begin{table}[htbp]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				& Total \\
+				\hline \hline
+				13 \euro /hora * 4 horas/día &   78 \euro /día \\ \hline
+				78 \euro /día * 5 dias/semana &   390 \euro /semana \\ \hline
+				390 \euro /semana * 4 semanas &   1560 \euro /mes (aproximadamente)\\ \hline
+				\textbf{Coste total salario} &   7800 \euro /5 meses \\ \hline
+			\end{tabular}
+			\caption{Tabla salarios.}
+			\label{tabla:salarios}
+		\end{center}
+	\end{table}
+	
+	\item[Coste de seguridad social] al coste de personal hay que sumar el coste de seguridad social. 
+	
+	
+	\begin{table}[htbp]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				\emph{Seguridad social} &  \\
+				\hline \hline
+				& \emph{23,60} \% en contigencias comunes \\ \hline
+				&   \emph{7,70} \% en concepto de desempleo \\ \hline
+				&   \emph{0,10} \% en concepto de formación personal. \\ \hline
+				\textbf{Gastos Seguridad Social}  &   7800 \euro  * 31,40 \% =  2449,20 \euro \\ \hline
+				\textbf{Gastos personal}  &  7800 \euro  + 2449,20 \euro  = 10249,2 \euro  \\ \hline
+			\end{tabular}
+			\caption{Tabla seguridad social.}
+			\label{tabla:ssocial}
+		\end{center}
+	\end{table}
+	
+	\item[Coste de software] Todo el software principal utilizado para este proyecto es gratuito y de libre distribución. En el caso de programas como PowerBI, que sí requieren licencias de pago, se han usado los períodos de prueba.
+	
+	\item[Coste de Hardware] En este apartado se analizan los costes derivados de la compra de los materiales que son necesarios para llevar a cabo el proyecto. Según la ley de Impuesto de Sociedades, la duración media del inmovilizado  hardware oscila entre 8 y 3 a\~nos. Yo consideraré 3 años. Más detalles en la siguiente tabla.  
+	
+	\begin{table}[htbp]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				\emph{Hardware utilizado}&  \\
+				\hline \hline
+				Portátil MacBook Pro 15'' & 1650 \euro  \\ \hline
+				Monitor externo Samsung 22'' &    107'99 \euro\\ \hline
+				\textbf{Gastos Hardware}  &   1650 \euro + 107,99  =  1757,99 \euro \\ \hline
+				\textbf{Coste amortización}  &  1757,99 \euro  / 36 meses = 48,8 \euro / mes  \\ \hline
+			\end{tabular}
+			\caption{Tabla costes hardware.}
+			\label{tabla:hardware}
+		\end{center}
+	\end{table}
+	
+	\begin{table}[htbp]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Coste final hardware} (5 meses)  &  48,8 \euro / mes  *  5 meses = 244 \euro   \\ \hline
+			\end{tabular}
+			\caption{Coste final hardware.}
+			\label{tabla:costefinalhardware}
+		\end{center}
+	\end{table}
+	
+	
+	\subsection{Coste final desarrollo del proyecto}\label{coste-final}
+	
+	El coste final del desarrollo del proyecto, con una duración estimada de tres meses es el siguiente.  
+	
+	\begin{table}[htb]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Coste total final del desarrollo proyecto}  &  244 \euro +  10249,2 \euro = 10493 \euro   \\ \hline
+			\end{tabular}
+			\caption{Coste proyecto final..}
+			\label{tabla:costefinal}
+		\end{center}
+	\end{table}
+	
+\end{description}
+
+\subsection{Viabilidad legal}\label{viabilidad-legal}
+La viabilidad legal se centra principalmente en el estudio de las licencias software utilizadas. Realizaremos una tabla resumen sobre las licencias. Indicar aquí que al tratarse de un estudio analítico se ha intentado seguir e utilizar software de carácter \textit{open source}.
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			Dependencias & Licencia \\
+			\hline \hline
+			\emph{Github pages} & \href{https://opensource.org/licenses/MIT}{MIT}\\ \hline
+			\emph{R} & \href{https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_2}{GNU}\\ \hline
+			\emph{Python} & \href{https://es.wikipedia.org/wiki/Python_Software_Foundation_License}{PSFL}\\ \hline
+			\emph{Vega} & \href{https://github.com/vega/vega/blob/master/LICENSET}{BSD-3 Clause}\\ \hline
+			
+		\end{tabular}
+		\caption{Tabla resumen-licencias.}
+		\label{tabla:licencias}
+	\end{center}
+\end{table}
+
+
+
+Una licencia software es un contrato entre el autor o titular de los derechos de explotación o distribución y el usuario consumidor, usuario profesional o empresa, para la utilización del software cumpliendo una serie de términos y condiciones establecidas dentro de sus cláusulas. Todo el software que empleo es su amplia mayoría es libre ya que la mayoría de código viene o bien de desarrolladores \emph{amateur} o es libre desde su creación. Emplean por tanto las licencias descritas en la tabla anterior por lo que diferencia entre ellas varían en términos como el nombramiento del autor o la garantía , son licencia comunes en software libre \cite{githublicense} , además github provee una página para ayudarte en la elección de tu licencia \citep{githubchoose}. La menos permisiva de entre las descritas es \emph{MIT} \citep{mit}  y la más es la licencia \emph{Apache-2.0} \cite{apache}.
+
+\imagen{licencias}{\footnotesize{Gráfico licencias Open Source in GitHub. Fuente:  \url{https://cartograf.net}.}}
+
+Para el proyecto de manera general (está alojado en github de forma libre) he elegido la licencia  \href{https://github.com/aguadotzn/TFM_MUINBDES/blob/master/LICENSE}{MIT}.
+
+Para la documentación he elegido una licencia Creative commons, en concreto se ha elegido la \emph{Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)}.
+
+\imagen{creativecommons}{\footnotesize{Licencia Creative Commons.}}\label{commons}
+
+
+
+
+
+

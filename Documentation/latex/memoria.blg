@@ -1,0 +1,146 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: memoria.aux
+A level-1 auxiliary file: ./tex/1_Introduccion.aux
+A level-1 auxiliary file: ./tex/2_Objetivos_del_proyecto.aux
+A level-1 auxiliary file: ./tex/3_Conceptos_teoricos.aux
+A level-1 auxiliary file: ./tex/4_Tecnicas_y_herramientas.aux
+A level-1 auxiliary file: ./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux
+A level-1 auxiliary file: ./tex/6_Trabajos_relacionados.aux
+A level-1 auxiliary file: ./tex/7_Entorno_experimental.aux
+A level-1 auxiliary file: ./tex/8_Resultados.aux
+A level-1 auxiliary file: ./tex/9_Conclusiones_Lineas_de_trabajo_futuras.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: ./tex/A_Plan_proyecto.aux
+A level-1 auxiliary file: ./tex/B_Extra_Resultados.aux
+Database file #1: bibliografia.bib
+Warning--entry type for "sharma_anirudh_anirudh_2018" isn't style-file defined
+--line 1 of file bibliografia.bib
+Warning--entry type for "informe_EeA_2019" isn't style-file defined
+--line 11 of file bibliografia.bib
+Warning--entry type for "bbc_ciudades" isn't style-file defined
+--line 23 of file bibliografia.bib
+Warning--entry type for "foote_big_2018" isn't style-file defined
+--line 40 of file bibliografia.bib
+Warning--entry type for "tec_ubicua" isn't style-file defined
+--line 53 of file bibliografia.bib
+Warning--entry type for "big_data_ciudades_inteligentes" isn't style-file defined
+--line 64 of file bibliografia.bib
+Warning--entry type for "informe_ecologistas" isn't style-file defined
+--line 129 of file bibliografia.bib
+Warning--entry type for "informe_2018" isn't style-file defined
+--line 140 of file bibliografia.bib
+Warning--entry type for "2018_oms_calidad" isn't style-file defined
+--line 153 of file bibliografia.bib
+Warning--entry type for "_sistema_vigilancia_madrid" isn't style-file defined
+--line 163 of file bibliografia.bib
+Warning--entry type for "portal_datosabiertos_madrid" isn't style-file defined
+--line 196 of file bibliografia.bib
+Warning--entry type for "state_global_air_2018" isn't style-file defined
+--line 213 of file bibliografia.bib
+Warning--entry type for "git_2019" isn't style-file defined
+--line 226 of file bibliografia.bib
+Warning--entry type for "wayback_2012" isn't style-file defined
+--line 269 of file bibliografia.bib
+Warning--entry type for "estandar" isn't style-file defined
+--line 278 of file bibliografia.bib
+Warning--entry type for "formatos" isn't style-file defined
+--line 287 of file bibliografia.bib
+Warning--entry type for "cesal_what_2019" isn't style-file defined
+--line 296 of file bibliografia.bib
+Warning--entry type for "visualisation_2016" isn't style-file defined
+--line 320 of file bibliografia.bib
+Warning--to sort, need author or key in informe_ecologistas
+Warning--to sort, need author or key in portal_datosabiertos_madrid
+Warning--to sort, need author or key in _sistema_vigilancia_madrid
+Warning--to sort, need author or key in bbc_ciudades
+Warning--to sort, need author or key in london_cameras
+Warning--to sort, need author or key in big_data_ciudades_inteligentes
+Warning--to sort, need author or key in tec_ubicua
+Warning--to sort, need author or key in wayback_2012
+Warning--to sort, need author or key in state_global_air_2018
+Warning--to sort, need author or key in 2018_oms_calidad
+Warning--to sort, need author or key in formatos
+Warning--to sort, need author or key in git_2019
+Warning--to sort, need author or key in visualisation_2016
+Warning--empty year in 2018_oms_calidad
+Warning--empty year in _sistema_vigilancia_madrid
+Warning--empty year in bbc_ciudades
+Warning--empty year in big_data_ciudades_inteligentes
+Warning--empty year in formatos
+Warning--empty year in git_2019
+Warning--empty year in informe_ecologistas
+Warning--empty author in london_cameras
+Warning--empty journal in london_cameras
+Warning--empty year in london_cameras
+Warning--empty year in london_cameras
+Warning--empty year in portal_datosabiertos_madrid
+Warning--empty year in state_global_air_2018
+Warning--empty year in tec_ubicua
+Warning--empty year in visualisation_2016
+Warning--empty year in wayback_2012
+Warning--empty journal in casado_reinaldos_big_2018
+Warning--empty year in casado_reinaldos_big_2018
+Warning--empty year in casado_reinaldos_big_2018
+Warning--empty year in cesal_what_2019
+Warning--empty year in informe_2018
+Warning--empty year in informe_EeA_2019
+Warning--empty year in foote_big_2018
+Warning--empty journal in gomez-losada_data_2019
+Warning--empty year in gomez-losada_data_2019
+Warning--empty year in gomez-losada_data_2019
+Warning--empty journal in laval_introduction
+Warning--empty year in laval_introduction
+Warning--empty year in laval_introduction
+Warning--empty journal in ley_protocolo_madrid
+Warning--empty year in ley_protocolo_madrid
+Warning--empty year in ley_protocolo_madrid
+Warning--empty journal in nunez-alonso_statistical_2019
+Warning--empty year in nunez-alonso_statistical_2019
+Warning--empty year in nunez-alonso_statistical_2019
+Warning--empty year in oates_researching_2006
+Warning--empty year in oates_researching_2006
+Warning--empty year in estandar
+Warning--empty year in sharma_anirudh_anirudh_2018
+You've used 29 entries,
+            2773 wiz_defined-function locations,
+            723 strings with 9966 characters,
+and the built_in function-call counts, 8630 in all, are:
+= -- 776
+> -- 218
+< -- 16
++ -- 95
+- -- 66
+* -- 565
+:= -- 1095
+add.period$ -- 84
+call.type$ -- 29
+change.case$ -- 108
+chr.to.int$ -- 29
+cite$ -- 123
+duplicate$ -- 478
+empty$ -- 978
+format.name$ -- 82
+if$ -- 1912
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 150
+num.names$ -- 64
+pop$ -- 403
+preamble$ -- 1
+purify$ -- 80
+quote$ -- 0
+skip$ -- 385
+stack$ -- 0
+substring$ -- 106
+swap$ -- 31
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 314
+warning$ -- 52
+while$ -- 54
+width$ -- 0
+write$ -- 324
+(There were 70 warnings)
