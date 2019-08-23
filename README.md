@@ -67,7 +67,7 @@ Development of an environment model for the analysis of air pollution/air qualit
 │          └─── /formatted_data
 │          |-- example.Rmd 
 │
-│        |- README.md (code)
+│        |-- README.md (code)
 │ 
 └───|- /Data Visualization
 │        └─── /Examples
@@ -77,24 +77,31 @@ Development of an environment model for the analysis of air pollution/air qualit
 │
 │        └─── /PowerBi
 │          |-- PowerBi.file
-│        |- README.md (data visualization)
+│
+│        |-- README.md (data visualization)
 │ 
 └───|- /Documentation
 │        └─── /latex
 │        └─── /slides (presentation)
 │        └─── /images (for the main README)
-│        |- README.md (documentation)
+│
+│        |-- README.md (documentation)
 │ 
 └───|- /Information
 │        └─── /Official Documents
 │        └─── /Other Documents
-│        |- README.md (information)
+│
+│        |-- README.md (information)
 │ 
 └───|- /docs
-│        |- README.md (github pages/landing page of the project)
+│        └─── /assets
+│        └─── /images
+│
+│        |-- index.html 
+│        |-- README.md (github pages/landing page of the project)
 │     
-│- LICENSE.md
-│- README.md (main)
+│-- LICENSE.md
+│-- README.md (main)
 ```
 
 # Previews
