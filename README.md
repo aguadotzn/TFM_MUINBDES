@@ -54,35 +54,45 @@ Development of an environment model for the analysis of air pollution/air qualit
 │          └─── /daily_data
 │          └─── /hourly_data
 │          └─── /control_stations_data
-│        └─── air_quality_stations
+│
+│        └─── /air_quality_stations
 │          └─── /formatted_data
 │          |-- calidad_aire_estaciones.ipynb
-│        └─── air_quality_python_analysis 
+│
+│        └─── /air_quality_python_analysis 
 │          └─── /formatted_data
 │          |-- example.py
-│        └─── air_quality_R_analysis
+│
+│        └─── /air_quality_R_analysis
 │          └─── /formatted_data
 │          |-- example.Rmd 
+│
 │        |- README.md (code)
+│ 
 └───|- /Data Visualization
 │        └─── /Examples
 │          |-- img1
 │          |-- img2
 │          |-- img3
+│
 │        └─── /PowerBi
 │          |-- PowerBi.file
 │        |- README.md (data visualization)
-└───|- /docs
-│        |- README.md (github pages/landing page of the project)    
+│ 
 └───|- /Documentation
 │        └─── /latex
 │        └─── /slides (presentation)
 │        └─── /images (for the main README)
 │        |- README.md (documentation)
+│ 
 └───|- /Information
 │        └─── /Official Documents
 │        └─── /Other Documents
 │        |- README.md (information)
+│ 
+└───|- /docs
+│        |- README.md (github pages/landing page of the project)
+│     
 │- LICENSE.md
 │- README.md (main)
 ```
