@@ -57,17 +57,17 @@ Development of an environment model for the analysis of air pollution/air qualit
 │
 │        └─── /air_quality_stations
 │          └─── /formatted_data
-│               └─── |-- calidad_aire_estaciones_formatted.csv
+│               |-- calidad_aire_estaciones_formatted.csv
 │          |-- calidad_aire_estaciones.ipynb
 │
 │        └─── /air_quality_python_analysis 
 │          └─── /formatted_data
-│               └─── |-- calidad_aire_dias_formatted.csv
+│               |-- calidad_aire_dias_formatted.csv
 │          |-- calidad_aire_dias.py
 │
 │        └─── /air_quality_R_analysis
 │          └─── /formatted_data
-│               └─── |-- calidad_aire_horas_formatted.csv
+│               |-- calidad_aire_horas_formatted.csv
 │          |-- calidad_aire_horas.R
 │
 │        |-- README.md (code)
