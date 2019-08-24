@@ -5,6 +5,8 @@
 
 >This folder contains some screenshots as examples (_/examples_ folder) about the most useful data visualization that I made with the code. It also contains the **Power BI** file with the main data visualization. 
 
+![Schema](/Documentation/images/portada.png)
+
 ## Prerequisites
 
 You need to download the [Power BI](https://powerbi.microsoft.com/) software before you can use the file.
