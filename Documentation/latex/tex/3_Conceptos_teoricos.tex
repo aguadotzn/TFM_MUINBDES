@@ -1,111 +1,54 @@
 \capitulo{3}{Conceptos teóricos}
 
-Una de las partes más importantes del proyecto, en cuestión de tiempo, ha sido la de familiarizarse con los conceptos científicos que requería el mismo. Además dada la numerosa cantidad de información sobre el tema en algunos momentos he tenido dudas sobre el punto de vista que darle al análisis dada la abrumadora cantidad de opciones de las que disponía. 
-
 \section{Introducción}\label{teorico-introduccion}
-Esta sección pretende servir como orientación antes de adentrarse en el trabajo en sí mismo. Se trata de un conglomerado de consideraciones de diferente índole que es necesario conocer para comprender este trabajo fin de máster. Esta subdividido en un preámbulo, algo más general y breve, sobre conceptos básicos de un proyecto \emph{Big Data}. Asimismo se abordan cuestiones como los tipos de datos, arquitecturas o smart cities. Se prosigue con diversos análisis de índole científica, legislativa y, por último, técnica. Todas estas secciones descritas siempre enfocadas desde el punto de vista del trabajo que se esta realizando.
+Esta sección pretende servir como orientación antes de adentrarse en el trabajo en sí mismo. Se trata de un conglomerado de consideraciones de diferente índole que es necesario conocer para comprender este trabajo fin de máster. 
 
 \section{Big data}\label{teorico-big-data}
 La información siempre ha sido, y será, el tesoro más valioso con el que puede contar una empresa. En la era de la sociedad de la información y en la que, al día, se generan 2,5 quintillones \footnote{Fuente IBM, Noticia ABC. \url{https://www.abc.es/tecnologia/redes/20140423/abci-trillones-byte-informacion-cada-201404222207.html}} de datos, resulta más que evidente que se trata de la herramienta empresarial y social más importante de la historia. 
 
-Empresas de cualquier tamaño pueden y deben usar esta tecnología para cubrir prácticamente cualquier necesidad que tengan. Se trata de un nuevo prisma que modifica la visión de un negocio desde cualquier perspectiva. Sin embargo podemos afirmar categóricamente que se trata de un área de reciente implantación, que avanza a una velocidad vertiginosa, y que pocas empresas emplean con resultados altamente satisfactorios. Por todo ello no existen definiciones estrictamente formales del término. Una aproximación a una interpretación del término podría ser la siguiente:
+Empresas de cualquier tamaño pueden y deben usar esta tecnología para cubrir prácticamente cualquier necesidad que tengan. Se trata de un nuevo prisma que modifica la visión de un negocio desde cualquier perspectiva. Sin embargo, podemos afirmar  que se trata de un área de reciente implantación, que avanza a una velocidad vertiginosa, y que pocas empresas emplean con resultados altamente satisfactorios. Por todo ello no existen definiciones estrictamente formales del término. Una aproximación a una interpretación del término podría ser la siguiente:
 
 \begin{displayquote}
 	\emph{Big Data refers to a data set that is so large and/or complex that it cannot be perceived, acquired, managed, and processed by traditional Information Technology (IT) and software/hardware tools within a tolerable time} \cite{laval_introduction}
 \end{displayquote} 
 
-En otras palabra, \emph{Big data} es un concepto en auge que se puede describir como una gran masa de datos cuyo gran tamaño hace complejo su análisis con las técnicas más habituales. El problema actual reside en que, y vamos a más, los grandes volúmenes de datos han superado con creces a la capacidad de procesamiento de un simple host. La importancia del término mencionado nació para intentar solucionar esos problemas de almacenamiento e intentar interpretar, almacenar y analizar esas grandes cantidades de datos de la manera más adecuada y eficiente posible.
-
-Cada día que nos levantamos si miramos a nuesrtro alrededor podemos ver que cualquier dispositivo de los que usamos a diario genera datos constantemente, todos ellos pueden ser analizados. De toda esta maraña de datos aproximadamente solo un 20\% es información estructurada, mientras que lo restante se trata de datos no estructurados. Éstos últimos requieren de un análisis un poco más profundo para almacenarlos y analizarlos. 
-
-Por lo que vemos resulta bastante complejo el intentar dar una definición exacta, pero en lo que sí estamos de acuerdo es en que podríamos agrupar la acepción mediante tres dimensiones, conocidas como “las tres V”: Volumen, Variedad y Velocidad.
-
-\begin{itemize}
-	\tightlist
-	\item
-	\textbf{Velocidad}: cada vez más y más datos generados a ritmo trepidante.
-	\item
-	\textbf{Variedad}: referencia a los tipos de datos. Los datos pueden datos pueden ser, simplificando, de dos tipos: estructurados o no estructurados. La manera de abordar el proyecto cambia en función de los datos a analizar.
-	\item
-	\textbf{Volumen}: alusión a la capacidad de almacenaje de todos esos datos que estamos analizando
-\end{itemize}
-
-\imagen{3vbigdata}{\footnotesize{Las 3 v's en \emph{Big Data}. Fuente: \url{cadreresearch.org}}}
-
-Éstas tres \textit{v's} engloban los principales atributos del \emph{Big Data}, aunque también es cierto que hoy en día y dada la creciente repercusión de las fake news y demás escándalos suelen incluir una cuarta, la \textbf{Veracidad}. Si nos encontráramos en un entorno \textit{business} también es posible incluir una quinta v, el \textbf{Valor}. Que no es más que el valor que tienen esos datos. 
-
-\subsection{Datos}
-Otra parte fundamental de el proceso que describimos es conocer que existen diferentes tipos de datos. Se pueden encontrar por lo tanto tres subgrupos de datos.
-\begin{itemize}
-	\tightlist
-	\item	Datos \underline {estructurados}: es información ya procesada, filtrada y con un formato estructurado. Las tablas relacionales son un buen ejemplo.
-	\item	Datos \underline {semi-estructurados}: es información que posee un formato definido y esta procesada pero no se encuentra estructurada. Un ejemplo serían los ficheros con información de un lenguaje de etiquetas como HTML.
-	\item Datos \underline {no estructurados}: se trata de información sin procesar y que puede tener cualquier estructura. La información colgada en redes sociales serían un gran ejemplo de este tipo de datos.
-\end{itemize}
-La manera de trabajar hoy en día implica almacenar solamente datos de tipo estructurado o semiestructurado, obligando a pasar por un proceso de filtrado y transformación los datos no estructurados. Este proceso radica en un coste y en una pérdida inevitable de datos que cada vez es más difícil ignorar ya que cada vez se busca más precisión y además iría en contra de las \textit{v’s} nombradas anteriormente.
+En otras palabra, \emph{Big data} es un concepto en auge que se puede describir como una gran masa de datos cuyo gran tamaño hace complejo su análisis con las técnicas más habituales. El problema actual reside en que, y vamos a más, los grandes volúmenes de datos han superado con creces a la capacidad de procesamiento de un simple \textit{host}. 
 
 \subsection{Arquitecturas}
 
-La arquitectura de un proyecto \emph{Big Data} está compuesta generalmente por varias capas, es posible encontrar fuentes que hablan de cuatro y también de cinco, aunque quizás es verdad que depende del proyecto al que se aplican. Particularmente creo que está mejor enfocado con cuatro capas que serían las siguientes: \emph{recolección de datos, almacenamiento, procesamiento de datos y visualización}. Esta arquitectura “por capas” no es nueva, sino que ya es algo generalizado en las soluciones de \textit{Business Intelligence} que existen hoy en día. Sin embargo, debido a las nuevas necesidades cada uno de estos pasos ha ido adaptándose y aportando nuevas tecnologías a la vez que abriendo nuevas oportunidades.
+La arquitectura de un proyecto \emph{Big Data} está compuesta generalmente por varias capas, es posible encontrar fuentes que hablan de cuatro y también de cinco, aunque quizás es verdad que depende del proyecto al que se aplican. Particularmente creo que está mejor enfocado con cuatro capas que serían las siguientes: \emph{recolección de datos, almacenamiento, procesamiento de datos y visualización}. Esta arquitectura “por capas” no es nueva, sino que ya es algo generalizado en las soluciones de \textit{Business Intelligence} que existen hoy en día. Sin embargo, debido a las nuevas necesidades cada uno de estos pasos ha ido adaptándose y aportando nuevas tecnologías a la vez que abriendo nuevas oportunidades. 
 
-\begin{enumerate}
-	\item \textbf{Recolección}: La primera etapa es dónde el sistema debe conectarse a las fuentes para extraer la información. Dependiendo de cómo se conecte a la fuente las herramientas pueden ser por lotes o por transmisión en tiempo real.
-	\item \textbf{Almacenamiento}: En esta segunda fase se engloban los sistemas de ficheros y la base de datos.
-	\item \textbf{Procesamiento}: Una vez se tienen los datos almacenados obtenidos del paso anterior, el siguiente paso en un sistema Big Data es explotar la
-	información para llegar a los resultados deseados
-	
-	\item \textbf{Visualización}: Este es el apartado o paso es que menos ha cambiado si lo comparamos con otro tipo de arquitecturas. Es el paso en el que se muestran los datos de manera visual.
-\end{enumerate}
+En la figura \ref{arquitecturas} podemos ver de manera resumida la diferencia entre una arquitectura clásica y una arquitectura\textit{ Big Data}.
 
-\imagen{arquitecturaBData}{\footnotesize{Arq. tradicional vs Arq. \emph{Big Data}. Fuente: \url{https://www.slideshare.net/bd4s/big-data-introduccion}}}
-
+\imagen{arquitecturaBData}{\footnotesize{Arq. tradicional vs Arq. \emph{Big Data}. Fuente: \url{https://www.slideshare.net/bd4s/big-data-introduccion}}\label{arquitecturas}}
 
 \subsection{\emph{Smart cities}}
 
-Aunque es práctica invisible para nosotros, cantidades ingentes de información se almacenan y circulan alrededor de nuestro mundo cada día generado mayormente por las empresas, administraciones o los propios ciudadanos en una explosión de datos a la espera de ser procesados y aprovechados con fines diversos. Desde hace unos años, la transformación digital que estamos sufriendo todos supone un cambio de paradigma en nuestras vidas. Existen multitud de actividades, por no decir casi todas, dónde la influencia del análisis de datos nos proporciona predicciones realmente interesantes. Si este tipo de actividades se realizan dentro de las ciudades, es decir, se aplica a la habitabildiad y al diseño de las mismas, entonces estaremos hablando de lo que los expertos llaman \emph{Smart Data} \cite{foote_big_2018}.
+Aunque es práctica invisible para nosotros, cantidades ingentes de información se almacenan y circulan alrededor de nuestro mundo cada día generado mayormente por las empresas, administraciones o los propios ciudadanos en una explosión de datos a la espera de ser procesados y aprovechados con fines diversos. Desde hace unos años, la transformación digital que estamos sufriendo todos supone un cambio de paradigma en nuestras vidas. Existen multitud de actividades, por no decir casi todas, dónde la influencia del análisis de datos nos proporciona predicciones realmente interesantes. Si este tipo de actividades se realizan dentro de las ciudades, es decir, se aplica a la habitabildiad y al diseño de las mismas, entonces estaremos hablando de lo que los expertos llaman \emph{Smart} \cite{foote_big_2018}.
 
 Las ciudades ofrecen distintos servicios a los ciudadanos por lo cual necesitan recopilar y almacenar una gran cantidad de datos. Otros organismos y administraciones públicas, financiados por la ciudadanía, generan a su vez información geográfica, cartográfica, meteorológica, médica etc. Los partidarios del \emph{Open Data}, la filosofía de datos abiertos, defienden que esta información debería ser accesible y reutilizable para el público en general, sin exigencia de ningun permiso específico. El por qué parece bastante lógico ya que consideran que restringir su acceso va contra el bien común debido a que se trata de información que pertenece a la sociedad, o ha sido financiada por ella. Por lo tanto, intentan promover que ese tipo de datos esten accesibles para todo el mundo que así lo desee. 
 
-Hablamos de \textit{Smart Cities} cuando las ciudades tratan de innovar para mejorar la calidad de vida de sus habitantes. Se trata de un término cada vez má común y hace referencia a sistemas de infraestructura, conectividad, \emph{IoT} (Internet of things), y, por supuesto, datos abiertos que conviven interconectados entre sí en un núcleo de población. Hablamos también de tecnologías\textit{ Big Data}, \textit{machine learning} y de extracción, transformación, normalización, procesamiento y exposición de datos, que nos permitirán sacar partido a toda esa información, detectar problemas, extraer patrones, analizar comportamientos, plantear hipótesis u optimizar modelos. En definitiva, usar los datos disponibles para optimizar los servicios ofrecidos a los ciudadanos. Este término de \textbf{ciudad inteligente} se puede disgregar en dos partes:
-
-\begin{itemize}
-	\item Por un lado hace referencia al creciente concepto de que las grandes urbes están compuestas de una elevada digitalización. Prácticamente desde el proceso o tarea más básico se pretende digitalizar para proporcionar a la administración la vía para integrar y analizar la información producida por los ciudadanos y de esta manera realizar los procesos de dicha ciudad de una manera eficiente en base a esos datos producidos. Por ejemplo, el volumen de datos producidos por estos procesos puede ser utilizado para modelar y predecir el tráfico de las calles principales en una ciudad.
-	\item Por otro lado, una \textit{smart city} es aquella cuya economía y gobierno está impulsado por la innovación, la creatividad y el emprendimiento. Quizás está parte sea la menos visible pero también resulta importante ya que las ciudades inteligentes no se basan todo en modelos tecnológicos sino que para evolucionar deben también cambiar la manera en la que funciona la administración. Por supuesto, las tecnologías de la información resultar ser de vital importancia, vistas como la plataforma para movilizar y llevar a cabo las ideas e innovaciones que se pretenden seguir para optimizar procesos.
-\end{itemize}
-
-Si queremos conocer algunas de estas ciudades nada mejor que visitar el informe anual de la escuela de negocios IESE, llamado \href{https://citiesinmotion.iese.edu/indicecim/}{IESE Cities in Motion}. Un gran ejemplo de ese tipo de ciudades es Nueva york.
+Hablamos de \textit{Smart Cities} cuando las ciudades tratan de innovar para mejorar la calidad de vida de sus habitantes. Se trata de un término cada vez má común y hace referencia a sistemas de infraestructura, conectividad, \emph{IoT} (Internet of things), y, por supuesto, datos abiertos que conviven interconectados entre sí en un núcleo de población.  Si queremos conocer algunas de estas ciudades nada mejor que visitar el informe anual de la escuela de negocios IESE, llamado \href{https://citiesinmotion.iese.edu/indicecim/}{IESE Cities in Motion}. Un gran ejemplo de ese tipo de ciudades es Nueva york.
 
 \subsection{\emph{Big Data} y ciudades}
-Hasta ahora nunca habíamos obtenido y recogido tal cantidad de datos en las ciudades, y lo que es quizás más importante, tenemos la capacidad para procesarlos y entenderlos. En las ciudades, aunque quizás jamás nos hayamos parado a pensarlo, es usual la producción de conjuntos de datos enormes. Además esto no resulta específico de hoy en día, sino desde hace tiempo se realizan censos, encuestas, entrevistas, baremos... El ser humano y sus acciones generamos datos pero las administraciones también. De la misma manera las empresas generan y almacenan cantidad de datos provenientes de sus operaciones internas. Sin embargo estamos hablando de que todos estos datos suelen ser muy específicos y generales por lo que resulta ser complejos a la hora de su análisis. Dependiendo de la manera de cómo se generan estos datos, es decir del origen que tienen dentro de las ciudades, podríamos hacer una clasificación de la siguiente manera:
+Hasta ahora nunca habíamos obtenido y recogido tal cantidad de datos en las ciudades, y lo que es quizás más importante, tenemos la capacidad para procesarlos y entenderlos. En las ciudades, aunque quizás jamás nos hayamos parado a pensarlo, es usual la producción de conjuntos de datos enormes. Además esto no resulta específico de hoy en día, sino desde hace tiempo se realizan censos, encuestas, entrevistas, baremos... El ser humano y sus acciones generamos datos pero las administraciones también. De la misma manera las empresas generan y almacenan cantidad de datos provenientes de sus operaciones internas. Sin embargo estamos hablando de que todos estos datos suelen ser muy específicos por lo que resultan ser complejos a la hora de su análisis. Dependiendo de la manera de cómo se generan estos datos, es decir del origen que tienen dentro de las ciudades, podríamos tener datos \textit{dirigidos} (formas tradicionales de recopilado como registros médicos), \textit{automatizado} (datos recogidos mediantes sensores) o \textit{voluntario} (datos extraídos de redes sociales).
 
-
-\begin{itemize}
-	\item Dirigido: aquí englobamos datos obtenidos median formas tradicionales de observación. En este tipo siempre suele existir una persona dentro de la iteracción que es la que normalmente almacena la información en una determinada base de datos. Algunos sería los controles de inmigración en los aeropuertos o los registros médico electrónicos.
-	\item Automatizado: los datos obtenidos de manera automática son generados diariamente por sistemas basados en tecnología cuya función es captar datos de un determinado aspecto. Por ejemplo temperaturas medidas por sensores, transacciones de pago en tiendas o registros de comunicaciones.
-	\item Voluntario: estos quizás sean los datos más evidentes y la vez no tanto. Son los datos que los usuario colgamos de manera voluntaria en nuestras redes sociales. Se puede extraer información muy valiosa de este tipo de datos. Algunos ejemplos son las publicaciones de Facebook, opiniones en twitter, búsquerda de Google o información sobre links. 
-\end{itemize}
-
-
- Como ya hemos nombrado, la población humana presenta una clara tendencia a concentrarse en los núcleos urbanos \footnote{Fuente: Banco Mundial. \url{https://datos.bancomundial.org/indicador/sp.urb.totl.in.zs}}. Esta cantidad de personas hace que sea necesario el actuar en base a estos datos para intentar mejorar la calidad de vida de las personas que viven en esas ciudades. A mayor número de personas también crece el número de problemas y por lo tanto debemos utilizar la tecnología, en este caso la que hace referencia al \textit{Big Data}, para intentar reducir al mínimo u optimizar esos problemas. 
+ Como ya hemos nombrado, la población humana presenta una clara tendencia a concentrarse en los núcleos urbanos \footnote{Fuente: Banco Mundial. \url{https://datos.bancomundial.org/indicador/sp.urb.totl.in.zs}}. Esta cantidad de personas hace que sea necesario el actuar en base a estos datos para intentar mejorar la calidad de vida de las personas que viven en esas ciudades. 
  
- Hoy en día las administraciones de grandes ciudades, en España tenemos ejemplos como Barcelona, Sevilla o Madrid, apuestan por un análisis en tiempo real de diferentes métricas relativas a las ciudades. Uno de los ejemplos más útiles es el del transporte público en tiempo real proporcionando a los ciudadanos implicacioens directas ya que pueden observar el estado de su próximo autobús o metro en una parada determinada y a una hora concreta. 
- 
- En cualquier proyecto que engloben datos es necesario el obtener esos datos para posteriormente almacenarlos, procesarlos y analizarlos con el fin de obtener conocimiento en forma de información que resulte relevante para cadad ciudad. El primer próposito es el de conocer la finalidad con la que queremos recolectar unos datos determinados para así proveer a la ciudad de un nuevo sistema. Existen numerosas áreas en las que la ciudades pueden aprovechar sus datos, como hemos nombrado el aumento del número de personas genera problemas que que repercuten directamente en la calidad de vida de los habitantes de las ciudades, tales como la polución, el acceso de las personas a recursos y servicios, la congestión del tráfico, la seguridad y la movilidad de personas y mercancías, entre otros. A continuación se nombran algunas de las más relevantes. En la lista se incluyen tanto sitemas que se están desarrollando actualmente como propuestas que se pueden realizar, o se están realizando pero no he encontrado ejemplos, en diversas ciudades gracias al análisis de los datos que en ellas se generan.
+ Hoy en día las administraciones de grandes ciudades, en España tenemos ejemplos como Barcelona, Sevilla o Madrid, apuestan por un análisis en tiempo real de diferentes métricas relativas a las ciudades. Uno de los ejemplos más útiles es el del transporte público en tiempo real proporcionando a los ciudadanos implicacioens directas ya que pueden observar el estado de su próximo autobús o metro en una parada determinada y a una hora concreta. A continuación nombraremos otros ejemplos.  En la lista se incluyen tanto sistemas que se están desarrollando actualmente como propuestas que se pueden realizar, o se están realizando pero no he encontrado ejemplos, en diversas ciudades gracias al análisis de los datos que en ellas se generan.
  
  \begin{itemize}
- 	\item \underline{Sistemas de transporte}: los problemas de movilidad, con el caso de transporte público o la congestión de tráfico, es posible paliarlos por medio de sistemas inteligentes de regulación de tráfico. Entre los medios utilizados para recabar datos de los agentes involucrados en el tráfico en las ciudades y de las infraestructuras viarias, destacan las videocámaras y diferentes tipos de dispositivos como sensores piezoeléctricos, magnéticos, inductivos, de infrarrojos, de microondas, radar, acústicos, e incluso sistemas que detectan dispositivos móviles e inalámbricos activos en el interior de los vehículos.
- 	\item \underline{Seguridad}: sin duda es una de las ventajas más directas ya que través de cámaras de videovigilancia o sensores es posible controlar a los delincuentes de una manera más eficaz. Londres por ejemplo cuenta con más de 40.000 cámaras de vigiliancia aunque hay quien critica que quizás no sea la metodología más adecuada \cite{london_cameras}
- 	\item \underline{Gestión de residuos}: en diversas ciudades ya se utilizan sistemas inteligente para optimizar la gestión de residuos tanto para la parte de clasificación como para la parte de recogida. \cite{big_data_ciudades_inteligentes}
- 	\item \underline{Sancione}s: una de las aplicaciones más rentables para las adminitraciones en sin duda la del control del cumplimiento de las normas de ciculación. Algunos ejemplos que actualmente se pueden realizar de manera automática son, por ejemplo, invadir carriles reservados, pisar una línea continua, incumplir una señal de stop o saltarse un semáforo en rojo. Cámaras con reconocimiento facial y de matrículas permiten identificar el vehículo y el conductor infractor.
- 	\item \underline{Sistemas medioambientes}: todo lo referente al medio ambiente se está utilizando desde hace años y se va a continuar utilizando para tratar de optimizarlo al máximo. Algunos de estos sistemas utilizan tecnología ubicua \cite{tec_ubicua}, capaz de suministrar información sobre diversas magnitudes de interés.
- 	\item \underline{Energía eléctrica}: las empresas privadas de energía ya llevan años recopilando datos gracias a los contadores aunque desde hace unos años ya han empezado a surgir los contadores inteligentes que empiezan a realizar estimaciones de lo eficientes que somos a la hora de gastar energía.
- 	\item \underline{Sistema de abastecimiento de agua}: el derroche de agua es un problema en muchas ciudades y con sistemas basados en datos extraídos a partir de sensrores de presión sería posible controlar la cantidad y calidad de agua en tiempo real.
- 	\item \underline{Eficacia de servicios púbico}s: se me ocurre también la eficacia en actuaciones de cuerpos de seguridad, ambulancias o bomberos a través de la correlación de toda la información procedente de diversos sistemas y accesible a través de herramientas en tiempo real.
+ 	\item \textbf{Sistemas de transporte}: los problemas de movilidad, con el caso de transporte público o la congestión de tráfico, es posible paliarlos por medio de sistemas inteligentes de regulación de tráfico. Entre los medios utilizados para recabar datos de los agentes involucrados en el tráfico en las ciudades y de las infraestructuras viarias, destacan las videocámaras y diferentes tipos de sensores.
+ 	\item \textbf{Seguridad}: sin duda es una de las ventajas más directas ya que través de cámaras de videovigilancia o sensores es posible controlar a los delincuentes de una manera más eficaz. Londres por ejemplo cuenta con más de 40.000 cámaras de vigiliancia aunque hay quien critica que quizás no sea la metodología más adecuada \cite{london_cameras}
+ 	\item \textbf{Gestión de residuos}: en diversas ciudades ya se utilizan sistemas inteligente para optimizar la gestión de residuos tanto para la parte de clasificación como para la parte de recogida. \cite{big_data_ciudades_inteligentes}
+ 	\item \textbf{Sancione}s: una de las aplicaciones más rentables para las adminitraciones en sin duda la del control del cumplimiento de las normas de ciculación. Algunos ejemplos que actualmente se pueden realizar de manera automática son invadir carriles reservados, pisar una línea continua, incumplir una señal de stop o saltarse un semáforo en rojo. Cámaras con reconocimiento facial y de matrículas permiten identificar el vehículo y también al conductor infractor.
+ 	\item \textbf{Sistemas medioambientes}: todo lo referente al medio ambiente se está utilizando desde hace años y se va a continuar utilizando para tratar de optimizarlo al máximo. Algunos de estos sistemas utilizan tecnología ubicua \cite{tec_ubicua}, capaz de suministrar información sobre diversas magnitudes de interés.
+ 	\item \textbf{Energía eléctrica}: las empresas privadas de energía ya llevan años recopilando datos gracias a los contadores.
+ 	\item \textbf{Sistema de abastecimiento de agua}: el derroche de agua es un problema en muchas ciudades y con sistemas basados en datos extraídos a partir de sensrores de presión sería posible controlar la cantidad y calidad de agua en tiempo real.
+ 	\item \textbf{Eficacia de servicios púbicos}: se me ocurre también la eficacia en actuaciones de cuerpos de seguridad, ambulancias o bomberos a través de la correlación de toda la información procedente de diversos sistemas y accesible a través de herramientas en tiempo real.
  \end{itemize}
  
-Como vemos hay multitud de áreas de mejora para las ciudades inteligentes. Solo es cuestión de que las administraciones se planteen que es lo que se quiere optimizar para empezar a recabar datos y buscar la manera más óptima de utilizarlos en beneficio de la sociedad. 
-
-En el caso de este trabajo nos centraremos en la parte de sistemas medioambientales o emisiones nocivas. Mediante sensores ubicados por toda la geografía de una ciudad se recogen de manera periódica diversos datos sobre diferentes gases que resultan ser nocivos para la salud. Asimismo también existen medidores de temperatura, precipitaciones u otro tipo de agentes medioambientales. En el apartado siguiente haremos una aproximación a la parte científica, de la parte de gases nocivos, necesaria para comprender mejor lo que miden este tipo de sensores para poder después abordarlo de manera práctica. El trabajo se centra en la ciudad de Madrid pero el análisis científico es válido para cualquier ciudad del mundo. Si bien es cierto que dependiendo de la zona en la que nos encontremos se tienen más en consideración un tipo u otro de compuestos químicos debido a la regulación existente en cada zona del mundo.
+En el caso de este trabajo nos centraremos en la parte de sistemas medioambientales o emisiones nocivas. Mediante sensores ubicados por toda la geografía de una ciudad se recogen de manera periódica diversos datos sobre diferentes contaminantes que resultan ser nocivos para la salud. Asimismo también existen medidores de temperatura, precipitaciones u otro tipo de agentes medioambientales. 
 
 
 \section{Análisis científico}\label{teorico-cientifico}
@@ -114,11 +57,11 @@ Se define la contaminación atmosférica como \textit{“la presencia en la atm�
 
 La atmósfera es un bien común indispensable para la vida. Dada su condición esencial para la vida humana y por los daños que su contaminación o deterioro puede causar, la calidad del aire y la protección de la atmósfera ha sido, desde hace décadas, una prioridad política ambiental a lo largo de todo el mundo. Podemos afirmar que la contaminación atmosférica es consecuencia directa de las emisiones al aire de los gases y material particulado derivados de la actividad humana (social y económica) y de fuentes naturales \cite{informe_2018}.
 
-Si hablamos del mundo, China lidera el ranking de países emisores de dióxido de carbono (\ce{CO2}), seguido de EE. UU. y de los estados miembros de la UE. El potente gas de efecto invernadero es una de las sustancias que más contribuyen al calentamiento global y al cambio climático, pero no es la única. Muchos otros compuestos, conocidos como contaminantes del clima, influyen en la cantidad de energía solar que retiene la Tierra... y provocan no pocos problemas de salud.
+Si hablamos del mundo, China lidera el ranking de países emisores de dióxido de carbono (\ce{CO2}), seguido de EE. UU. y de los estados miembros de la UE.  El potente gas de efecto invernadero es una de las sustancias que más contribuyen al calentamiento global y al cambio climático, pero no es la única. 
 
-\imagen{graficaEmisiones}{\footnotesize{Emisiones de \ce{CO2} mundiales. Fuente: Infografía por \href{https://twitter.com/countcarbon/}{@countcarbon}}}
+\imagen{graficaEmisiones}{\footnotesize{Emisiones de \ce{CO2} mundiales. Fuente: Infografía por \href{https://twitter.com/countcarbon/}{@countcarbon}}\label{graficaEmisiones}}
 
-La gráfica que podemos ver en el párrafo inmediatamente superior  muestra qué países contaminan y cuánto: en vertical están las toneladas de \ce{CO2} por persona y en horizontal la población de cada país, de modo que el rectángulo simboliza las emisiones totales. China se lleva la palma, aunque sus emisiones son la mitad por persona que las de Estados Unidos. Hasta Alemania o Japón están peor (pero tienen menos personas y emisiones totales). 
+La figura \ref{graficaEmisiones} muestra qué países contaminan y cuánto: en vertical están las toneladas de \ce{CO2} por persona y en horizontal la población de cada país, de modo que el rectángulo simboliza las emisiones totales. China se lleva la palma, aunque sus emisiones son la mitad por persona que las de Estados Unidos. Hasta Alemania o Japón están peor (pero tienen menos personas y emisiones totales). 
 
 En cuanto a europa, las últimas estimaciones globales de la AEMA (\href{https://www.eea.europa.eu/}{Agencia Europea de Medio Ambiente}) y la OMS (\href{https://www.who.int/}{Organización Mundial de la Salud}) sobre la repercusión sanitaria de la contaminación atmosférica son muy preocupantes. Elevan en el año 2015 hasta medio millón las muertes prematuras en los países europeos por la mala calidad del aire, 422.000 por exposición a partículas inferiores a 2,5 micras de diámetro (\ce{PM2,5}), 79.000 por exposición a dióxido de nitrógeno (\ce{NO2}) y 17.700 por exposición a ozono troposférico. En España, las víctimas de la contaminación serían ya más de 30.000 al año, 27.900 por partículas \ce{PM2,5}, 8.900 por \ce{NO2} y 1.800 por ozono, lo que supone duplicar los 16.000 fallecimientos prematuros anuales que se estimaban hace apenas una década \cite{informe_ecologistas}.
 
@@ -130,20 +73,18 @@ El coste económico de la mortalidad prematura y de la pérdida de días de trab
  
  La calidad del aire viene determinada principalmente por la distribución geográfica de las fuentes de emisión de contaminantes y las cantidades de contaminantes que se emiten. Pero ¿qué es un contaminante? Según la directiva europea \textit{2008/50/CE} (CE, 2008), un contaminante es “toda sustancia presente en el aire ambiente que pueda tener efectos nocivos para la salud humana y el medio ambiente en su conjunto”. 
  
- Cualquier método que permita medir, calcular, predecir o estimar las emisiones, los niveles o los efectos de la contaminación atmosférica resulta válido para llevar a cabo la evaluación de la calidad del aire. Sin embargo dependiendo de los tipos de contaminantes en los que se quiera hacer foco existen métodos diferentes. Esto es debido a qué no todas las metodologías aportan la misma precisióm, se tienen en cuenta diversos factores.
+ Cualquier método que permita medir, calcular, predecir o estimar las emisiones, los niveles o los efectos de la contaminación atmosférica resulta válido para llevar a cabo la evaluación de la calidad del aire. Sin embargo dependiendo de los tipos de contaminantes en los que nos queremos enfocar existen metodologías diferentes. Esto es debido a qué no todas las metodologías aportan la misma precisióm, se tienen en cuenta diversos factores.
  
-   A finales de 2017, la Agencia Europea de Medio Ambiente (\href{https://www.eea.europa.eu/}{AEMA}) y la Comisión Europea pusieron en marcha un nuevo Índice europeo de Calidad del Aire (\href{https://www.eltiempo.es/calidad-aire}{ICA}), que permite a los usuarios comprobar su calidad en las más de 2.000 estaciones de medición repartidas por toda Europa. Este índice, que proporciona información actualizada sobre la calidad del aire en los 33 países miembros de la AEMA, incluye perfiles nacionales ya que las administraciones públicas locales tienen que adaptar sus medidas para considerar factores como demografía, infraestructuras de transporte, etc. Estas mediciones vigilan los estándares de calidad del aire y controlan los niveles de ozono (\ce{O3}), de dióxido de nitrógeno (\ce{NO2}), de dióxido de carbono (\ce{CO2}), de dióxido de azufre (\ce{SO2})... y toda la contaminación generada por partículas que pueden representar serios riesgos para la salud.
+   A finales de 2017, la Agencia Europea de Medio Ambiente (\href{https://www.eea.europa.eu/}{AEMA}) y la Comisión Europea pusieron en marcha un nuevo Índice europeo de Calidad del Aire (\href{https://www.eltiempo.es/calidad-aire}{ICA}), que permite a los usuarios comprobar su calidad en las más de 2.000 estaciones de medición repartidas por toda Europa. Este índice, el cuál se basa en la figura \ref{ICAtabla}, proporciona información actualizada sobre la calidad del aire en los 33 países miembros de la AEMA, incluye perfiles nacionales ya que las administraciones públicas locales tienen que adaptar sus medidas para considerar factores como demografía, infraestructuras de transporte, etc. Estas mediciones vigilan los estándares de calidad del aire y controlan los niveles de ozono (\ce{O3}), de dióxido de nitrógeno (\ce{NO2}), de dióxido de carbono (\ce{CO2}), de dióxido de azufre (\ce{SO2})... y toda la contaminación generada por partículas que pueden representar serios riesgos para la salud.
       
-  La agencia medioambiente \href{https://www.epa.gov}{EPA} es la responsable del índice en EE. UU. mientras que el Centro Nacional para la Monitorización del Medio ambiente en China (CNMMC) es el organismo responsable de compilar, analizar, agregar y publicar los datos de los diferentes indicadores del aire en el país asiático.
+  La agencia de medioambiente \href{https://www.epa.gov}{EPA} es la responsable del índice en EE. UU. mientras que el Centro Nacional para la Monitorización del Medio ambiente en China (CNMMC) es el organismo responsable de compilar, analizar, agregar y publicar los datos de los diferentes indicadores del aire en el país asiático.
   
    \imagen{ICAtabla}{\footnotesize{Tabla ICA. Fuente: \href{https://www.elespanol.com/omicrono/tecnologia/20171026/mide-contaminacion-aire-peligroso-podemos-hacer/257225717_0.html}{https://www.elespanol.com/omicrono}}
-   \label{fig:tablaICA}}
+   \label{fig:tablaICA}\label{ICAtabla}}
    
-   Esta contaminación suele darse  cuando las condiciones atmosféricas son favorablemente agradables (cuando hay Sol y el cielo está despejado). En estos casos, el suelo se calienta durante el día y se enfría durante la noche, de modo que el aire se estanca y no se regenera. El diseño de la ciudad también puede hacer aumentar o disminuir la polución, haciendo que el aire se estanque o se regenere en mayor o menor medida.
+   Esta contaminación suele darse  cuando las condiciones atmosféricas son favorablemente agradables (cuando hay sol y el cielo está despejado). En estos casos, el suelo se calienta durante el día y se enfría durante la noche, de modo que el aire se estanca y no se regenera. El diseño de la ciudad también puede hacer aumentar o disminuir la polución, haciendo que el aire se estanque o se regenere en mayor o menor medida.
    
-   El método técnico para saber la cantidad de contaminación que hay es mediante estaciones meteorológicas, también conocidas como estaciones de seguimiento de contaminación o estaciones remotas de medición de la calidad del aire.
-   
-   Estas estaciones miden la concentración de distintos agentes contaminantes en el aire. Además, se emplea la geoestadística, una ciencia no exacta, para predecir los niveles de contaminación por óxido de nitrógeno, una de las sustancias más perjudiciales para los seres vivos. Concretamente el dióxido de nitrógeno es producido por la combustión de los distintos combustibles que usan los vehículos mecánicos, por lo que es uno de los gases con mayor concentración.
+   El método técnico para saber la cantidad de contaminación que hay es mediante estaciones meteorológicas, también conocidas como estaciones de seguimiento de contaminación o estaciones remotas de medición de la calidad del aire. Estas estaciones miden la concentración de distintos agentes contaminantes en el aire. En la tabla \ref{medidores} se resumen algunos de los gasos y los medidores que son necesarios para en análsisis de los mismos.
       
    \begin{table}[H]
    	\begin{center}
@@ -160,6 +101,7 @@ El coste económico de la mortalidad prematura y de la pérdida de días de trab
    		\end{tabular}
    		\caption{Tipos de medidores y sus contaminantes principales \cite{_sistema_vigilancia_madrid}}
    	\end{center}
+   \label{medidores}
    \end{table}   
 
  
@@ -206,25 +148,25 @@ El coste económico de la mortalidad prematura y de la pérdida de días de trab
 
 \subsection{La calidad del aire en España}
 
-Todo este apartado esta basado en los diferentes informes que se realizan de manera anual por el ministerio de Agricultura, Alimentación y Medio Ambiente \cite{informe_2018}. Las siguientes líneas, que describen el marco teórico de la situación de España en cuanto a calidad de aire, se apoyan en el mencionado informe y también en el informe anual que elabora la plataforma ecologistas en acción \cite{informe_ecologistas}.
+Todo este apartado esta basado en los diferentes informes que se realizan de manera anual por el \textit{Ministerio de Agricultura, Alimentación y Medio Ambiente} \cite{informe_2018}. Las siguientes líneas, que describen el marco teórico de la situación de España en cuanto a calidad de aire, se apoyan en el mencionado informe y también en el informe anual que elabora la plataforma ecologistas en acción \cite{informe_ecologistas}.
 
- En España, se divide el territorio en zonas o aglomeraciones, en función de la densidad de población, y se evalúa la calidad del aire para los contaminantes dióxido de azufre (\ce{SO2}), dióxido de nitrógeno y óxidos de nitrógeno (\ce{NO2}, \ce{NOX}), partículas (\ce{PM10} y \ce{PM2,5}), plomo (\ce{Pb}), benceno (\ce{C6H6}), monóxido de carbono (\ce{CO}), arsénico (\ce{As}), cadmio (\ce{Cd}), níquel (\ce{Ni)}, benzo(a)pireno (\ce{B(a)P}) y ozono (\ce{O3}), que son los contaminantes con valores legislados para protección de la salud.
+ En nuestro país se divide el territorio en zonas o aglomeraciones, en función de la densidad de población, y se evalúa la calidad del aire para los contaminantes dióxido de azufre (\ce{SO2}), dióxido de nitrógeno y óxidos de nitrógeno (\ce{NO2}, \ce{NOX}), partículas (\ce{PM10} y \ce{PM2,5}), plomo (\ce{Pb}), benceno (\ce{C6H6}), monóxido de carbono (\ce{CO}), arsénico (\ce{As}), cadmio (\ce{Cd}), níquel (\ce{Ni)}, benzo(a)pireno (\ce{B(a)P}) y ozono (\ce{O3}), que son los contaminantes con valores legislados para protección de la salud. Existen diferentes estaciones de cointrol para la medición de estos gases repartidas por toda la península tal y como se puede ver en la figura \ref{mapaTotalEstaciones}.
  
- Para garantizar que se abarca la totalidad de la superficie nacional, las comunidades autónomas son las encargadas de dividir su territorio en zonas de calidad del aire homogéneas para la gestión y la evaluación (mediante mediciones, modelización u otras técnicas). Para ello se determinan unos métodos y criterios comunes de evaluación. También hay que cumplir con el requisito imprescindible de informar a la población y a las organizaciones interesadas. Por lo tanto cada comunidad es la que se encarga de las mediciones particulares de cada territorio. Después, al terminar el año. el gobierno se encarga de realizar el mencionado informe. El resultado de esta evaluación anual se presenta en uncuestionario técnico para su envío a la Comisión Europea y en otros informes más claros y comprensibles dirigidos a la población.
- 
-     \imagen{mapaTotalEstaciones}{\footnotesize{Mapa estaciones calidad del aire España.} Fuente: \href{https://www.mapama.gob.es/ide/metadatos/srv/spa/metadata.show?uuid=6c181182-6d75-4380-9783-d87a115d422a}{Metadatos gobierno España}}
+ Para garantizar que se abarca la totalidad de la superficie nacional, las comunidades autónomas son las encargadas de dividir su territorio en zonas de calidad del aire homogéneas para la gestión y la evaluación (mediante mediciones, modelización u otras técnicas). Para ello se determinan unos métodos y criterios comunes de evaluación. También hay que cumplir con el requisito imprescindible de informar a la población y a las organizaciones interesadas. Por lo tanto cada comunidad es la que se encarga de las mediciones particulares de cada territorio. Después, al terminar el año el gobierno se encarga de realizar el ya mencionado informe \cite{informe_2018}. El resultado de esta evaluación anual se presenta en uncuestionario técnico para su envío a la Comisión Europea y en otros informes más claros y comprensibles dirigidos a la población.
  
  
- Por motivos obvios se va a escoger como referencia el último de los informes, que es el correspondiente al periodo anual del año anterior al que nos encontramos. Los contaminantes más problemáticos en el Estado español \textbf{durante 2018} han sido las partículas en suspensión (\ce{PM10} y \ce{PM2,5}), el dióxido de nitrógeno (\ce{NO2}), el ozono troposférico (\ce{O3}) y el dióxido de azufre (\ce{SO2}). Para el cálculo del porcentaje de población española  que respiró aire contaminado y de la superficie expuesta a niveles de contaminación que dañan la vegetación se han tenido en cuenta estos contaminantes, si bien se ha recopilado y evaluado asimismo la información disponible sobre otros contaminantes
- regulados legalmente como el monóxido de carbono (CO), el benceno, los hidrocarburos
- aromáticos policíclicos (HAP) y los metales pesados (arsénico, cadmio, níquel y plomo).
  
-    \imagen{resumen2018contaminantes}{\footnotesize{Resumen calidad del aire por contaminante.} Fuente: Informe Calidad Aire 2018 \cite{informe_2018}}
+     \imagen{mapaTotalEstaciones}{\footnotesize{Mapa estaciones calidad del aire España.} Fuente: \href{https://www.mapama.gob.es/ide/metadatos/srv/spa/metadata.show?uuid=6c181182-6d75-4380-9783-d87a115d422a}{Metadatos gobierno España}\label{mapaTotalEstaciones}}
+ 
+ 
+ Por motivos obvios se va a escoger como referencia el último de los informes, que es el correspondiente al periodo anual del año anterior al que nos encontramos. Los contaminantes más problemáticos en el Estado español \textbf{durante 2018} han sido las partículas en suspensión (\ce{PM10} y \ce{PM2,5}), el dióxido de nitrógeno (\ce{NO2}), el ozono troposférico (\ce{O3}) y el dióxido de azufre (\ce{SO2}). Se puede ver de manera más detallada en la figura \ref{resumen2018contaminantes}.
+
+    \imagen{resumen2018contaminantes}{\footnotesize{Calidad del aire por contaminante.} Fuente: Informe Calidad Aire 2018 \cite{informe_2018}\label{resumen2018contaminantes}}
  
 Como conclusión general de ambos informes, y en referente a la salud de la población, se destacan dos perspectivas:
 \begin{enumerate}
-	\item La población que respiró aire contaminado en el Estado español, según los valores límite y objetivo establecidos para los contaminantes principales citados por la \textit{Directiva 2008/50/CE} y el Real Decreto \textit{102/2011}, alcanzó los 14,9 millones de personas, es decir un 31,8\% de toda la población. En otras palabras, \textbf{uno de cada tres españoles respiró un aire que incumple los estándares legales vigentes}. Esta situación supone no obstante un descenso de 2,6 millones de afectados respecto a 2017, y la cifra más baja desde el año 2011.
-	\item Si se tienen en cuenta los valores recomendados por la Organización Mundial de la Salud (OMS), más estrictos que los límites legales (y más acordes con una adecuada protección	de la salud), \textbf{la población que respiró aire contaminado se incrementa hasta los 45,2 millones de personas}. Es decir, un 96,8\% de la población. En otras palabras, la práctica totalidad de los españoles respiró un aire con niveles de contaminación superiores a los recomendados por la OMS. Esta situación supone un modesto descenso de 0,6 millones de afectados respecto a 2017, y se mantiene por encima de la incidencia en la década, salvo el año 2015.
+	\item La población que respiró aire contaminado en el Españal, según los valores límite y objetivo establecidos para los contaminantes principales citados por la \textit{Directiva 2008/50/CE} y el Real Decreto \textit{102/2011}, alcanzó los 14,9 millones de personas, es decir un 31,8\% de toda la población. En otras palabras, \textbf{uno de cada tres españoles respiró un aire que incumple los estándares legales vigentes}. Esta situación supone no obstante un descenso de 2,6 millones de afectados respecto a 2017, y la cifra más baja desde el año 2011.
+	\item Si se tienen en cuenta los valores recomendados por la OMS, más estrictos que los límites legales (y más acordes con una adecuada protección	de la salud), \textbf{la población que respiró aire contaminado se incrementa hasta los 45,2 millones de personas}. Es decir, un 96,8\% de la población. En otras palabras, la práctica totalidad de los españoles respiró un aire con niveles de contaminación superiores a los recomendados por la OMS. Esta situación supone un modesto descenso de 0,6 millones de afectados respecto a 2017, y se mantiene por encima de la incidencia en la década, salvo el año 2015.
 \end{enumerate}
 
 \subsubsection{Metodologías de evaluación}
@@ -238,7 +180,7 @@ Independientemente de la comunidad autónoma o territorio  la evaluación de la 
 	justifique que se evalúe y controle la calidad del aire ambiente.
 \end{itemize}
 
-En las zonas y aglomeraciones así definidas se evalúa la calidad del aire para los contaminantes dióxido de azufre (\ce{SO2}), dióxido de nitrógeno y óxidos de nitrógeno (\ce{NO2}, \ce{NOx}),partículas (\ce{PM10} y \ce{PM2,5}), plomo (\ce{Pb}), benceno (\ce{C6H6}), monóxido de carbono (\ce{CO}), arsénico (\ce{As}), cadmio (\ce{Cd}), níquel (\ce{Ni}), benzo(a)pireno (\ce{B(a)P}) y ozono (\ce{O3}). La unidad utilizada en la medida de todos estos contaminantes es \textmugreek g/m3, microgramos por metro cúbico.
+En las zonas y aglomeraciones así definidas se evalúa la calidad del aire para los contaminantes dióxido de azufre (\ce{SO2}), dióxido de nitrógeno y óxidos de nitrógeno (\ce{NO2}, \ce{NOx}), partículas (\ce{PM10} y \ce{PM2,5}), plomo (\ce{Pb}), benceno (\ce{C6H6}), monóxido de carbono (\ce{CO}), arsénico (\ce{As}), cadmio (\ce{Cd}), níquel (\ce{Ni}), benzo(a)pireno (\ce{B(a)P}) y ozono (\ce{O3}). La unidad utilizada en la medida de todos estos contaminantes es \textmugreek g/m3 ()microgramos por metro cúbico).
 
 Dicha evaluación se efectúa considerando diversos objetivos de calidad del aire. 
 Se distingue entre:
@@ -255,7 +197,7 @@ fin de evitar, prevenir o reducir los efectos nocivos para la salud humana, para
 ambiente en su conjunto y demás bienes de cualquier naturaleza que debe alcanzarse en
 un período determinado y no superarse una vez alcanzado
 
-Si nos centramos en el temas únicamente referidos a la salud existen unos \textbf{valores límite} objetivo que se recogen en la siguiente tabla: 
+Si nos centramos en el temas únicamente referidos a la salud existen unos \textbf{valores límite} objetivo que se recogen en la tabla \ref{ValoresLimite}.
  
  %%%TABLE
 \begin{table}[H]
@@ -274,9 +216,10 @@ Si nos centramos en el temas únicamente referidos a la salud existen unos \text
 		\ce{PM2,5}                                 & Anual                                             & 25 \textmugreek g/m3                                                                  \\ \hline
 	\end{tabular}
 		\caption{Tabla valores límite \cite{informe_2018}}
+		\label{ValoresLimite}
 \end{table}
 
-Si nos centramos en el temas únicamente referidos a la salud existen unos \textbf{valores objetivo} objetivo que se recogen en la siguiente tabla: 
+Si nos centramos en el temas únicamente referidos a la salud existen unos \textbf{valores objetivo} objetivo que se recogen en la tabla \ref{ValoresObjetivo}.
 
 
 \begin{table}[H]
@@ -292,14 +235,13 @@ Si nos centramos en el temas únicamente referidos a la salud existen unos \text
 	\end{tabular}
 \caption{Tabla valores objetivo \cite{informe_2018}}
 	\end{center}
+	\label{ValoresObjetivo}
 \end{table}
 
  \subsection{La calidad del aire en Madrid}
  
- Ahora hablamos tan solo de la comunidad de Madrid, que posee las siguiente características.
+ Ahora hablamos tan solo de la ciudad de Madrid, que posee las  características descritas en la tabla \ref{tablaMadrid}.
  
- % Please add the following required packages to your document preamble:
- % \usepackage{multirow}
  \begin{table}[H]
  		\begin{center}
  	\begin{tabular}{|c|c|c|c|}
@@ -312,32 +254,33 @@ Si nos centramos en el temas únicamente referidos a la salud existen unos \text
  	\end{tabular}
  \caption{Tabla información Madrid. Fuente: INE \cite{informe_2018}}
  	\end{center}
+ \label{tablaMadrid}
  \end{table}
  
   Como conclusiones de los informes del pasado año se destaca principalmente lo siguiente:
  
  \begin{itemize}
- 	\item En el año 2018 \textbf{se ha superado el valor límite anual de \ce{NO2}}, así como el valor objetivo de \ce{O3} tanto para la protección de la salud como de la vegetación.	Las causas de la superación del \ce{NO2} se atribuyen principalmente al tráfico de vehículos d	combustión ya que se trata de ubicaciones muy influenciadas por vías principales de tráfico.
+ 	\item En el año 2018 \textbf{se ha superado el valor límite anual de \ce{NO2}}, así como el valor objetivo de \ce{O3} tanto para la protección de la salud como de la vegetación.	Las causas de la superación del \ce{NO2} se atribuyen principalmente al tráfico de vehículos de	combustión ya que se trata de ubicaciones muy influenciadas por vías principales de tráfico. En la figura \ref{superaMapa}
  	\item En el ámbito de esta red no se supera el valor límite horario de \ce{NO2}, pero sí se produce, sin embargo, una \textbf{superación del valor límite anual de \ce{NO2}}, concretamente en la zona ES1308 “Corredor del Henares”, como consecuencia de los niveles alcanzados en la estación ES1869A “Coslada”, de tipo urbana de tráfico (41 \textmugreek g/m3 de media anual).
  \end{itemize}
 
 
-    \imagen{mapaEspanaNO2}{\footnotesize{Mapa España superación límite legal durante 2018 con Madrid en rojo.} Fuente: Ecologistas en acción \cite{informe_ecologistas}}
+    \imagen{mapaEspanaNO2}{\footnotesize{Mapa España superación límite legal durante 2018 con Madrid en rojo.} Fuente: Ecologistas en acción \cite{informe_ecologistas} \label{superaMapa}}
 
-Además de los valores emitidos en los informes anuales por el gobierno y otras organizaciones existen también numerosos papers \cite{nunez-alonso_statistical_2019} \cite{gomez-losada_data_2019} que estudian la creciente contaminación en la ciudad de Madrid.
+Además de los valores emitidos en los informes anuales por el gobierno y otras organizaciones existen también papers, como por ejemplo \cite{nunez-alonso_statistical_2019} \cite{gomez-losada_data_2019}, que estudian la creciente contaminación en la ciudad de Madrid.
  
- Madrid posee un un sistema de vigilancia que dispone de una red formada por 24 estaciones que pueden clasificarse en tres categorías en cuanto al tipo de ambiente en el que se ubican: 9 estaciones de tráfico (situadas próximas al viario), 12 estaciones de fondo urbano (más alejadas del tráfico, generalmente en parques) y 3 estaciones suburbanas (situadas fuera del núcleo urbano consolidado).
+ Madrid ciudad posee un un sistema de vigilancia que dispone de una red formada por 24 estaciones que pueden clasificarse en tres categorías en cuanto al tipo de ambiente en el que se ubican: 9 estaciones de tráfico (situadas próximas a las vías), 12 estaciones de fondo urbano (más alejadas del tráfico, generalmente en parques) y 3 estaciones suburbanas (situadas fuera del núcleo urbano consolidado). En la figura \ref{carto} es posible observar su ubicación.
  
      \imagen{cartdoDBestaciones}{\footnotesize{Localización estaciones Madrid.} Fuente: Elaboración propia mediante \href{https://carto.com}{cartodb}
- 	y los datos de madrid \cite{portal_datosabiertos_madrid}}
+ 	y los datos de madrid \cite{portal_datosabiertos_madrid}\label{carto}}
 
- Así, para el caso de los contaminantes que se analizan, tenemos que el \ce{NO2} se mide en las 24 estaciones, las partículas \ce{PM10} en 12 de ellas, las partículas \ce{PM2.5} en 6 y el \ce{O3} se registra en 14 estaciones. Por otro lado, el Ayuntamiento ha establecido una zonificación de la ciudad de Madrid orientada a la gestión de situaciones de altos niveles de contaminación, como los picos de contaminación por \ce{NO2}, que ponen en marcha la aplicación del protocolo aprobado por el Ayuntamiento de Madrid para hacer frente a dichas situaciones.
+ Así, para el caso de los contaminantes que se analizan, tenemos que el \ce{NO2} se mide en las 24 estaciones, las partículas \ce{PM10} en 12 de ellas, las partículas \ce{PM2,5} en 6 y el \ce{O3} se registra en 14 estaciones. Por otro lado, el Ayuntamiento ha establecido una zonificación de la ciudad de Madrid orientada a la gestión de situaciones de altos niveles de contaminación, como los picos de contaminación por \ce{NO2}, que ponen en marcha la aplicación del protocolo aprobado por el Ayuntamiento de Madrid para hacer frente a dichas situaciones.
  
  Como medidas del protocolo de actuación cabe destacar que el dióxido de nitrógeno \ce{NO2} \textbf{nunca deberá sobrepasar los 200 \textmugreek g/m3}, de hacerlo se entraría en estado de ‘preaviso’.
  
  La legislación europea, a la cual se ajusta la ciudad de Madrid, establece también un valor límite horario de \ce{NO2}, para proteger a la población de exposiciones a altos niveles de este contaminante, aunque sea por cortos periodos de tiempo (denominados "pico de contaminación"). El valor límite horario para el \ce{NO2} está establecido en 200 \textmugreek g/m3, límite que no debería rebasarse más de 18 horas al año en ninguna estación de la ciudad.
  
-    Madrid, por ser una de las ciudades más susceptibles de sufrir contaminación, tiene varios protocolos de actuación ante distintos niveles de contaminación del aire. Todos ellos se atienden al ICA (Índice de Calidad del Aire. Ver figura ~\ref{fig:tablaICA}). Mediante este índice se indica a si el aire es apto o no, o qué grado de contaminación tiene. 
+    Madrid, por ser una de las ciudades más susceptibles de sufrir contaminación, tiene varios protocolos de actuación ante distintos niveles de contaminación del aire. Todos ellos se atienden al índice ICA (ver figura ~\ref{fig:tablaICA}). Mediante este índice se indica a si el aire es apto o no y qué grado de contaminación tiene. 
   
  Según el mencionado índice, si el valor está entre \textit{0 y 50}, las \textbf{condiciones del aire son buenas}. Si se encuentra entre \textit{51 y 100}, son \textbf{regulares}. A partir de \textit{101}, y hasta el valor \textit{150}, el nivel de contaminación es \textbf{dañino} para la salud de algunos grupos (niños y ancianos, entre otros). Desde los valores \textit{151 hasta 200}, \textbf{el aire es contaminante para cualquiera}. \textit{A partir de 201}, los niveles son \textbf{muy dañinos e incluso peligrosos}.
 
@@ -399,30 +342,27 @@ Durante años anteriores se han desarrollado diferentes protocolos que van en fu
 		\end{itemize}
 \end{itemize}
 
-    \imagen{protocolo}{\footnotesize{Infografía escenarios.} Fuente:  \href{https://www.madrid.es/}{Madrid/contaminación}}
 
 Como vemos son medidas acumulativas que dependen de la gravedad de la situación. Este tipo de medidas no solo permite hacer descender el nivel de contaminación durante los días que están activas, sin que también incentiva la compra de vehículos híbridos o vehículos totalmente eléctricos. 
 
 Debido a los diversos toques de atención de la Unión Europea Madrid cuenta con un protocolo de actuación claro y eficaz del que carecen otras ciudades españolas.
 
  \subsection{Low Emission Zone (LEZ): Madrid  Central}
-También denominadas ZUAP (Zonas Urbanas de Atmósfera Protegida \cite{wayback_2012}) o ZBE (Zona de bajas emisiones), son aquellos espacio dentro de una ciudad que tienen vetada la entrada a los vehículos mas contaminantes al espacio delimitado, en algunos casos la ZBE, solo incluye aquellos vehículos denominados “pesados o industriales” y en otros, también a todos los que entren dentro de la zona. Algunos de los países que implementan, desde hace varios años, este tipo de medidas son Noruega, Francia, Holanda o Gran Bretaña. 
+También denominadas ZUAP (Zonas Urbanas de Atmósfera Protegida \cite{wayback_2012}) o ZBE (Zona de bajas emisiones), son aquellos espacios dentro de una ciudad que tienen vetada la entrada a los vehículos más contaminantes al espacio delimitado. Algunos de los países que implementan, desde hace varios años, este tipo de medidas son Noruega, Francia, Holanda o Gran Bretaña. 
 
-Madrid Central es una zona de emisiones que  entró en vigor el 30 de noviembre del 2018, esta medida está incluida dentro del Plan A de Calidad del Aire y Cambio Climático, la medida tiene como pretensión principal, la reducción de los gases nocivos, bajando así un 40\% las emisiones en el distrito central de la ciudad y un 20\% los desplazamientos dentro de la zona.
+Madrid Central es una zona de emisiones que  entró en vigor el 30 de noviembre del 2018. Esta medida está incluida dentro del Plan A de Calidad del Aire y Cambio Climático. El bojetivo principal es el de reducir los gases nocivos, bajando así un 40\% las emisiones en el distrito central de la ciudad y un 20\% los desplazamientos dentro de la zona.
 
-La zona afectada está conformada por la mayoría de calles del centro de la Ciudad, entre las mas relevantes incluidas se pueden destacar las siguientes: Alberto Aguilera, Glorieta de Ruíz Jiménez, Carranza, Glorieta de Bilbao, Sagasta, Plaza de Alonso Martínez, Génova, Plaza de Colón, Paseo de Recoletos, Plaza de Cibeles, Paseo del Prado, Plaza de Cánovas del Castillo, Paseo del Prado, Plaza del Emperador Carlos V, Ronda de Atocha, Ronda de Valencia, Glorieta de Embajadores, Ronda de Toledo, Glorieta de la Puerta de Toledo, Ronda de Segovia, Cuesta de la Vega, Calle Mayor, Calle Bailén, Plaza de España (lateral continuación de la Cuesta de San Vicente), Calle Princesa y Calle Serrano Jover.
+La zona afectada está conformada por la mayoría de calles del centro de la ciudad, entre las mas relevantes incluidas se pueden destacar las siguientes: Alberto Aguilera, Glorieta de Ruíz Jiménez, Carranza, Glorieta de Bilbao, Sagasta, Plaza de Alonso Martínez, Génova, Plaza de Colón, Paseo de Recoletos, Plaza de Cibeles, Paseo del Prado, Plaza de Cánovas del Castillo, Paseo del Prado, Plaza del Emperador Carlos V, Ronda de Atocha, Ronda de Valencia, Glorieta de Embajadores, Ronda de Toledo, Glorieta de la Puerta de Toledo, Ronda de Segovia, Cuesta de la Vega, Calle Mayor, Calle Bailén, Plaza de España (lateral continuación de la Cuesta de San Vicente), Calle Princesa y Calle Serrano Jover. Podemos ver la zona delimitada en la figura \ref{madridcentral}.
 
-    \imagen{madridcentral}{\footnotesize{Perímetro Madrid Central.} Fuente:  \href{https://www-s.munimadrid.es}{Ayto Madrid}}
-
- \hl{Si tengo tiempo puedo hablar mas sobre Madrid Central en la parte de experimentos}
+    \imagen{madridcentral}{\footnotesize{Perímetro Madrid Central.} Fuente:  \href{https://www-s.munimadrid.es}{Ayto Madrid}\label{madridcentral}}
 
  \subsection{La calidad del aire y la salud}
 
 El 95\% de la población mundial vive en áreas que no cumplen las pautas de un aire sano, según el informe State of Global Air \cite{state_global_air_2018}, del Health Effects Institute. Las ciudades, donde viven más de la mitad de los casi 7.500 millones de habitantes del planeta, son el caldo de cultivo de la contaminación, un importante factor de mortalidad, al que solo superan la hipertensión, la dieta no saludable y el tabaco.
 
-El aire contaminado puede generar problemas de pulmón o del corazón, además de problemas disfuncionales cardio respiratorios e incluso la muerte, pero esto sería únicamente ante una exposición muy prolongada, o antes varias exposiciones periódicas prolongadas. De hecho, la OMS (Organización Mundial de la Salud) ha advertido que representa un importante riesgo medioambiental para la salud y que provoca cada año unas tres millones de defunciones prematuras, de las cuales medio millón corresponderían a Europa \cite{2018_oms_calidad}.
+El aire contaminado puede generar problemas de pulmón o del corazón, además de problemas disfuncionales cardio respiratorios e incluso la muerte, pero esto sería únicamente ante una exposición muy prolongada, o antes varias exposiciones periódicas prolongadas. De hecho, la OMS ha advertido que representa un importante riesgo medioambiental para la salud y que provoca cada año unas tres millones de defunciones prematuras, de las cuales medio millón corresponderían a Europa \cite{2018_oms_calidad}.
 
-Según la Organización Mundial de la Salud (OMS), la contaminación del aire es actualmente uno de los mayores riesgos sanitarios mundiales, comparable a los riesgos relacionados con el tabaco  \cite{2018_oms_calidad}. Algunos agravios directos que puede producir serían los siguientes.
+Según la OMS, la contaminación del aire es actualmente uno de los mayores riesgos sanitarios mundiales, comparable a los riesgos relacionados con el tabaco \cite{2018_oms_calidad}. Algunos ejemplos serían los siguientes.
 
 \begin{itemize}
 \item Limitar las vías respiratorias.
@@ -443,7 +383,7 @@ Según la Organización Mundial de la Salud (OMS), la contaminación del aire es
 
 Por supuesto toda esta maraña de terminología científica está regida por diversas leyes, tanto a nivel nacional como también Europeo. La presencia en la atmósfera de sustancias contaminantes, que pueden ser gases, partículas y/o aerosoles es la que determina en última instancia la calidad del aire. En España, la protección de la atmósfera y de la calidad del aire pasa por la prevención, vigilancia y reducción de los efectos nocivos de dichas sustancias contaminantes sobre la salud y el medio ambiente en su conjunto, en todo el territorio nacional. Para ello, la normativa vigente en materia de calidad del aire establece unos objetivos de calidad del aire, o niveles (concentraciones) de contaminantes en la atmósfera que no deben sobrepasarse. 
 
-España comunica anualmente información sobre calidad del aire a la Comisión Europea en cumplimiento de diferentes directivas . En la siguiente lista se realiza un recopilatorio de las más importantes a nivel europeo y nacional. En el informe anual de 2018 \cite{informe_2018}, apartado 2.1 se añade información detallada sobre el marco legislativo y cada una de las leyes que incumber a nuestro país en materia de gases nocivos.
+España comunica anualmente información sobre calidad del aire a la Comisión Europea en cumplimiento de diferentes directivas . En la siguiente lista se realiza un recopilatorio de las más importantes a nivel europeo y nacional. En el informe anual de 2018 \cite{informe_2018}, apartado 2.1 se añade información detallada sobre el marco legislativo y cada una de las leyes que incumben a nuestro país en materia de gases nocivos.
 
 \begin{itemize}
 \item  \underline{Marco legislativo Europeo}
@@ -464,13 +404,13 @@ España comunica anualmente información sobre calidad del aire a la Comisión E
 
 A modo de resumen, en la actualidad, los textos legales más relevantes para la calidad del aire en España son: la \textit{Directiva europea 2008/50}; la \textit{Ley 34/2007}, de Calidad del Aire y Protección de la Atmósfera; y el \textit{R.D. 102/2011 }relativo a la mejora de la calidad del aire.
 
-Si nos atenemos únicamente a Madrid, que es la ciudad objeto de estudio en el presente trabajo, a parte de seguir todas estás leyes nacionales y europeas poseen un protocolo de contaminación propio para actuar en caso de sobrepasar los niveles establecidos en dichas leyes. No es frecuente que cambie pero si es interesante preguntar, debido a los cambios de gobierno, cuál es el que se encuentra en vigor. Consulté con la administración actual para recibir esa información y me respondieron amablemente. El protocolo de actuación se puede consultar de manera online \cite{ley_protocolo_madrid} por cualquier ciudadano.
+Si nos atenemos únicamente a Madrid, que es la ciudad objeto de estudio en el presente trabajo, a parte de seguir todas estás leyes nacionales y europeas poseen un protocolo de contaminación propio para actuar en caso de sobrepasar los niveles establecidos en dichas leyes. No es frecuente que cambie pero si es interesante preguntar, debido a los cambios de gobierno, cuál es el que se encuentra en vigor. Se ha consultado con la administración actual para recibir esa información se obtuvo una amable respuesta (figura \ref{protocoloRespuestaCorreo}). El protocolo de actuación se puede consultar de manera online \cite{ley_protocolo_madrid} por cualquier ciudadano.
 
-    \imagen{protocoloRespuestaCorreo}{\footnotesize{Respuesta ayundamiento de Madrid.} Fuente: Consulta realizada \href{https://www-s.munimadrid.es}{Ayto Madrid}}
+    \imagen{protocoloRespuestaCorreo}{\footnotesize{Respuesta ayundamiento de Madrid.} Fuente: Consulta realizada \href{https://www-s.munimadrid.es}{Ayto Madrid}\label{protocoloRespuestaCorreo}}
 
-Para ampliar la información sobre normativa se puede consultar el apartado \textit{Acerca de Datos Abiertos / Normativa} en la \href{https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=830512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextchannel=830512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default}{página web} de datos abiertos de la comunidad de Madrid que es el mismo que aplica a toda España.
+Para ampliar la información sobre normativa se puede consultar el apartado \textit{Acerca de Datos Abiertos / Normativa} en la \href{https://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=830512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextchannel=830512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default}{página web} de datos abiertos del ayuntamiento de Madrid que es el mismo que aplica a toda España.
 
-Para terminar, y para conocer por qué me he decantado finalmente por unos contaminantes y no otros a la hora de realizar el estudio, en el \textit{Real Decreto 102/2011} relativo a la mejora de la calidad del aire, establece umbrales de alerta para tres contaminantes,  dióxido de nitrógeno (\ce{NO2}), dióxido de azufre (\ce{SO2}) y ozono (\ce{O3}). Define además el umbral de alerta como el nivel a partir del cual una exposición de breve duración supone un riesgo para la salud humana, que afecta al conjunto de la población y que requiere la adopción de medidas inmediatas. El valor del umbral de alerta para el dióxido de nitrógeno está establecido en \textbf{400 \textmugreek g /m3} durante tres horas consecutivas en lugares representativos de la calidad del aire, en un área de al menos 100 km2 o en una zona o aglomeración entera, si ésta última superficie es menor..
+Para terminar, y para conocer por qué me he decantado finalmente por unos contaminantes y no otros a la hora de realizar el estudio, en el \textit{Real Decreto 102/2011} relativo a la mejora de la calidad del aire, establece umbrales de alerta para tres contaminantes,  dióxido de nitrógeno (\ce{NO2}), dióxido de azufre (\ce{SO2}) y ozono (\ce{O3}). Define además el umbral de alerta como el nivel a partir del cual una exposición de breve duración supone un riesgo para la salud humana, que afecta al conjunto de la población y que requiere la adopción de medidas inmediatas. El valor del umbral de alerta para el dióxido de nitrógeno está establecido en \textbf{400 \textmugreek g /m3} durante tres horas consecutivas en lugares representativos de la calidad del aire, en un área de al menos 100 km2 o en una zona o aglomeración entera, si ésta última superficie es menor.
 
 \section{Análisis parte técnica}\label{teorico-tecnico}
 
@@ -478,14 +418,13 @@ En esta parte vamos a realizar una inmersión a la parte teórica de la parte m�
 
 \subsection{Fuente de  datos}
 
-Los datos provienen de \href{https://datos.madrid.es}{datos Madrid} que es el portal de datos abiertos de la comunidad de Madrid. Tal y como ellos mismos se describen en la web: \textit{El portal de datos abiertos de la comunidad de Madrid contiene  datos en bruto (bases de datos) que pueden ser utilizados, reutilizados y redistribuidos libremente por cualquier persona, y que ponemos las administraciones a disposición de la ciudadanía para realizar nuevas aplicaciones, estudios, análisis, investigaciones, etc.}
+Los datos provienen de \href{https://datos.madrid.es}{datos Madrid} que es el portal de datos abiertos del ayuntamiento de Madrid.  La verdad que la página está realmente bien, hay \textit{datasets} que contienen información relevante de diversa índole, se actualizan de manera frecuente y las opciones de descarga son múltiples (ver figura \ref{tipodatos}) lo que permite versatilidad a la hora de realizar proyectos. 
 
-La verdad que la página está realmente bien, hay \textit{datasets} que contienen informaciones bastante relevantes, se actualizan de manera frecuente y las opciones de descarga son múltiples lo que permite versatilidad a la hora de realizar proyectos. Aunque se realizará un análisis exhaustivo más adelante de la tipología de las fuentes de origen, es interesante el saber por qué se ha escogido\textit{ .csv} como archivo de datos de las fuentes. 
+   \imagen{tipodatos}{\footnotesize{Tipos de datos a descargar (datos diarios)} Fuente:  \href{https://datos.madrid.es}{Datos Madrid}\label{tipodatos}}
 
-   \imagen{tipodatos}{\footnotesize{Tipos de datos ofrecidos por Ayto. Madrid.} Fuente:  \href{https://datos.madrid.es}{Datos Madrid}}
+En este caso concreto se ha escogido el formato \textit{.csv}. Un csv \textit{(comma-separated values}) es un archivo de texto que almacena los datos en forma de columnas, separadas generalmente por coma y donde las filas se distinguen por saltos de línea. Este tipo de archivos podría decirse que es el lenguaje internacional de trabajo con datos, aunque por supuesto no es el único \cite{formatos}. De hecho tiene un estándar \cite{estandar} por el que se rige, si bien es cierto que cada persona lo interpreta un poco como conviene para cada proyecto.
 
-Un csv \textit{(comma-separated values}) es un archivo de texto que almacena los datos en forma de columnas, separadas generalmente por coma y donde las filas se distinguen por saltos de línea. Este tipo de archivos podría decirse que es el lenguaje internacional de trabajo con datos, aunque por supuesto no es el único \cite{formatos}. De hecho tiene un estándar \cite{estandar} por el que se rige, si bien es cierto que cada persona lo interpreta un poco como conviene para cada proyecto.
-En el caso concreto del estudio yo he descargado los datos en formato \textit{.csv}, principalmente los datos de la calidad del aire, los datos de las estaciones y los datos de temperatura. 
+En el caso concreto del estudio se han descargados los datos, en su mayoría, en formato \textit{.csv}. Si bien es cierto que en versiones de hace más de cuatro años los formatos se limitaban solo a texto plano (\textit{.txt}) y se han evaluado con lo que había disponible.
 
 \subsection{Modelo analítico}
 Alrededor de un 80\% del análisis de un proyecto o negocio se invierte en los procesos iniciales, es decir, en la elección de un buen modelo que permitar extraer, transformar y cargar los datos de una manera óptima. 
@@ -503,18 +442,12 @@ A continuación se resume el procedimiento de manera genérica.
 
 En otra palabras se podría resumir con lo que se conoce como \textit{proceso ETL}: \textbf{Extracción} (obtención de datos de las fuentes de origen), \textbf{Transformación} (realización de los cálculos necesarios para obtener los datos que nos interesan) y \textbf{Carga} (en esta parte del proceso se vuelcan los datos procedentes de la fase de transformación al sistema de destino.)
 
-Finalmente hay que comunicar los resultados. Una manera idónea son las visualizaciones de datos.
-
- \hl{Aqui puedo darle una vuelta e incluso hacerlo mas detallado}
-
 \subsection{Visualización de datos}
-Una vez tenemos claro el modelo con el que se van a obtener los datos la última parte comprende la visualización de los mismos.
+Una vez tenemos los datos es hora de transformarlos en información. Desde un punto de vista más comercial podríamos afirmar que la visualización de datos es un proceso que consume datos como entrada y los transforma en conocimiento del negocio. 
 
-Desde un punto de vista más comercial podríamos afirmar que la visualización de datos es un proceso que consume datos como entrada y los transforma en conocimiento del negocio.
+Desde un punto de vista más técnico la visualización de datos es la presentación gráfica de información con dos propósitos principales. Por un lado, la interpretación y construcción de significado a partir de los datos (es decir, el análisis); y por otro lado, la comunicación (la comunicación de la información que se obtiene de esos datos). De una manera más simple se trata de representar magnitudes de forma visual con el objetivo último de presentar una información. Normalmente esta información se presenta a una audiencia o puede ser también parte de un estudio con el que obtener patrones  dentro de un proyecto más grande.  En la figura \ref{dataviz} se pueden ver los pilares básicos que conforman una buena visualización.
 
-Desde un punto de vista más técnico la visualización de datos es la presentación gráfica de información con dos propósitos principales. Por un lado, la interpretación y construcción de significado a partir de los datos (es decir, el análisis); y por otro lado, la comunicación (la comunicación de la información que se obtiene de esos datos). De una manera más simple se trata de representar magnitudes de forma visual con el objetivo último de presentar una información. Normalmente esta información se presenta a una audiencia o puede ser también parte de un estudio con el que obtener patrones o modelos dentro de un proyecto más grande. 
-
-   \imagen{dataviz}{\footnotesize{\textit{What makes a good visualization?} by David McCandless.} Fuente:  \href{https://InformationIsBeautiful.net}{InformationIsBeautiful.net}}
+   \imagen{dataviz}{\footnotesize{\textit{What makes a good visualization?} by David McCandless.} Fuente:  \href{https://InformationIsBeautiful.net}{InformationIsBeautiful.net}\label{dataviz}}
 
 Una  visualización es una herramienta muy potente para descubrir y comprender la lógica que se encuentra detrás de un conjunto de datos, así como para compartir esta interpretación con otras personas desde un punto de vista objetivo.
 

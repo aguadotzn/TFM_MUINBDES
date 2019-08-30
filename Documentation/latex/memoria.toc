@@ -6,107 +6,102 @@
 \contentsline {part}{Memoria}{1}{section*.3}% 
 \contentsline {chapter}{Introducci\IeC {\'o}n}{2}{chapter*.6}% 
 \contentsline {chapter}{Objetivos del proyecto}{4}{chapter*.7}% 
-\contentsline {section}{\numberline {2.1}Objetivos generales}{4}{section.2.1}% 
+\contentsline {section}{\numberline {2.1}Objetivos}{4}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Objetivos personales}{4}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Objetivos alcanzados}{5}{section.2.3}% 
 \contentsline {chapter}{Conceptos te\IeC {\'o}ricos}{6}{chapter*.8}% 
 \contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{6}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Big data}{6}{section.3.2}% 
-\contentsline {subsection}{Datos}{8}{section*.9}% 
-\contentsline {subsection}{Arquitecturas}{9}{section*.10}% 
-\contentsline {subsection}{\emph {Smart cities}}{10}{section*.11}% 
-\contentsline {subsection}{\emph {Big Data} y ciudades}{11}{section*.12}% 
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis cient\IeC {\'\i }fico}{14}{section.3.3}% 
-\contentsline {subsection}{\IeC {\textquestiondown }C\IeC {\'o}mo se mide la calidad del aire?}{16}{section*.13}% 
-\contentsline {subsection}{Agentes contaminantes principales}{18}{section*.14}% 
-\contentsline {subsection}{La calidad del aire en Espa\IeC {\~n}a}{19}{section*.15}% 
-\contentsline {subsubsection}{Metodolog\IeC {\'\i }as de evaluaci\IeC {\'o}n}{21}{section*.16}% 
-\contentsline {subsection}{La calidad del aire en Madrid}{23}{section*.17}% 
-\contentsline {subsection}{Low Emission Zone (LEZ): Madrid Central}{30}{section*.18}% 
-\contentsline {subsection}{La calidad del aire y la salud}{31}{section*.19}% 
-\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis legislativo (En Espa\IeC {\~n}a)}{32}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis parte t\IeC {\'e}cnica}{34}{section.3.5}% 
-\contentsline {subsection}{Fuente de datos}{34}{section*.20}% 
-\contentsline {subsection}{Modelo anal\IeC {\'\i }tico}{35}{section*.21}% 
-\contentsline {subsection}{Visualizaci\IeC {\'o}n de datos}{37}{section*.22}% 
-\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{39}{chapter*.23}% 
-\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }as}{39}{section.4.1}% 
-\contentsline {subsection}{Estrategia de investigaci\IeC {\'o}n}{39}{section*.24}% 
-\contentsline {subsection}{Metodolog\IeC {\'\i }a de trabajo diaria: Scrum}{40}{section*.25}% 
-\contentsline {section}{\numberline {4.2}Herramientas}{42}{section.4.2}% 
-\contentsline {subsection}{Pycharm}{42}{section*.26}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{42}{section*.27}% 
-\contentsline {subsection}{Jupyter Notebooks}{42}{section*.28}% 
-\contentsline {subsection}{Conda}{42}{section*.29}% 
-\contentsline {subsection}{R studio}{42}{section*.30}% 
-\contentsline {subsection}{Visual Studio code}{43}{section*.31}% 
-\contentsline {subsection}{Firefox for developers}{43}{section*.32}% 
-\contentsline {section}{\numberline {4.3}Herramientas de visualizaci\IeC {\'o}n de datos}{43}{section.4.3}% 
-\contentsline {subsection}{Power BI}{44}{section*.33}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{44}{section*.34}% 
-\contentsline {subsection}{CartoDB}{44}{section*.35}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{44}{section*.36}% 
-\contentsline {subsection}{Vega}{44}{section*.37}% 
-\contentsline {subsection}{DataWrapper}{44}{section*.38}% 
-\contentsline {section}{\numberline {4.4}Tecnolog\IeC {\'\i }as}{45}{section.4.4}% 
-\contentsline {subsection}{Python}{45}{section*.39}% 
-\contentsline {subsection}{R}{45}{section*.40}% 
-\contentsline {subsection}{Tinybird}{46}{section*.41}% 
-\contentsline {section}{\numberline {4.5}Documentaci\IeC {\'o}n}{46}{section.4.5}% 
-\contentsline {subsection}{La\TeX }{46}{section*.42}% 
-\contentsline {subsubsection}{Detalles}{46}{section*.43}% 
-\contentsline {subsection}{Zotero}{47}{section*.44}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{47}{section*.45}% 
-\contentsline {section}{\numberline {4.6}Otras herramientas}{48}{section.4.6}% 
-\contentsline {subsection}{Git}{48}{section*.46}% 
-\contentsline {subsection}{Github}{48}{section*.47}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{48}{section*.48}% 
-\contentsline {subsection}{Github pages}{49}{section*.49}% 
-\contentsline {subsubsection}{Alternativas estudiadas}{49}{section*.50}% 
-\contentsline {subsection}{StackOverFlow}{49}{section*.51}% 
-\contentsline {subsection}{OpenRefine}{49}{section*.52}% 
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{51}{chapter*.53}% 
-\contentsline {section}{\numberline {5.1}Elecci\IeC {\'o}n del proyecto}{51}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{52}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Metodolog\IeC {\'\i }as/Estrategias aplicadas}{52}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Desarrollo del modelo anal\IeC {\'\i }tico}{52}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Desarrollo visualizaci\IeC {\'o}n}{53}{section.5.5}% 
-\contentsline {section}{\numberline {5.6}Desarrollo web}{53}{section.5.6}% 
-\contentsline {section}{\numberline {5.7}Documentaci\IeC {\'o}n}{53}{section.5.7}% 
-\contentsline {section}{\numberline {5.8}Dificultades encontradas}{53}{section.5.8}% 
-\contentsline {section}{\numberline {5.9}Agradecimientos}{54}{section.5.9}% 
-\contentsline {chapter}{Trabajos relacionados}{55}{chapter*.54}% 
-\contentsline {section}{\numberline {6.1}Trabajos \IeC {\'u}tiles}{55}{section.6.1}% 
-\contentsline {chapter}{Entorno experimental}{57}{chapter*.55}% 
-\contentsline {section}{\numberline {7.1}Esquema}{57}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}Fuente datos origen}{58}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}Exploraci\IeC {\'o}n de datos}{63}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}Transformaci\IeC {\'o}n de datos}{63}{section.7.4}% 
-\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de datos}{63}{section.7.5}% 
-\contentsline {chapter}{Resultados}{64}{chapter*.56}% 
-\contentsline {section}{\numberline {8.1}Pre\IeC {\'a}mbulo}{64}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}Resultados generales obtenidos}{65}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Preguntas anal\IeC {\'\i }ticas}{65}{section.8.3}% 
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{66}{chapter*.57}% 
-\contentsline {section}{\numberline {9.1}Conclusiones proyecto}{66}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Conclusiones personales}{66}{section.9.2}% 
-\contentsline {section}{\numberline {9.3}L\IeC {\'\i }neas de trabajo futuras}{67}{section.9.3}% 
-\contentsline {part}{Ap\IeC {\'e}ndices}{68}{section.9.3}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{69}{appendix*.60}% 
-\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{72}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Introducci\IeC {\'o}n}{72}{section.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Planificaci\IeC {\'o}n temporal}{72}{section.Alph1.2}% 
-\contentsline {subsection}{Desarrollo con Scrum}{73}{section*.61}% 
-\contentsline {subsubsection}{Mayo/Junio 2019}{76}{section*.62}% 
-\contentsline {subsubsection}{Sprint 0: 15/06/2019 - 01/07/2019}{76}{section*.63}% 
-\contentsline {subsection}{Sprint 1: 01/07/2019- 15/07/2019}{77}{section*.64}% 
-\contentsline {subsection}{Sprint 2: 15/07/2019- 31/07/2019}{78}{section*.65}% 
-\contentsline {subsection}{Sprint 3: 31/07/2019 - 15/08/2019}{80}{section*.66}% 
-\contentsline {subsection}{Sprint 4: 15/08/2019 - 31/08/2019}{81}{section*.67}% 
-\contentsline {subsection}{Sprint 5: 31/08/2019- 05/09/2019}{82}{section*.68}% 
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{82}{section.Alph1.3}% 
-\contentsline {subsection}{Viabilidad econ\IeC {\'o}mica}{82}{section*.69}% 
-\contentsline {subsubsection}{An\IeC {\'a}lisis de costes}{82}{section*.70}% 
-\contentsline {subsection}{Coste final desarrollo del proyecto}{83}{section*.71}% 
-\contentsline {subsection}{Viabilidad legal}{84}{section*.72}% 
-\contentsline {appendix}{\chapternumberline {B}Extra Resultados}{86}{appendix.Alph2}% 
+\contentsline {subsection}{Arquitecturas}{7}{section*.9}% 
+\contentsline {subsection}{\emph {Smart cities}}{7}{section*.10}% 
+\contentsline {subsection}{\emph {Big Data} y ciudades}{8}{section*.11}% 
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis cient\IeC {\'\i }fico}{10}{section.3.3}% 
+\contentsline {subsection}{\IeC {\textquestiondown }C\IeC {\'o}mo se mide la calidad del aire?}{12}{section*.12}% 
+\contentsline {subsection}{Agentes contaminantes principales}{14}{section*.13}% 
+\contentsline {subsection}{La calidad del aire en Espa\IeC {\~n}a}{15}{section*.14}% 
+\contentsline {subsubsection}{Metodolog\IeC {\'\i }as de evaluaci\IeC {\'o}n}{17}{section*.15}% 
+\contentsline {subsection}{La calidad del aire en Madrid}{19}{section*.16}% 
+\contentsline {subsection}{Low Emission Zone (LEZ): Madrid Central}{24}{section*.17}% 
+\contentsline {subsection}{La calidad del aire y la salud}{25}{section*.18}% 
+\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis legislativo (En Espa\IeC {\~n}a)}{26}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis parte t\IeC {\'e}cnica}{28}{section.3.5}% 
+\contentsline {subsection}{Fuente de datos}{28}{section*.19}% 
+\contentsline {subsection}{Modelo anal\IeC {\'\i }tico}{29}{section*.20}% 
+\contentsline {subsection}{Visualizaci\IeC {\'o}n de datos}{30}{section*.21}% 
+\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{33}{chapter*.22}% 
+\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }as}{33}{section.4.1}% 
+\contentsline {subsection}{Estrategia de investigaci\IeC {\'o}n}{33}{section*.23}% 
+\contentsline {subsection}{Metodolog\IeC {\'\i }a de trabajo diaria: Scrum}{34}{section*.24}% 
+\contentsline {section}{\numberline {4.2}Herramientas}{35}{section.4.2}% 
+\contentsline {subsection}{Pycharm}{35}{section*.25}% 
+\contentsline {subsubsection}{Alternativas estudiadas}{35}{section*.26}% 
+\contentsline {subsection}{Jupyter Notebooks}{36}{section*.27}% 
+\contentsline {subsection}{Conda}{36}{section*.28}% 
+\contentsline {subsection}{R studio}{36}{section*.29}% 
+\contentsline {subsection}{Visual Studio code}{36}{section*.30}% 
+\contentsline {subsection}{Firefox for developers}{36}{section*.31}% 
+\contentsline {section}{\numberline {4.3}Herramientas de visualizaci\IeC {\'o}n de datos}{36}{section.4.3}% 
+\contentsline {subsection}{Power BI}{37}{section*.32}% 
+\contentsline {subsubsection}{Alternativas estudiadas}{37}{section*.33}% 
+\contentsline {subsection}{CartoDB}{37}{section*.34}% 
+\contentsline {subsection}{Vega}{37}{section*.35}% 
+\contentsline {subsection}{DataWrapper}{37}{section*.36}% 
+\contentsline {section}{\numberline {4.4}Tecnolog\IeC {\'\i }as}{38}{section.4.4}% 
+\contentsline {subsection}{Python}{38}{section*.37}% 
+\contentsline {subsection}{R}{38}{section*.38}% 
+\contentsline {subsection}{Tinybird}{38}{section*.39}% 
+\contentsline {section}{\numberline {4.5}Documentaci\IeC {\'o}n}{39}{section.4.5}% 
+\contentsline {subsection}{La\TeX }{39}{section*.40}% 
+\contentsline {subsubsection}{Detalles}{39}{section*.41}% 
+\contentsline {subsection}{Zotero}{39}{section*.42}% 
+\contentsline {subsubsection}{Alternativas estudiadas}{40}{section*.43}% 
+\contentsline {section}{\numberline {4.6}Otras herramientas}{40}{section.4.6}% 
+\contentsline {subsection}{Git}{40}{section*.44}% 
+\contentsline {subsection}{Github}{40}{section*.45}% 
+\contentsline {subsubsection}{Alternativas estudiadas}{41}{section*.46}% 
+\contentsline {subsection}{Github pages}{41}{section*.47}% 
+\contentsline {subsubsection}{Alternativas estudiadas}{42}{section*.48}% 
+\contentsline {subsection}{StackOverFlow}{42}{section*.49}% 
+\contentsline {subsection}{OpenRefine}{42}{section*.50}% 
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{43}{chapter*.51}% 
+\contentsline {section}{\numberline {5.1}Elecci\IeC {\'o}n del proyecto}{43}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{43}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Metodolog\IeC {\'\i }as/estrategias aplicadas}{44}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Desarrollo an\IeC {\'a}lisis datos}{44}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Desarrollo visualizaci\IeC {\'o}n}{44}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Desarrollo web}{45}{section.5.6}% 
+\contentsline {section}{\numberline {5.7}Documentaci\IeC {\'o}n}{45}{section.5.7}% 
+\contentsline {section}{\numberline {5.8}Dificultades encontradas}{45}{section.5.8}% 
+\contentsline {section}{\numberline {5.9}Agradecimientos}{45}{section.5.9}% 
+\contentsline {chapter}{Trabajos relacionados}{47}{chapter*.52}% 
+\contentsline {section}{\numberline {6.1}Trabajos \IeC {\'u}tiles}{47}{section.6.1}% 
+\contentsline {chapter}{Entorno experimental}{49}{chapter*.53}% 
+\contentsline {section}{\numberline {7.1}Esquema}{49}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Fuente datos origen}{50}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Exploraci\IeC {\'o}n}{55}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}Transformaci\IeC {\'o}n de datos}{58}{section.7.4}% 
+\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de datos}{60}{section.7.5}% 
+\contentsline {chapter}{Resultados}{65}{chapter*.54}% 
+\contentsline {section}{\numberline {8.1}Pre\IeC {\'a}mbulo}{65}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Resultados generales obtenidos}{66}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Preguntas anal\IeC {\'\i }ticas}{66}{section.8.3}% 
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{68}{chapter*.55}% 
+\contentsline {section}{\numberline {9.1}Conclusiones proyecto}{68}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Conclusiones personales}{68}{section.9.2}% 
+\contentsline {section}{\numberline {9.3}L\IeC {\'\i }neas de trabajo futuras}{68}{section.9.3}% 
+\contentsline {part}{Ap\IeC {\'e}ndices}{69}{section.9.3}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{70}{appendix*.58}% 
+\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{73}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Introducci\IeC {\'o}n}{73}{section.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Planificaci\IeC {\'o}n temporal}{73}{section.Alph1.2}% 
+\contentsline {subsection}{Desarrollo con Scrum}{73}{section*.59}% 
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n inicial}{76}{section*.60}% 
+\contentsline {subsubsection}{Mayo/Junio 2019}{76}{section*.61}% 
+\contentsline {subsubsection}{Sprint 0: 15/06/2019 - 01/07/2019}{77}{section*.62}% 
+\contentsline {subsection}{Sprint 1: 01/07/2019- 15/07/2019 (ver figura \ref {sprint1_img})}{77}{section*.63}% 
+\contentsline {subsection}{Sprint 2: 15/07/2019- 31/07/2019(ver figura \ref {sprint2_img})}{78}{section*.64}% 
+\contentsline {subsection}{Sprint 3: 31/07/2019 - 15/08/2019 (ver figura \ref {sprint3_img})}{80}{section*.65}% 
+\contentsline {subsection}{Sprint 4: 15/08/2019 - 31/08/2019 (ver figura \ref {sprint4_img})}{81}{section*.66}% 
+\contentsline {subsection}{Sprint 5: 31/08/2019- 05/09/2019 (ver figura \ref {sprint5_img})}{82}{section*.67}% 
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n final}{82}{section*.68}% 
+\contentsline {section}{\numberline {A.3}Viabilidad legal}{82}{section.Alph1.3}% 
+\contentsline {section}{\numberline {A.4}Links Importantes}{84}{section.Alph1.4}% 

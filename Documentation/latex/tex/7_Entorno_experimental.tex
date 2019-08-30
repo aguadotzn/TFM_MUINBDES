@@ -1,14 +1,14 @@
 \capitulo{7}{Entorno experimental}
 
-En esta sección se va a exponer de manuscrita el entorno con el que se ha realizado el estudio. Pasaremos por las diferentes fases precisando y señalando los aspectos técnicos de relevancia sobre el proyecto.
+En esta sección se va a exponer de manuscrita el entorno con el que se ha realizado el estudio. 
 
 
 \section{Esquema}
 
-A modo de introducción se han seguido cuatro partes principales en el desarrollo técnico del proyecto en las que se han utilizado diferentes técnicas. Los siguiente esquemas describen de manera breve la línea a seguir en el proyecto.
+A modo de introducción se han seguido cuatro partes principales en el desarrollo técnico del proyecto en las que se han utilizado diferentes técnicas. Los siguientes esquemas (ver figuras \ref{diagramtechA} y \ref{diagramtechB}) describen de manera la línea a seguir en el proyecto.
 
-   \imagen{diagramtechA}{\footnotesize{Detalle diagrama desarrollo (Partes 1 y 2). Fuente: Elaboración propia.}}
-    \imagen{diagramtechB}{\footnotesize{Detalle diagrama desarrollo (Partes 3 y 4). Fuente: Elaboración propia.}}
+   \imagen{diagramtechA}{\footnotesize{Detalle diagrama desarrollo (Partes 1 y 2). Fuente: Elaboración propia.}\label{diagramtechA}}
+    \imagen{diagramtechB}{\footnotesize{Detalle diagrama desarrollo (Partes 3 y 4). Fuente: Elaboración propia.}\label{diagramtechB}}
 
 \section{Fuente datos origen}
 
@@ -20,9 +20,9 @@ Este portal dispone de un amplio catálogo de datos que puede ser descargado a t
 Por lo tanto los tres tipos de ficheros que podemos descargar son los siguientes:
 
 \begin{itemize}
-	\item \underline{Datos de calidad del aire horarios}: en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos diarios} por anualidades de 2001 a 2019. 
-	\item \underline{Datos de calidad del aire horarios:} en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos horarios} por anualidades de 2001 a 2019. Los datos horarios de las magnitudes corresponden a la media aritmética de los valores diezminutales que se registran cada hora.
-	\item \underline{Datos de calidad del aire en tiempo real:} En este conjunto de datos se puede obtener la información actualizada en tiempo real.
+	\item \textbf{Datos de calidad del aire horarios}: en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos diarios} por anualidades de 2001 a 2019. 
+	\item \textbf{Datos de calidad del aire horarios:} en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos horarios} por anualidades de 2001 a 2019. Los datos horarios de las magnitudes corresponden a la media aritmética de los valores diezminutales que se registran cada hora.
+	\item \textbf{Datos de calidad del aire en tiempo real:} En este conjunto de datos se puede obtener la información actualizada en tiempo real.
 \end{itemize}
 
 En el caso concreto del proyecto nos vamos a centrar en los dos primeros. En el caso de los \textbf{datos horarios}, éstos viene comprimidos en un archivo \textit{.zip} y cuando nos los descargamos aparecen divididos por meses. El nombre del archivo esta formado por las tres letras primeras, que corresponden al mes más un guión bajo seguido de dos números \textit{XX}, que identifican al año.
@@ -37,10 +37,11 @@ Los principales aspectos a destacar de la fuente de datos serían:
 	\item Se dispone de mediciones de calidad del aire desde el año 2001 hasta la actualidad. 
 	\item Cada campo tiene asignado un determinado número de dígitos. 
 	\item Todos los campos contienen datos numéricos ya sean identificadores o medidas.
-	\item Hay que precisar que las medidas válidas están marcadas con una V y las medidas no válidas están marcadas con una N. tan solo serán validas las que contienen la V.
+	\item Hay que precisar que las medidas válidas están marcadas con una V y las medidas no válidas están marcadas con una N. Tan solo serán validas las que contienen la V.
+	\item Los datos anteriores a 2010 presentan algunos errores y los formatos están delimitados
 \end{itemize}
 
-La siguiente tabla contiene los código de interpretación de los \underline{datos horarios}. Tres apuntes importantes:
+La tabla 7.5 contiene los código de interpretación de los \textbf{datos horarios}. Tres apuntes importantes:
 
 \begin{enumerate}
 \item El campo punto de muestreo incluye el código de la estación completo (provincia, municipio y estación) más la magnitud y la técnica de muestreo.
@@ -72,9 +73,10 @@ La siguiente tabla contiene los código de interpretación de los \underline{dat
 		\end{tabular}
 		\caption{Tabla intérprete valores horarios.}
 	\end{center}
+\label{TablaValHorarios}
 \end{table}
 
-La siguiente tabla contiene los código de interpretación de los \underline{datos diarios}. Tres apuntes importantes:
+La tabla 7.6 contiene los código de interpretación de los \textbf{datos diarios}. Tres apuntes importantes:
 
 \begin{enumerate}
 	\item El campo punto de muestreo incluye el código de la estación completo (provincia, municipio y estación) más la magnitud y la técnica de muestreo.
@@ -104,13 +106,11 @@ La siguiente tabla contiene los código de interpretación de los \underline{dat
 		\end{tabular}
 	\caption{Tabla intérprete valores diarios.}
 	\end{center}
+\label{TablaValDiarios}
 \end{table}
 
 
-Como ya hemos nombrado anteriormente, el Sistema de Vigilancia está formado por 24 estaciones remotas automáticas que recogen la información básica para la vigilancia atmosférica. Poseen los analizadores necesarios para la medida correcta de los niveles de gases y de partículas. La localización de las estaciones de control también se encuentra para su libre descarga, este caso se permiten los ficheros \textit{.xls}, \textit{.csv} y \textit{.geo}.  
-
-La tabla para la correcta interpretación de los datos sería la siguiente:
-
+Como ya hemos nombrado anteriormente, el Sistema de Vigilancia está formado por 24 estaciones remotas automáticas que recogen la información básica para la vigilancia atmosférica. Poseen los analizadores necesarios para la medida correcta de los niveles de gases y de partículas. La localización de las estaciones de control también se encuentra para su libre descarga, este caso se permiten los ficheros \textit{.xls}, \textit{.csv} y \textit{.geo}. La tabla 7.7 contiene los datos para la correcta interpretación de los ficheros.
 
 
 %TABLA ESTACIONES
@@ -164,7 +164,7 @@ La tabla para la correcta interpretación de los datos sería la siguiente:
 	\end{center}	
 \end{table}
 
-Y para terminar los contaminantes también tiene su tabla para saber interpretarlos de manera correcta.
+Y para terminar los contaminantes, descritos en la tabla 7.8, también es necesario interpretarlos.
 
 %TABLA CONTAMINANTES
 \begin{table}[H]
@@ -195,11 +195,153 @@ Y para terminar los contaminantes también tiene su tabla para saber interpretar
 \end{table}
 
 
-\section{Exploración de datos}
+\section{Exploración}
 Tras conocer, estudiar a fondo los tipos de datos existentes y su correcta interpretación es tiempo de explorarlos. La fase de exploración se ha realizado de diferentes maneras y desde varias perspectivas con la ayuda de diversas herramientas \textit{open source}.
 
+Esta fase es necesaria para realizar una investigación preliminar con el fin de entender mejor las características específicas de nuestros datos. En esta fase buscaremos correlaciones, tendencias y valores atípicos. Sin esta fase, no podríamos utilizar los datos de manera eficaz. Hemos hecho uso de diversas herramientas como es el caso de \href{http://vega.github.io/}{Voyager2} (figura \ref{voyager}).
+
+    \imagen{voyager}{\footnotesize{Detalle \textit{vega-voyager}. Fuente: Elaboración propia.}\label{voyager}}
+    
+Datawrapper (ver figura \ref{datawrapper}) es otra herramienta que nos ayuda a analizar nuestros datos de una manera rápida. Es conveniente no coger una muestra demasiado grande ya que, ni es necesario, ni el software está correctamente optimizado para grandes volúmenes.
+    
+        \imagen{datawrapper}{\footnotesize{Detalle \textit{Datawrapper}. Fuente: Elaboración propia.}\label{datawrapper}}
+ 
+A continuaciónn, en las tablas 7.9 y 7.9, se expone la tipología de las variables en su conjunto. Aunque es posible que no se utilicen todas, sí es necesario introducir aquí todas las variables para establecer una relación con lo descrito en páginas anteriores.
+
+    %DATOS HORARIOS
+    \begin{table}[H]
+    	\begin{center}
+    		\begin{tabular}{|c|c|}
+    			\hline
+    			\textbf{PROVINCIA}       & \textit{integer}              \\ \hline
+    			\textbf{MUNICIPIO}       & \textit{integer}              \\ \hline
+    			\textbf{ESTACION}        & \textit{integer}               \\ \hline
+    			\textbf{MAGNITUD}        & \textit{integer}               \\ \hline
+    			\textbf{PUNTO\_MUESTREO} & \textit{integer} \\ \hline
+    			\textbf{ANO}             & \textit{integer}            \\ \hline
+    			\textbf{MES}             & \textit{integer}               \\ \hline
+    			\textbf{DIA}             & \textit{integer}               \\ \hline
+    			\textbf{H01}             & \textit{integer}              \\ \hline
+    			\textbf{V01}             & \textit{float}               \\ \hline
+    			\textbf{H02}             & \textit{integer}              \\ \hline
+    			\textbf{V02}             & \textit{text}               \\ \hline
+    			\textbf{[...]}             & \textit{[...]}               \\ \hline
+    		\end{tabular}
+    		\caption{Tabla tipo datos valores horarios.}
+    	\end{center}
+    \end{table}
+
+%DATOS DIARIOS
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{PROVINCIA}       & \textit{integer}              \\ \hline
+			\textbf{MUNICIPIO}       & \textit{integer}              \\ \hline
+			\textbf{ESTACION}        & \textit{integer}               \\ \hline
+			\textbf{MAGNITUD}        & \textit{integer}               \\ \hline
+			\textbf{PUNTO\_MUESTREO} & \textit{integer} \\ \hline
+			\textbf{ANO}             & \textit{integer}            \\ \hline
+			\textbf{MES}             & \textit{integer}               \\ \hline
+			\textbf{D01}             & \textit{integer}              \\ \hline
+			\textbf{V01}             & \textit{text}               \\ \hline
+			\textbf{D02}             & \textit{integer}              \\ \hline
+			\textbf{V02}             & \textit{text}               \\ \hline
+			\textbf{[...]}             & \textit{[...]}               \\ \hline
+		\end{tabular}
+		\caption{Tabla tipo datos valores diarios.}
+	\end{center}
+\end{table}
+
+Para conocer más a fondo nuestros datos algunas estadísticas básicas de este tipo que debemos calcular para nuestro conjunto de datos son la media, mediana, el rango y la desviación estándar. La media y la mediana son medidas de la ubicación de un conjunto de valores. La moda es el valor que ocurre con mayor frecuencia en el conjunto de datos. El rango o la desviación estándar son medidas de la dispersión de los datos. Examinar estas mediciones nos dará una idea más precisa de la naturaleza de nuestros datos.
+
+ \hl{Este parrafo de arriba QUE EH}
+ 
+
+
 \section{Transformación de datos}
-Tras explorar y entender los datos es hora de transformarlos de acuerdo a nuestros objetivos finales. También aquí se han empleado diferentes lenguajes de programación.
+Tras explorar y entender los datos es hora de transformarlos de acuerdo a nuestros objetivos finales. Es cierto que se han utilizado diferentes lenguajes de programación pero en todos se han seguido patrones comunes común a la hora de transformar los datos.
+
+Algunas características comunes de la transformación de los datos han sido el renombramiento de columnas, el establecer el tipo de dato adecuado por columnas para realizar operaciones y evitar problemas a la hora de realizar operaciones, el intercambiar las columnas de validación para establecer los datos que son correctos o el agrupar por contenido para obtener una determinada gráfica.
+
+ \hl{Este parrafo de arriba QUE EH}
+
+Vamos a poner un ejemplo del procedimiento a seguir para \href{https://tinybird.co//}{Tinybird.co}. Lo primero que hay que hacer es cargar los datos. Como hemos nombrado se trata de una aplicación en beta por lo tanto el entorno gráfico no está disponible todavía para subir cantidades  grandes de datos por lo que he creado un script en bash que a través de un bucle sube todos los archivos. 
+
+\lstset{breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+#!/bin/bash
+
+#Personal Token
+TOKEN=p.eyXXXXXXXXXXXXXXXXXXXXXX
+#URL
+BASE_URL=/Users/xxxx/Documents//TFM_MUINBDES/Code/data
+
+#Load months
+for month in ene feb mar abr may jun jul ago sep oct nov dic
+do
+curl -F "csv=@${month}_mo18.csv" \
+-H "Authorization: Bearer $TOKEN" \
+-X POST "https://XXXXXXXXXXX/v0/datasources?name=datos_2018&mode=append"
+done
+\end{lstlisting}
+
+Una vez tenemos los datos cargados (ver figura \ref{tiny1}) es el momento de transformar los datos. 
+
+\imagen{tinybird1}{\footnotesize{Datos cargados en \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny1}}
+
+En este caso queremos observar si existen patrones anuales en los datos de la cantidad de \ce{CO2} para después comprobar la misma hipótesis de manera semanal y por horas. Lo primero que hacemos es seleccionar de nuestro conjunto de datos lo que nos hace falta, además transformamos la fecha (ya que recordamos que la fecha viene en nuestro fichero de datos original separada en tres columnas diferentes) para una mejor visualización (ver figura \ref{tiny2}).
+
+\imagen{tinybird2}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny2}}
+
+Después escogemos los valores válidos y también la magnitud que corresponde al contaminante del cuál queremos hacer el análisis (ver figura \ref{tiny3})
+
+\imagen{tinybird3}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny3}}
+
+Para terminar agrupamos y ordenamos por lo que nos hace falta para nuestro análisis (ver figura \ref{tiny4}) y ya podemos exportar el archivo para proceder a su visualización.
+
+\imagen{tinybird4}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny4}}
+
+ \hl{Explicar python}
 
 \section{Visualización de datos}
-Una vez que tenemos los datos transformados de manera adecuada ya podemos cargar éstos en nuestra herramienta de visualización principal.
+Una vez que tenemos los datos transformados de manera adecuada ya podemos concentrarnos en la parte visual. En este trabajo la parte visual está dividia en varias partes, por un lado en todas las gráficas que hemos empleado para explorar los datos; segundo, en una visualización final a modo de dashboard realizada con \textit{PowerBi};  y en una pequeña web resumen de resultados.
+
+
+Siguiendo con el ejemplo nombrado en el apartado anterior y cargando los datos en vega podemos obtener la visualización de acuerdo a nuestro objetivo. En este caso hemos calculado la media de \ce{NO2} anual junto con los máximos (ver figura \ref{NO22018}) repartido por meses.
+
+%\imagen{NO22019}{\footnotesize{Detalle \ce{NO2} 2018. Fuente: Elaboración propia.}\label{NO22018}}
+ \hl{Aqui poner datos actualizados de 2019}
+ 
+También lo mismo pero por día de la semana (ver figura \ref{ejemploJulio}), en este caso par el mes de julio.
+
+\imagen{ejemploJulio}{\footnotesize{Detalle \ce{NO2} 2019 (julio). Fuente: Elaboración propia.}\label{ejemploJulio}}
+
+
+Y lo mismo pero por horas, en este caso para el 12 de julio (ver figura \ref{ejemplo01julio}).
+\imagen{ejemplo01julio}{\footnotesize{Detalle \ce{NO2} 2019 (12 julio). Fuente: Elaboración propia.}\label{ejemplo01julio}}
+
+La parte de la visualización en \textbf{PowerBi} es más interactiva y resulta muy sencilla de utilizar.  Una vez transformados los datos mediante python (descrito en el apartado anterior) se cargan los datos. En este caso he cargado los datos de 2014 a 2018, ya que he considerado que terminar el período anual completo era mejor para el análisis. 
+
+He realizado distintas páginas dentro de PowerBi en las que podemos ver diferentes tipos de gráficos.
+
+\begin{itemize}
+	\item Página 1: 
+	
+	\item Página 2: 
+	 \imagen{powerBi2}{\footnotesize{Detalle \textit{page} en \textit{PowerBi} carga. Fuente: Elaboración propia.}}
+	
+
+	\item Página 3: 
+		\imagen{powerBi3}{\footnotesize{Detalle \textit{page} en \textit{PowerBi} carga. Fuente: Elaboración propia.}}
+	\item Página 4: 
+\end{itemize}
+
+Después también se ha experimentado con otro tipo de gráficos en los que se puede ver de manera clara según el año, figura \ref{tamanos}, cual es la zona más afectada, o en el conjunto completo del período seleccionado (2014-2018) cuál es la zona más afectada, figura \ref{nubePalabras}.
+
+      \imagen{powerBi1}{\footnotesize{Ejemplo gráfico por tamaño. Fuente: Elaboración propia.}\label{tamanos}}
+      
+         \imagen{nubePalabras}{\footnotesize{Ejemplo gráfico nube de palabras.}\label{nubePalabras}}
+      
+
+     
