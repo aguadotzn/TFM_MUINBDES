@@ -70,6 +70,8 @@ Development of an environment model for the analysis of air pollution/air qualit
 │          └─── /formatted_data
 │               |-- calidad_aire_horas_formatted.csv
 │          |-- calidad_aire_horas.R
+│ 
+│        └─── /extra
 │
 │        |-- README.md (code)
 │ 
