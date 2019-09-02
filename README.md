@@ -82,7 +82,7 @@ Development of an environment model for the analysis of air pollution/air qualit
 │          |-- img3
 │
 │        └─── /PowerBi
-│          |-- PowerBi.file
+│          |-- calidad_aire.pbix
 │
 │        |-- README.md (data visualization)
 │ 
