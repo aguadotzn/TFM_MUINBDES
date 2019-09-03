@@ -4,3 +4,5 @@
 .idea
 .ipynb_checkpoints
 .Rapp.history
+.vscode
+.git
