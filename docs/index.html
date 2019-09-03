@@ -4,6 +4,7 @@
 	Template: html5up.net 
 -->
 <html>
+
 <head>
 	<title>Air quality</title>
 	<meta charset="utf-8" />
@@ -12,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
 </head>
+
 <body class="is-preload">
 	<!-- HEADER-->
 	<div id="header">
@@ -25,19 +27,31 @@
 	<!-- MAIN -->
 	<div id="main">
 
-		<!-- GRAPH 1 -->
+		<!-- GRAPH 1 (DATAGRAPH) -->
 		<div class="container medium">
-				<iframe id='ep-chart-b993a66c-738d-4311-aa78-e07a4e43fa44' src='https://www.epdata.es/embed/b993a66c-738d-4311-aa78-e07a4e43fa44/450' style='width: 100%; min-height: 450px; overflow: hidden;' frameborder='0' scrolling='no' height='450'></iframe>
+			<iframe id='ep-chart-b993a66c-738d-4311-aa78-e07a4e43fa44'
+				src='https://www.epdata.es/embed/b993a66c-738d-4311-aa78-e07a4e43fa44/450'
+				style='width: 100%; min-height: 450px; overflow: hidden;' frameborder='0' scrolling='no'
+				height='450'></iframe>
 
 		</div>
 
-		<!-- VIDEO DOCUMENTARY -->
+		<!-- VIDEO DOCUMENTARY (YOUTUBE) -->
 		<div class="container medium">
-				<iframe style='width: 100%; min-height: 450px; overflow: hidden;' frameborder='0' scrolling='no' height='450' type="text/html" src="https://www.youtube.com/embed/PVOOhGJKJyA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div></iframe>
+			<iframe style='width: 100%; min-height: 450px; overflow: hidden;' frameborder='0' scrolling='no'
+				height='450' type="text/html"
+				src="https://www.youtube.com/embed/PVOOhGJKJyA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+				<div>
+			</iframe>
 		</div>
 
-
-
+		<!-- GRAPH WITH EPISODES (DATAWRAPPER) -->
+		<div class="container medium">
+			<iframe style='width: 100%; min-height: 450px; overflow: hidden;' frameborder='0' scrolling='no'
+				height='450' type="text/html" src="https://datawrapper.dwcdn.net/03jtJ/3/">
+				<div>
+			</iframe>
+		</div>
 
 
 	</div>
@@ -139,4 +153,5 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
