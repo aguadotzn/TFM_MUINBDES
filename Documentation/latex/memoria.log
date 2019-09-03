@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.5)  30 AUG 2019 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.5)  3 SEP 2019 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1398,7 +1398,11 @@ LaTeX Warning: Label `docs' multiply defined.
 LaTeX Warning: Label `inicio-proyecto' multiply defined.
 
 ) (./tex/6_Trabajos_relacionados.aux) (./tex/7_Entorno_experimental.aux)
-(./tex/8_Resultados.aux) (./tex/9_Conclusiones_Lineas_de_trabajo_futuras.aux)
+(./tex/8_Resultados.aux
+
+LaTeX Warning: Label `fig:NO22019' multiply defined.
+
+) (./tex/9_Conclusiones_Lineas_de_trabajo_futuras.aux)
 (./tex/A_Plan_proyecto.aux))
 \openout1 = `memoria.aux'.
 
@@ -1642,7 +1646,7 @@ Underfull \hbox (badness 6268) in paragraph at lines 7--7
 
 
 ]
-<./img/arquitecturaBData.png, id=508, 350.2686pt x 203.3196pt>
+<./img/arquitecturaBData.png, id=544, 350.2686pt x 203.3196pt>
 File: ./img/arquitecturaBData.png Graphic file (type png)
 <use ./img/arquitecturaBData.png>
 Package pdftex.def Info: ./img/arquitecturaBData.png  used on input line 23.
@@ -1656,7 +1660,7 @@ LaTeX Info: Redefining \% on input line 36.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
  [9]
-<./img/graficaEmisiones.png, id=543, 563.10374pt x 332.24126pt>
+<./img/graficaEmisiones.png, id=579, 563.10374pt x 332.24126pt>
 File: ./img/graficaEmisiones.png Graphic file (type png)
 <use ./img/graficaEmisiones.png>
 Package pdftex.def Info: ./img/graficaEmisiones.png  used on input line 62.
@@ -1667,7 +1671,7 @@ LaTeX Info: Redefining \% on input line 62.
 LaTeX Info: Redefining \. on input line 75.
 LaTeX Info: Redefining \% on input line 75.
  [11 <./img/graficaEmisiones.png>]
-<./img/ICAtabla.jpg, id=567, 679.94873pt x 384.76141pt>
+<./img/ICAtabla.jpg, id=603, 679.94873pt x 384.76141pt>
 File: ./img/ICAtabla.jpg Graphic file (type jpg)
 <use ./img/ICAtabla.jpg>
 Package pdftex.def Info: ./img/ICAtabla.jpg  used on input line 83.
@@ -1693,7 +1697,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 LaTeX Info: Redefining \. on input line 141.
 LaTeX Info: Redefining \% on input line 141.
  [14]
-<./img/mapaTotalEstaciones.png, id=595, 580.1675pt x 378.41376pt>
+<./img/mapaTotalEstaciones.png, id=631, 580.1675pt x 378.41376pt>
 File: ./img/mapaTotalEstaciones.png Graphic file (type png)
 <use ./img/mapaTotalEstaciones.png>
 Package pdftex.def Info: ./img/mapaTotalEstaciones.png  used on input line 159.
@@ -1702,7 +1706,7 @@ Package pdftex.def Info: ./img/mapaTotalEstaciones.png  used on input line 159.
 LaTeX Info: Redefining \. on input line 159.
 LaTeX Info: Redefining \% on input line 159.
  [15]
-<./img/resumen2018contaminantes.png, id=604, 580.1675pt x 302.12875pt>
+<./img/resumen2018contaminantes.png, id=640, 580.1675pt x 302.12875pt>
 File: ./img/resumen2018contaminantes.png Graphic file (type png)
 <use ./img/resumen2018contaminantes.png>
 Package pdftex.def Info: ./img/resumen2018contaminantes.png  used on input line
@@ -1729,7 +1733,7 @@ Overfull \hbox (29.18243pt too wide) in paragraph at lines 204--218
 LaTeX Info: Redefining \. on input line 240.
 LaTeX Info: Redefining \% on input line 240.
 [18]
-<./img/mapaEspanaNO2.png, id=637, 679.53876pt x 539.01375pt>
+<./img/mapaEspanaNO2.png, id=673, 679.53876pt x 539.01375pt>
 File: ./img/mapaEspanaNO2.png Graphic file (type png)
 <use ./img/mapaEspanaNO2.png>
 Package pdftex.def Info: ./img/mapaEspanaNO2.png  used on input line 268.
@@ -1737,7 +1741,7 @@ Package pdftex.def Info: ./img/mapaEspanaNO2.png  used on input line 268.
 LaTeX Info: Redefining \. on input line 268.
 LaTeX Info: Redefining \% on input line 268.
  [19]
-<./img/cartdoDBestaciones.png, id=648, 1355.0625pt x 875.27pt>
+<./img/cartdoDBestaciones.png, id=684, 1355.0625pt x 875.27pt>
 File: ./img/cartdoDBestaciones.png Graphic file (type png)
 <use ./img/cartdoDBestaciones.png>
 Package pdftex.def Info: ./img/cartdoDBestaciones.png  used on input line 275.
@@ -1772,7 +1776,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--336
 LaTeX Info: Redefining \. on input line 341.
 LaTeX Info: Redefining \% on input line 341.
 [23]
-<./img/madridcentral.jpeg, id=678, 1063.975pt x 1084.05pt>
+<./img/madridcentral.jpeg, id=714, 1063.975pt x 1084.05pt>
 File: ./img/madridcentral.jpeg Graphic file (type jpg)
 <use ./img/madridcentral.jpeg>
 Package pdftex.def Info: ./img/madridcentral.jpeg  used on input line 357.
@@ -1791,7 +1795,7 @@ ec-ti-vas 2004/107/CE
 LaTeX Info: Redefining \. on input line 395.
 LaTeX Info: Redefining \% on input line 395.
 [26]
-<./img/protocoloRespuestaCorreo.png, id=705, 913.4125pt x 404.51125pt>
+<./img/protocoloRespuestaCorreo.png, id=741, 913.4125pt x 404.51125pt>
 File: ./img/protocoloRespuestaCorreo.png Graphic file (type png)
 <use ./img/protocoloRespuestaCorreo.png>
 Package pdftex.def Info: ./img/protocoloRespuestaCorreo.png  used on input line
@@ -1800,7 +1804,7 @@ Package pdftex.def Info: ./img/protocoloRespuestaCorreo.png  used on input line
 LaTeX Info: Redefining \. on input line 409.
 LaTeX Info: Redefining \% on input line 409.
  [27]
-<./img/tipodatos.png, id=716, 741.77126pt x 362.35374pt>
+<./img/tipodatos.png, id=753, 741.77126pt x 362.35374pt>
 File: ./img/tipodatos.png Graphic file (type png)
 <use ./img/tipodatos.png>
 Package pdftex.def Info: ./img/tipodatos.png  used on input line 423.
@@ -1811,97 +1815,96 @@ LaTeX Info: Redefining \% on input line 423.
 LaTeX Info: Redefining \. on input line 435.
 LaTeX Info: Redefining \% on input line 435.
  [29 <./img/tipodatos.png>]
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
-
-[30]
-<./img/dataviz.png, id=744, 480.79625pt x 481.8pt>
+<./img/dataviz.png, id=774, 480.79625pt x 481.8pt>
 File: ./img/dataviz.png Graphic file (type png)
 <use ./img/dataviz.png>
 Package pdftex.def Info: ./img/dataviz.png  used on input line 450.
 (pdftex.def)             Requested size: 332.09775pt x 332.79523pt.
-)
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
+
+[30])
 LaTeX Info: Redefining \. on input line 525.
 LaTeX Info: Redefining \% on input line 525.
  [31 <./img/dataviz.png>]
-LaTeX Info: Redefining \. on input line 525.
-LaTeX Info: Redefining \% on input line 525.
- [32]
 \openout2 = `./tex/4_Tecnicas_y_herramientas.aux'.
 
- (./tex/4_Tecnicas_y_herramientas.tex
-[33
+ (./tex/4_Tecnicas_y_herramientas.tex [32
 
 
 
 ]
-<./img/ScrumSprint.png, id=770, 686.0832pt x 400.8576pt>
+<./img/ScrumSprint.png, id=804, 686.0832pt x 400.8576pt>
 File: ./img/ScrumSprint.png Graphic file (type png)
 <use ./img/ScrumSprint.png>
 Package pdftex.def Info: ./img/ScrumSprint.png  used on input line 24.
 (pdftex.def)             Requested size: 332.09775pt x 194.03647pt.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- [34 <./img/ScrumSprint.png>]
-<./img/BoardExample1.png, id=780, 1907.125pt x 825.0825pt>
+
+[33 <./img/ScrumSprint.png>]
+<./img/BoardExample1.png, id=814, 1907.125pt x 825.0825pt>
 File: ./img/BoardExample1.png Graphic file (type png)
 <use ./img/BoardExample1.png>
 Package pdftex.def Info: ./img/BoardExample1.png  used on input line 30.
 (pdftex.def)             Requested size: 332.09775pt x 143.67398pt.
 LaTeX Info: Redefining \. on input line 49.
 LaTeX Info: Redefining \% on input line 49.
- [35 <./img/BoardExample1.png>]
+ [34 <./img/BoardExample1.png>]
 LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
- [36]
+ [35]
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
+ [36]
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
  [37]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-
-[38]
-<./img/zotero.png, id=846, 1469.49pt x 818.05624pt>
+<./img/zotero.png, id=875, 1469.49pt x 818.05624pt>
 File: ./img/zotero.png Graphic file (type png)
 <use ./img/zotero.png>
-Package pdftex.def Info: ./img/zotero.png  used on input line 136.
+Package pdftex.def Info: ./img/zotero.png  used on input line 134.
 (pdftex.def)             Requested size: 332.09775pt x 184.87856pt.
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
- [39]
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
- [40 <./img/zotero.png>]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
- [41]
-<./img/openrefine.png, id=883, 1273.75874pt x 447.6725pt>
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+
+[38]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [39 <./img/zotero.png>]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [40]
+<./img/openrefine.png, id=913, 1273.75874pt x 447.6725pt>
 File: ./img/openrefine.png Graphic file (type png)
 <use ./img/openrefine.png>
-Package pdftex.def Info: ./img/openrefine.png  used on input line 190.
+Package pdftex.def Info: ./img/openrefine.png  used on input line 188.
 (pdftex.def)             Requested size: 332.09775pt x 116.71315pt.
 )
 LaTeX Info: Redefining \. on input line 526.
 LaTeX Info: Redefining \% on input line 526.
- [42 <./img/openrefine.png>]
+ [41 <./img/openrefine.png>]
 \openout2 = `./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux'.
 
 
-(./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [43
+(./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.tex [42
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
+ [43]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
  [44]
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
- [45])
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+
+[45])
 LaTeX Info: Redefining \. on input line 527.
 LaTeX Info: Redefining \% on input line 527.
-
-[46]
+ [46]
 \openout2 = `./tex/6_Trabajos_relacionados.aux'.
 
  (./tex/6_Trabajos_relacionados.tex [47
@@ -1916,12 +1919,12 @@ LaTeX Info: Redefining \% on input line 528.
 
 
 (./tex/7_Entorno_experimental.tex
-<./img/diagramtechA.png, id=935, 903.375pt x 472.76625pt>
+<./img/diagramtechA.png, id=969, 903.375pt x 472.76625pt>
 File: ./img/diagramtechA.png Graphic file (type png)
 <use ./img/diagramtechA.png>
 Package pdftex.def Info: ./img/diagramtechA.png  used on input line 10.
 (pdftex.def)             Requested size: 332.09775pt x 173.80263pt.
-<./img/diagramtechB.png, id=936, 903.375pt x 472.76625pt>
+<./img/diagramtechB.png, id=970, 903.375pt x 472.76625pt>
 File: ./img/diagramtechB.png Graphic file (type png)
 <use ./img/diagramtechB.png>
 Package pdftex.def Info: ./img/diagramtechB.png  used on input line 11.
@@ -1962,7 +1965,7 @@ Overfull \hbox (100.83186pt too wide) in paragraph at lines 172--193
  [] 
  []
 
-<./img/voyager.png, id=973, 1823.81375pt x 821.0675pt>
+<./img/voyager.png, id=1008, 1823.81375pt x 821.0675pt>
 File: ./img/voyager.png Graphic file (type png)
 <use ./img/voyager.png>
 Package pdftex.def Info: ./img/voyager.png  used on input line 203.
@@ -1970,7 +1973,7 @@ Package pdftex.def Info: ./img/voyager.png  used on input line 203.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 [55]
-<./img/datawrapper.png, id=981, 1219.55624pt x 765.86125pt>
+<./img/datawrapper.png, id=1016, 1219.55624pt x 765.86125pt>
 File: ./img/datawrapper.png Graphic file (type png)
 <use ./img/datawrapper.png>
 Package pdftex.def Info: ./img/datawrapper.png  used on input line 207.
@@ -1978,117 +1981,235 @@ Package pdftex.def Info: ./img/datawrapper.png  used on input line 207.
 LaTeX Info: Redefining \. on input line 233.
 LaTeX Info: Redefining \% on input line 233.
  [56 <./img/voyager.png> <./img/datawrapper.png>]
-LaTeX Info: Redefining \. on input line 264.
-LaTeX Info: Redefining \% on input line 264.
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
  [57]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 283.
-<./img/tinybird1.png, id=996, 1196.47pt x 688.5725pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
+<./img/tinybird1.png, id=1031, 1196.47pt x 688.5725pt>
 File: ./img/tinybird1.png Graphic file (type png)
 <use ./img/tinybird1.png>
-Package pdftex.def Info: ./img/tinybird1.png  used on input line 291.
+Package pdftex.def Info: ./img/tinybird1.png  used on input line 288.
 (pdftex.def)             Requested size: 332.09775pt x 191.11789pt.
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
  [58]
-<./img/tinybird2.png, id=1018, 1189.44376pt x 793.96625pt>
+<./img/tinybird2.png, id=1053, 1189.44376pt x 793.96625pt>
 File: ./img/tinybird2.png Graphic file (type png)
 <use ./img/tinybird2.png>
-Package pdftex.def Info: ./img/tinybird2.png  used on input line 295.
+Package pdftex.def Info: ./img/tinybird2.png  used on input line 292.
 (pdftex.def)             Requested size: 332.09775pt x 221.67905pt.
-LaTeX Info: Redefining \. on input line 298.
-LaTeX Info: Redefining \% on input line 298.
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
  [59 <./img/tinybird1.png> <./img/tinybird2.png>]
-<./img/tinybird3.png, id=1026, 1224.575pt x 557.08125pt>
+<./img/tinybird3.png, id=1061, 1224.575pt x 557.08125pt>
 File: ./img/tinybird3.png Graphic file (type png)
 <use ./img/tinybird3.png>
-Package pdftex.def Info: ./img/tinybird3.png  used on input line 299.
+Package pdftex.def Info: ./img/tinybird3.png  used on input line 296.
 (pdftex.def)             Requested size: 332.09775pt x 151.07697pt.
-<./img/tinybird4.png, id=1028, 1212.53pt x 636.3775pt>
+<./img/tinybird4.png, id=1063, 1212.53pt x 636.3775pt>
 File: ./img/tinybird4.png Graphic file (type png)
 <use ./img/tinybird4.png>
-Package pdftex.def Info: ./img/tinybird4.png  used on input line 303.
+Package pdftex.def Info: ./img/tinybird4.png  used on input line 300.
 (pdftex.def)             Requested size: 332.09775pt x 174.29063pt.
-LaTeX Info: Redefining \. on input line 309.
-LaTeX Info: Redefining \% on input line 309.
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
  [60 <./img/tinybird3.png> <./img/tinybird4.png>]
-
-LaTeX Warning: Reference `NO22018' on page 61 undefined on input line 311.
-
-<./img/ejemploJulio.png, id=1036, 1071.00125pt x 674.52pt>
+LaTeX Info: Redefining \. on input line 345.
+LaTeX Info: Redefining \% on input line 345.
+ [61]
+<./img/NO22019.png, id=1075, 1062.97125pt x 670.505pt>
+File: ./img/NO22019.png Graphic file (type png)
+<use ./img/NO22019.png>
+Package pdftex.def Info: ./img/NO22019.png  used on input line 366.
+(pdftex.def)             Requested size: 332.09775pt x 209.48114pt.
+LaTeX Info: Redefining \. on input line 366.
+LaTeX Info: Redefining \% on input line 366.
+ [62]
+<./img/ejemploJulio.png, id=1082, 1071.00125pt x 674.52pt>
 File: ./img/ejemploJulio.png Graphic file (type png)
 <use ./img/ejemploJulio.png>
-Package pdftex.def Info: ./img/ejemploJulio.png  used on input line 318.
+Package pdftex.def Info: ./img/ejemploJulio.png  used on input line 371.
 (pdftex.def)             Requested size: 332.09775pt x 209.1608pt.
-<./img/ejemplo01julio.png, id=1038, 1061.9675pt x 674.52pt>
+<./img/ejemplo01julio.png, id=1084, 1061.9675pt x 674.52pt>
 File: ./img/ejemplo01julio.png Graphic file (type png)
 <use ./img/ejemplo01julio.png>
-Package pdftex.def Info: ./img/ejemplo01julio.png  used on input line 322.
+Package pdftex.def Info: ./img/ejemplo01julio.png  used on input line 375.
 (pdftex.def)             Requested size: 332.09775pt x 210.93108pt.
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
-[61 <./img/ejemploJulio.png>]
-<./img/powerBi2.png, id=1044, 1383.1675pt x 777.90625pt>
-File: ./img/powerBi2.png Graphic file (type png)
-<use ./img/powerBi2.png>
-Package pdftex.def Info: ./img/powerBi2.png  used on input line 332.
-(pdftex.def)             Requested size: 332.09775pt x 186.77252pt.
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
- [62 <./img/ejemplo01julio.png>]
-<./img/powerBi3.png, id=1051, 990.70125pt x 571.13374pt>
-File: ./img/powerBi3.png Graphic file (type png)
-<use ./img/powerBi3.png>
-Package pdftex.def Info: ./img/powerBi3.png  used on input line 336.
-(pdftex.def)             Requested size: 332.09775pt x 191.44646pt.
-<./img/powerBi1.png, id=1054, 966.61125pt x 537.00626pt>
-File: ./img/powerBi1.png Graphic file (type png)
-<use ./img/powerBi1.png>
-Package pdftex.def Info: ./img/powerBi1.png  used on input line 342.
-(pdftex.def)             Requested size: 332.09775pt x 184.49712pt.
-LaTeX Info: Redefining \. on input line 342.
-LaTeX Info: Redefining \% on input line 342.
- [63 <./img/powerBi2.png> <./img/powerBi3.png>]
-<./img/nubePalabras.png, id=1061, 620.3175pt x 333.245pt>
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
+ [63 <./img/NO22019.png> <./img/ejemploJulio.png>]
+<./img/pagina2PowerBi.png, id=1092, 928.46875pt x 499.8675pt>
+File: ./img/pagina2PowerBi.png Graphic file (type png)
+<use ./img/pagina2PowerBi.png>
+Package pdftex.def Info: ./img/pagina2PowerBi.png  used on input line 385.
+(pdftex.def)             Requested size: 332.09775pt x 178.7928pt.
+LaTeX Info: Redefining \. on input line 385.
+LaTeX Info: Redefining \% on input line 385.
+ [64 <./img/ejemplo01julio.png>]
+<./img/pagina5.png, id=1099, 907.39pt x 477.785pt>
+File: ./img/pagina5.png Graphic file (type png)
+<use ./img/pagina5.png>
+Package pdftex.def Info: ./img/pagina5.png  used on input line 391.
+(pdftex.def)             Requested size: 332.09775pt x 174.86758pt.
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
+ [65 <./img/pagina2PowerBi.png>]
+<./img/pagina6.png, id=1105, 901.3675pt x 442.65375pt>
+File: ./img/pagina6.png Graphic file (type png)
+<use ./img/pagina6.png>
+Package pdftex.def Info: ./img/pagina6.png  used on input line 395.
+(pdftex.def)             Requested size: 332.09775pt x 163.09036pt.
+LaTeX Info: Redefining \. on input line 400.
+LaTeX Info: Redefining \% on input line 400.
+ [66 <./img/pagina5.png> <./img/pagina6.png>]
+<./img/MapaNO2.jpg, id=1113, 698.61pt x 392.96812pt>
+File: ./img/MapaNO2.jpg Graphic file (type jpg)
+<use ./img/MapaNO2.jpg>
+Package pdftex.def Info: ./img/MapaNO2.jpg  used on input line 405.
+(pdftex.def)             Requested size: 332.09775pt x 186.8057pt.
+<./img/NivelProtocolo.jpg, id=1115, 697.8572pt x 391.4625pt>
+File: ./img/NivelProtocolo.jpg Graphic file (type jpg)
+<use ./img/NivelProtocolo.jpg>
+Package pdftex.def Info: ./img/NivelProtocolo.jpg  used on input line 409.
+(pdftex.def)             Requested size: 332.09775pt x 186.29306pt.
+LaTeX Info: Redefining \. on input line 409.
+LaTeX Info: Redefining \% on input line 409.
+ [67 <./img/MapaNO2.jpg>]
+<./img/nubePalabras.png, id=1123, 620.3175pt x 333.245pt>
 File: ./img/nubePalabras.png Graphic file (type png)
 <use ./img/nubePalabras.png>
-Package pdftex.def Info: ./img/nubePalabras.png  used on input line 344.
+Package pdftex.def Info: ./img/nubePalabras.png  used on input line 413.
 (pdftex.def)             Requested size: 332.09775pt x 178.40887pt.
+<./img/powerBitamanos.png, id=1124, 966.61125pt x 537.00626pt>
+File: ./img/powerBitamanos.png Graphic file (type png)
+<use ./img/powerBitamanos.png>
+Package pdftex.def Info: ./img/powerBitamanos.png  used on input line 416.
+(pdftex.def)             Requested size: 332.09775pt x 184.49712pt.
+LaTeX Info: Redefining \. on input line 416.
+LaTeX Info: Redefining \% on input line 416.
+ [68 <./img/NivelProtocolo.jpg> <./img/nubePalabras.png>]
+<./img/powerBidias.png, id=1132, 1383.1675pt x 777.90625pt>
+File: ./img/powerBidias.png Graphic file (type png)
+<use ./img/powerBidias.png>
+Package pdftex.def Info: ./img/powerBidias.png  used on input line 419.
+(pdftex.def)             Requested size: 332.09775pt x 186.77252pt.
 )
 LaTeX Info: Redefining \. on input line 529.
 LaTeX Info: Redefining \% on input line 529.
- [64 <./img/powerBi1.png> <./img/nubePalabras.png>]
+ [69 <./img/powerBitamanos.png> <./img/powerBidias.png>]
 \openout2 = `./tex/8_Resultados.aux'.
 
- (./tex/8_Resultados.tex
-<./img/diagramtech.png, id=1069, 903.375pt x 472.76625pt>
+
+(./tex/8_Resultados.tex
+<./img/diagramtech.png, id=1141, 903.375pt x 472.76625pt>
 File: ./img/diagramtech.png Graphic file (type png)
 <use ./img/diagramtech.png>
 Package pdftex.def Info: ./img/diagramtech.png  used on input line 12.
 (pdftex.def)             Requested size: 332.09775pt x 173.80263pt.
- [65
+ [70
 
 
 
  <./img/diagramtech.png>]
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
- [66])
+<./img/promTODOS.png, id=1149, 648.4225pt x 373.395pt>
+File: ./img/promTODOS.png Graphic file (type png)
+<use ./img/promTODOS.png>
+Package pdftex.def Info: ./img/promTODOS.png  used on input line 25.
+(pdftex.def)             Requested size: 332.09775pt x 191.23798pt.
+<./img/ojo.png, id=1150, 1281.78876pt x 782.925pt>
+File: ./img/ojo.png Graphic file (type png)
+<use ./img/ojo.png>
+Package pdftex.def Info: ./img/ojo.png  used on input line 28.
+(pdftex.def)             Requested size: 332.09775pt x 202.83891pt.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [71 <./img/promTODOS.png>]
+<./img/estacionalidad.png, id=1157, 1061.9675pt x 666.49pt>
+File: ./img/estacionalidad.png Graphic file (type png)
+<use ./img/estacionalidad.png>
+Package pdftex.def Info: ./img/estacionalidad.png  used on input line 34.
+(pdftex.def)             Requested size: 332.09775pt x 208.41998pt.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+[72 <./img/ojo.png>]
+<./img/promedioHora.png, id=1164, 783.92876pt x 453.695pt>
+File: ./img/promedioHora.png Graphic file (type png)
+<use ./img/promedioHora.png>
+Package pdftex.def Info: ./img/promedioHora.png  used on input line 39.
+(pdftex.def)             Requested size: 332.09775pt x 192.19823pt.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ [73 <./img/estacionalidad.png>]
+<./img/estaciones.png, id=1171, 656.4525pt x 350.30875pt>
+File: ./img/estaciones.png Graphic file (type png)
+<use ./img/estaciones.png>
+Package pdftex.def Info: ./img/estaciones.png  used on input line 46.
+(pdftex.def)             Requested size: 332.09775pt x 177.22256pt.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+ [74 <./img/promedioHora.png> <./img/estaciones.png>]
+<./img/navidad2015.png, id=1181, 656.4525pt x 469.755pt>
+File: ./img/navidad2015.png Graphic file (type png)
+<use ./img/navidad2015.png>
+Package pdftex.def Info: ./img/navidad2015.png  used on input line 55.
+(pdftex.def)             Requested size: 332.09775pt x 237.6509pt.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [75 <./img/navidad2015.png>]
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+ [76]
+Overfull \hbox (0.24889pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/it/10.95 con-ta-mi-nan-tes? ?`Al-gu-na zo-na/es-ta-ci^^Son en con-cr
+e-to? ?`Tie-ne sen-ti-do Ma-
+ []
+
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+[77]
+<./img/junjul2019.png, id=1205, 1122.1925pt x 378.41376pt>
+File: ./img/junjul2019.png Graphic file (type png)
+<use ./img/junjul2019.png>
+Package pdftex.def Info: ./img/junjul2019.png  used on input line 106.
+(pdftex.def)             Requested size: 332.09775pt x 111.9833pt.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+ [78 <./img/junjul2019.png>]
+<./img/plazacarmen.png, id=1213, 633.36626pt x 323.2075pt>
+File: ./img/plazacarmen.png Graphic file (type png)
+<use ./img/plazacarmen.png>
+Package pdftex.def Info: ./img/plazacarmen.png  used on input line 110.
+(pdftex.def)             Requested size: 332.09775pt x 169.47441pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+ [79 <./img/plazacarmen.png>]
+<./img/EscuelasAguirre.png, id=1225, 935.495pt x 437.635pt>
+File: ./img/EscuelasAguirre.png Graphic file (type png)
+<use ./img/EscuelasAguirre.png>
+Package pdftex.def Info: ./img/EscuelasAguirre.png  used on input line 127.
+(pdftex.def)             Requested size: 332.09775pt x 155.35817pt.
+File: ./img/NO22019.png Graphic file (type png)
+<use ./img/NO22019.png>
+Package pdftex.def Info: ./img/NO22019.png  used on input line 138.
+(pdftex.def)             Requested size: 332.09775pt x 209.48114pt.
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
+ [80 <./img/EscuelasAguirre.png>])
 LaTeX Info: Redefining \. on input line 530.
 LaTeX Info: Redefining \% on input line 530.
- [67]
+ [81]
 \openout2 = `./tex/9_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
-
-(./tex/9_Conclusiones_Lineas_de_trabajo_futuras.tex) [68
-
-
-
-] [69
+ (./tex/9_Conclusiones_Lineas_de_trabajo_futuras.tex)
+[82
 
 
-] (./memoria.bbl
-(./memoria.brf)
+
+] [83
+
+
+] (./memoria.bbl (./memoria.brf)
 \tf@brf=\write5
 \openout5 = `memoria.brf'.
 
@@ -2100,170 +2221,308 @@ ient-[](outdoor )
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\OT1/cmtt/m/n/10.95 tercer-[]auto-[]judicial-[]mantiene-[]multas-[]madrid-[]cen
+tral _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 [][]$\OT1/cmtt/m/n/10.95 https : / / www . bbc . com / mundo / noticias / 2013 
 / 02 / 130218 _ ciudades _
  []
 
 
-Underfull \hbox (badness 3503) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\OT1/cmr/m/n/10.95 Bruselas lle-va a es-pa~na a la jus-ti-cia eu-ro-pea por l
+a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmr/m/n/10.95 con-ta-mi-na-ci^^Son en ma-drid y bar-ce-lo-na.  URL [][]$\O
+T1/cmtt/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmtt/m/n/10.95 / / www . elconfidencial . com / mundo / europa / 2019-[]07
+-[]25 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/cmtt/m/n/10.95 bruselas-[]espana-[]justicia-[]europea-[]contaminacion _ 21
+44223/$[][]\OT1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 43--43
 []\OT1/cmr/m/n/10.95 Formatos - por-tal de da-tos abier-tos del ayun-ta-mien-to
  de ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10.95 drid.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / datos . madr
 id . es / portal / site / egob /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmtt/m/n/10.95 menuitem . 400a817358ce98c34e937436a8a409a0 / ?vgnextoid =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmtt/m/n/10.95 b07512b9ace9f310VgnVCM100000171f5a0aRCRD & vgnextchannel =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmtt/m/n/10.95 b07512b9ace9f310VgnVCM100000171f5a0aRCRD & vgnextfmt = defa
 ult$[][]\OT1/cmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 38--38
+Underfull \hbox (badness 4454) in paragraph at lines 49--49
 []\OT1/cmr/m/n/10.95 Git.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / en . wikipe
 dia . org / w / index . php ? title = Git &
  []
 
-[70
+[84
 
 ]
-Underfull \hbox (badness 6125) in paragraph at lines 59--59
+Underfull \hbox (badness 6157) in paragraph at lines 76--76
+[]\OT1/cmr/m/n/10.95 Ambient (out-door) air qua-lity and health, .  URL [][]$\O
+T1/cmtt/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\OT1/cmtt/m/n/10.95 / / www . who . int / news-[]room / fact-[]sheets / detail 
+/ ambient-[](outdoor )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/10.95 Protocolo de ac-tua-ci^^Son pa-ra epi-so-dios de con-ta-mi
+-na-ci^^Son
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 86--86
+\OT1/cmr/m/n/10.95 por di^^Soxi-do de nitr^^Sogeno - ayun-ta-mien-to de ma-drid
+.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[][]$\OT1/cmtt/m/n/10.95 https : / / www . madrid . es / portales / munimadrid 
+/ es / Inicio /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/cmtt/m/n/10.95 Medidas-[]especiales-[]de-[]movilidad / Protocolo-[]de-[]co
+ntaminacion /
+ []
+
+
+Overfull \hbox (118.40338pt too wide) in paragraph at lines 86--86
+\OT1/cmtt/m/n/10.95 Protocolo-[]de-[]actuacion-[]para-[]episodios-[]de-[]contam
+inacion-[]por-[]dioxido-[]de-[]nitrogeno /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/cmtt/m/n/10.95 ?vgnextoid = fd8718cea863c410VgnVCM1000000b205a0aRCRD &
+ []
+
+
+Underfull \hbox (badness 6125) in paragraph at lines 91--91
 []\OT1/cmr/m/n/10.95 State of glo-bal air 2018: Over 7 bi-llion peo-ple fa-ce u
 n-sa-fe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 \OT1/cmr/m/n/10.95 air.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / www . healthe
 ffects . org / announcements /
  []
 
 
-Overfull \hbox (0.72261pt too wide) in paragraph at lines 59--59
+Overfull \hbox (0.72261pt too wide) in paragraph at lines 91--91
 \OT1/cmtt/m/n/10.95 state-[]global-[]air-[]2018-[]over-[]7-[]billion-[]people-[
 ]face-[]unsafe-[]air$[][]\OT1/cmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 65--65
+Underfull \hbox (badness 2980) in paragraph at lines 97--97
 []\OT1/cmr/m/n/10.95 Universidad car-los III de ma-drid - la in-te-li-gen-cia u
 bi-cua cam-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 65--65
+Underfull \hbox (badness 5331) in paragraph at lines 97--97
 \OT1/cmr/m/n/10.95 biar^^Sa nues-tra vi-da en me-nos de una d^^Seca-da.  URL []
 []$\OT1/cmtt/m/n/10.95 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 \OT1/cmtt/m/n/10.95 / / portal . uc3m . es / portal / page / portal / actualida
 d _ cientifica /
  []
 
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
 
-Underfull \hbox (badness 2884) in paragraph at lines 70--70
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+
+[85]
+Underfull \hbox (badness 2884) in paragraph at lines 102--102
 []\OT1/cmr/m/n/10.95 All the 'little of vi-sua-li-sa-tion of de-sign'.  URL [][
 ]$\OT1/cmtt/m/n/10.95 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
 \OT1/cmtt/m/n/10.95 visualisingdata . com / 2016 / 03 / little-[]visualisation-
 []design/$[][]\OT1/cmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []\OT1/cmr/m/n/10.95 Wayback ma-chi-ne.  URL [][]$\OT1/cmtt/m/n/10.95 https : /
  / web . archive . org / web /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \OT1/cmtt/m/n/10.95 20120414062644 / http : / / www . magrama . gob . es / imag
 enes / es / PNMCA _
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 80--80
+Underfull \hbox (badness 4872) in paragraph at lines 114--114
+[]\OT1/cmr/m/n/10.95 20Minutos.  Eu-ro-pa podr^^S^^Pa de-nun-ciar a es-pa~na an
+-te la jus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10.95 ti-cia por la ba-ja ca-li-dad del ai-re en ma-drid y bar-ce-
+lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10.95 na.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / www . 20minuto
+s . es / noticia / 3712752 / 0 /
+ []
+
+
+Overfull \hbox (109.44768pt too wide) in paragraph at lines 114--114
+\OT1/cmtt/m/n/10.95 comision-[]europea-[]denunciar-[]espana-[]justicia-[]baja-[
+]calidad-[]aire-[]madrid-[]barcelona/$[][]\OT1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/10.95 Medio am-bien-te.  La con-ta-mi-na-ci^^Son au-men-ta la mo
+r-ta-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/10.95 dad a cor-to pla-zo en ma-drid y bar-ce-lo-na, seg^^Sun un m
+a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/10.95 cro-es-tu-dio.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / www
+ . eldiario . es / sociedad /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmtt/m/n/10.95 contaminacion-[]mortalidad-[]Madrid-[]Barcelona-[]macroestu
+dio _ 0 _
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 126--126
 []\OT1/cmr/m/n/10.95 Apache-Github.  Apa-che li-cen-se 2.0, 2004.  URL [][]$\OT
 1/cmtt/m/n/10.95 https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []\OT1/cmr/m/n/10.95 Ben Bal-ter.  Open sour-ce li-cen-se usa-ge on git-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \OT1/cmr/m/n/10.95 hub.com, 2015.  URL [][]$\OT1/cmtt/m/n/10.95 https : / / git
 hub . com / blog /
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 86--86
+Underfull \hbox (badness 2735) in paragraph at lines 132--132
 \OT1/cmtt/m/n/10.95 1964-[]open-[]source-[]license-[]usage-[]on-[]github-[]com$
 [][]\OT1/cmr/m/n/10.95 .   (Ci-ta-do en
  []
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 105.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ulasy.fd
+LaTeX Info: Redefining \. on input line 167.
+LaTeX Info: Redefining \% on input line 167.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+
+[86]
+LaTeX Font Info:    Try loading font information for U+lasy on input line 167.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 1308) in paragraph at lines 105--105
+Underfull \hbox (badness 1308) in paragraph at lines 167--167
 []\OT1/cmr/m/n/10.95 denoticias.  In-for-me de eva-lua-ci^^Son de la ca-li-dad 
 del ai-re en es-
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 105--105
+Underfull \hbox (badness 5939) in paragraph at lines 167--167
 \OT1/cmr/m/n/10.95 pa~na [] de-No-ti-cias.  URL [][]$\OT1/cmtt/m/n/10.95 https 
 : / / www . denoticias . es / notas /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 \OT1/cmtt/m/n/10.95 informe-[]de-[]evaluacion-[]de-[]la-[]calidad-[]del-[]aire-
 []en-[]espana .
  []
 
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
 
-Overfull \vbox (0.8521pt too high) has occurred while \output is active []
-
-
-[71]
-Underfull \hbox (badness 1281) in paragraph at lines 121--121
+Underfull \hbox (badness 1281) in paragraph at lines 183--183
 []\OT1/cmr/m/n/10.95 Github.  Choo-se an open sour-ce li-cen-se, 2016.  URL [][
 ]$\OT1/cmtt/m/n/10.95 https : / /
  []
 
-)
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+
+[87])
 LaTeX Info: Redefining \. on input line 548.
 LaTeX Info: Redefining \% on input line 548.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[72]
+[88]
 \openout2 = `./tex/A_Plan_proyecto.aux'.
 
  (./tex/A_Plan_proyecto.tex
@@ -2271,11 +2530,11 @@ Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <14.4> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 1.
 
-[73
+[89
 
 
 ]
-<./img/backlog.png, id=1238, 756.8275pt x 678.535pt>
+<./img/backlog.png, id=1433, 756.8275pt x 678.535pt>
 File: ./img/backlog.png Graphic file (type png)
 <use ./img/backlog.png>
 Package pdftex.def Info: ./img/backlog.png  used on input line 31.
@@ -2286,120 +2545,136 @@ LaTeX Info: Redefining \% on input line 31.
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[74]
+[90]
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[75 <./img/backlog.png>]
+[91 <./img/backlog.png>]
 Overfull \hbox (5.08684pt too wide) in paragraph at lines 46--47
 []\OT1/cmr/m/it/10.95 Retrospective Mee-ting\OT1/cmr/m/n/10.95 : es-ta reuni^^S
 on tam-bi^^Sen se rea-li-za-la fi-na-li-zar el \OT1/cmr/m/it/10.95 Sprint\OT1/c
 mr/m/n/10.95 .
  []
 
-<./img/scrumBoard.png, id=1252, 670.505pt x 171.64125pt>
+<./img/scrumBoard.png, id=1447, 670.505pt x 171.64125pt>
 File: ./img/scrumBoard.png Graphic file (type png)
 <use ./img/scrumBoard.png>
 Package pdftex.def Info: ./img/scrumBoard.png  used on input line 64.
 (pdftex.def)             Requested size: 332.09775pt x 85.01111pt.
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[76 <./img/scrumBoard.png>]
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+[92 <./img/scrumBoard.png>]
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[77]
-<./img/sprint1.png, id=1269, 695.59875pt x 563.10374pt>
+[93]
+<./img/sprint1.png, id=1465, 695.59875pt x 563.10374pt>
 File: ./img/sprint1.png Graphic file (type png)
 <use ./img/sprint1.png>
 Package pdftex.def Info: ./img/sprint1.png  used on input line 111.
 (pdftex.def)             Requested size: 332.09775pt x 268.83463pt.
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[78 <./img/sprint1.png>]
-<./img/sprint2.png, id=1278, 913.4125pt x 516.93124pt>
+[94 <./img/sprint1.png>]
+<./img/sprint2.png, id=1474, 913.4125pt x 516.93124pt>
 File: ./img/sprint2.png Graphic file (type png)
 <use ./img/sprint2.png>
 Package pdftex.def Info: ./img/sprint2.png  used on input line 148.
 (pdftex.def)             Requested size: 332.09775pt x 187.94083pt.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[79]
-LaTeX Info: Redefining \. on input line 177.
-LaTeX Info: Redefining \% on input line 177.
-
-Overfull \vbox (0.8521pt too high) has occurred while \output is active []
-
-
-[80 <./img/sprint2.png>]
-<./img/sprint3.png, id=1297, 816.04875pt x 496.85625pt>
+[95 <./img/sprint2.png>]
+<./img/sprint3.png, id=1483, 816.04875pt x 496.85625pt>
 File: ./img/sprint3.png Graphic file (type png)
 <use ./img/sprint3.png>
 Package pdftex.def Info: ./img/sprint3.png  used on input line 185.
 (pdftex.def)             Requested size: 332.09775pt x 202.19609pt.
-
-
-LaTeX Warning: Reference `sprint4_img' on page 81 undefined on input line 187.
-
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[81 <./img/sprint3.png>]
-
-LaTeX Warning: Reference `sprint5_img' on page 82 undefined on input line 224.
-
-LaTeX Info: Redefining \. on input line 260.
-LaTeX Info: Redefining \% on input line 260.
+[96]
+LaTeX Info: Redefining \. on input line 211.
+LaTeX Info: Redefining \% on input line 211.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[82]
-<./img/licencias.png, id=1322, 639.38875pt x 376.40625pt>
+[97 <./img/sprint3.png>]
+<./img/sprint4.png, id=1501, 823.075pt x 584.1825pt>
+File: ./img/sprint4.png Graphic file (type png)
+<use ./img/sprint4.png>
+Package pdftex.def Info: ./img/sprint4.png  used on input line 222.
+(pdftex.def)             Requested size: 332.09775pt x 235.71013pt.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+
+[98 <./img/sprint4.png>]
+<./img/sprint5.png, id=1511, 806.01125pt x 391.4625pt>
+File: ./img/sprint5.png Graphic file (type png)
+<use ./img/sprint5.png>
+Package pdftex.def Info: ./img/sprint5.png  used on input line 256.
+(pdftex.def)             Requested size: 332.09775pt x 161.28912pt.
+<./img/planningGantt.png, id=1513, 1936.23375pt x 531.48563pt>
+File: ./img/planningGantt.png Graphic file (type png)
+<use ./img/planningGantt.png>
+Package pdftex.def Info: ./img/planningGantt.png  used on input line 263.
+(pdftex.def)             Requested size: 332.09775pt x 91.15422pt.
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+
+[99 <./img/sprint5.png>]
+<./img/licencias.png, id=1530, 639.38875pt x 376.40625pt>
 File: ./img/licencias.png Graphic file (type png)
 <use ./img/licencias.png>
-Package pdftex.def Info: ./img/licencias.png  used on input line 261.
+Package pdftex.def Info: ./img/licencias.png  used on input line 291.
 (pdftex.def)             Requested size: 332.09775pt x 195.50838pt.
-<./img/creativecommons.png, id=1326, 631.35875pt x 173.64874pt>
-File: ./img/creativecommons.png Graphic file (type png)
-<use ./img/creativecommons.png>
-Package pdftex.def Info: ./img/creativecommons.png  used on input line 267.
-(pdftex.def)             Requested size: 332.09775pt x 91.34183pt.
-LaTeX Info: Redefining \. on input line 267.
-LaTeX Info: Redefining \% on input line 267.
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[83 <./img/licencias.png>])
+[100 <./img/planningGantt.png>]
+<./img/creativecommons.png, id=1539, 631.35875pt x 173.64874pt>
+File: ./img/creativecommons.png Graphic file (type png)
+<use ./img/creativecommons.png>
+Package pdftex.def Info: ./img/creativecommons.png  used on input line 297.
+(pdftex.def)             Requested size: 332.09775pt x 91.34183pt.
+)
 LaTeX Info: Redefining \. on input line 548.
 LaTeX Info: Redefining \% on input line 548.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 
-[84 <./img/creativecommons.png>]
+[101 <./img/licencias.png> <./img/creativecommons.png>]
 
 Class memoir Warning: The material used in the headers is too large
 (14.4521pt) for the given head height (13.6pt), it is recommended to
@@ -2430,32 +2705,28 @@ LaTeX Info: Redefining \% on input line 26.
 (./tex/A_Plan_proyecto.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 555.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 555.
+Package rerunfilecheck Info: File `memoria.out' has not changed.
+(rerunfilecheck)             Checksum: 01B0D5B50EB22626AE880C41DD57E4BA;3700.
 
 
-Package rerunfilecheck Warning: File `memoria.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package rerunfilecheck Warning: File `memoria.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
 
-Package rerunfilecheck Info: Checksums for `memoria.out':
-(rerunfilecheck)             Before: 62587B1E4093C754E8AA6CA66C142225;3716
-(rerunfilecheck)             After:  224492E2725730175ACCD11DE0AEA738;3710.
-Package rerunfilecheck Info: File `memoria.brf' has not changed.
-(rerunfilecheck)             Checksum: 8FDB11F5EC0E0277B9B799495F7D1DA3;2806.
+Package rerunfilecheck Info: Checksums for `memoria.brf':
+(rerunfilecheck)             Before: B25C8F47DE79A57B7484D8BA962E36C8;3278
+(rerunfilecheck)             After:  4746080632E7D30CE4A3A13B9D96853F;3404.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27705 strings out of 492616
- 468026 string characters out of 6129482
- 655140 words of memory out of 5000000
- 30904 multiletter control sequences out of 15000+600000
+ 27948 strings out of 492616
+ 472771 string characters out of 6129482
+ 662431 words of memory out of 5000000
+ 31084 multiletter control sequences out of 15000+600000
  549401 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,20n,66p,1173b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2476,7 +2747,7 @@ te\040\\protect\040\\begingroup\040\\def\040\\MessageBreak\040{\012\(spanish\)\
 040\040\040\040\040\040\040\040\040\040\040\040\040\040\040\040}\\let\040\\prot
 ect\040\\immediate\\write\040\\@unused\040{\012Package\040spanish\040Warning:\0
 40Replacing\040`OT1/cmr/m/n'\040by\040\\MessageBreak\040faked\040small\040caps\
-040on\040input\040line\040105.\012}\\endgroup\040\\uppercase\040{vii}}} has bee
+040on\040input\040line\040167.\012}\\endgroup\040\\uppercase\040{vii}}} has bee
 n referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{page.\\protect\040\\unhbox\040\\voidb@x\040\\hbox\0
@@ -2496,7 +2767,7 @@ vrule\040height.7\\baselineskip\040depth.3\\baselineskip\040width\\z@\040}\\let
 0\040\040\040\040\040\040\040\040\040\040\040\040\040\040\040}\\let\040\\protec
 t\040\\immediate\\write\040\\@unused\040{\012Package\040spanish\040Warning:\040
 Replacing\040`OT1/cmr/m/n'\040by\040\\MessageBreak\040faked\040small\040caps\04
-0on\040input\040line\040105.\012}\\endgroup\040\\uppercase\040{v}}} has been re
+0on\040input\040line\040167.\012}\\endgroup\040\\uppercase\040{v}}} has been re
 ferenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{page.\\protect\040\\unhbox\040\\voidb@x\040\\hbox\0
@@ -2516,7 +2787,7 @@ vrule\040height.7\\baselineskip\040depth.3\\baselineskip\040width\\z@\040}\\let
 0\040\040\040\040\040\040\040\040\040\040\040\040\040\040\040}\\let\040\\protec
 t\040\\immediate\\write\040\\@unused\040{\012Package\040spanish\040Warning:\040
 Replacing\040`OT1/cmr/m/n'\040by\040\\MessageBreak\040faked\040small\040caps\04
-0on\040input\040line\04054.\012}\\endgroup\040\\uppercase\040{v}}} has been ref
+0on\040input\040line\04080.\012}\\endgroup\040\\uppercase\040{v}}} has been ref
 erenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{page.\\protect\040\\unhbox\040\\voidb@x\040\\hbox\0
@@ -2536,7 +2807,7 @@ vrule\040height.7\\baselineskip\040depth.3\\baselineskip\040width\\z@\040}\\let
 0\040\040\040\040\040\040\040\040\040\040\040\040\040\040\040}\\let\040\\protec
 t\040\\immediate\\write\040\\@unused\040{\012Package\040spanish\040Warning:\040
 Replacing\040`OT1/cmr/m/n'\040by\040\\MessageBreak\040faked\040small\040caps\04
-0on\040input\040line\04044.\012}\\endgroup\040\\uppercase\040{v}}} has been ref
+0on\040input\040line\04055.\012}\\endgroup\040\\uppercase\040{v}}} has been ref
 erenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{page.\\protect\040\\unhbox\040\\voidb@x\040\\hbox\0
@@ -2586,10 +2857,10 @@ ist/fonts/type1/public/cbfonts/grmi1095.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/cbfonts/grmn1095.pfb></usr/local/texlive/2019/texmf-dist/fo
 nts/type1/public/cbfonts/grxn1095.pfb></usr/local/texlive/2019/texmf-dist/fonts
 /type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on memoria.pdf (95 pages, 8880290 bytes).
+Output written on memoria.pdf (112 pages, 10122496 bytes).
 PDF statistics:
- 1493 PDF objects out of 1728 (max. 8388607)
- 1261 compressed objects within 13 object streams
- 324 named destinations out of 1000 (max. 500000)
- 633 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1715 PDF objects out of 1728 (max. 8388607)
+ 1432 compressed objects within 15 object streams
+ 370 named destinations out of 1000 (max. 500000)
+ 718 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 \capitulo{5}{Aspectos relevantes del desarrollo del proyecto}
 
-Este apartado pretende recoger de manera teórica y breve los aspectos más interesantes del desarrollo del proyecto así como su justificación: decisiones que se han tomado, avances evolutivos por tipo y problemas que surgieron durante toda la realización del proyecto.
+Este apartado pretende recoger de manera teórica y muy breve los aspectos más interesantes del desarrollo del proyecto así como su justificación: decisiones que se han tomado, avances evolutivos por tipo y problemas que surgieron durante toda la realización del proyecto.
 
 
 \section{Elección del proyecto}\label{inicio-proyecto}
@@ -22,9 +22,10 @@ En resumen, ambas decisiones han fomentado de manera positiva tanto la motivaci�
 \section{Desarrollo análisis datos}
 El modelo empleado para el desarrollo del proyecto comprende la exploración, transformación y posterior visualización de datos, se detalla de manera precisa en el apartado 7. 
 
-Hay que destacar aquí que cuando hablamos de Big Data estamos hablando de cantidades realmente enormes pero en este caso, aún con todo los datos descargados de todos los años, no supone una cantidad excesivamente grande de datos. Es por eso que se han elegido este tipo de lenguajes de programación, quizás más enfocados también a otras áreas pero perfectamente válidos para un estudio de este tipo.
+Hay que destacar aquí que cuando hablamos de \textit{Big Data} estamos hablando de cantidades realmente enormes pero en este caso, aún con todo los datos descargados de todos los años, no supone una cantidad excesivamente grande de datos. Estamos hablando de que podemos llegar a un poco más de millón de filas si juntamos todos los datos, por ejemplo para el fichero utilizado para la visualización final. Pero hablamos de \textit{31831} filas para el caso de los meses que llevamos de 2019 o \textit{54831} filas para todo 2018. 
 
- \hl{SEGUIR AQUI}
+Es por esta razón que se han elegido este tipo de lenguajes de programación, quizás más enfocados también a otras áreas pero perfectamente válidos para un estudio de este tipo.
+
  
 \section{Desarrollo visualización}\label{grafico}
 La parte de visualización comprende varias partes:
@@ -32,35 +33,41 @@ La parte de visualización comprende varias partes:
 \begin{itemize}
 	\item La parte final del \textit{dashboard}, realizada con \textit{PowerBI}.
 	\item Todas las gráficas internas que se han realizado en los diferentes lenguajes de programación, con ayuda de diferentes bibliotecas, y con la finalidad última de explorar los datos o ayudarse a las explicaciones.
-	\item El uso de otras herramientas, ya nombradas, mediante las cuales también se han realizado gráficas. Ya sea de apoyo a la memoria, como explicación añadida web o para demostrar ciertas afirmaciones.
+	\item El uso de otras herramientas, ya nombradas, mediante las cuales también se han realizado gráficas. Ya sea de apoyo a la memoria, como explicación añadida a la web o para demostrar ciertas afirmaciones.
 \end{itemize}
 
 En general ha sido una parte costosa en términos de tiempo. Además se han intentado seguir guías de estilo \cite{visualisation_2016} adecuadas o tener en cuenta gamas de colores aptas realizando la visualización de la mejor manera posible. 
 
 \section{Desarrollo web}\label{dweb}
 
-Como complemento a la visualización se ha realizado también una pequeña web, alojada en \textit{github pages}, que pretende ser un pequeño resumen vertical de todo lo que se ha estudiado en el proyecto.
+Como complemento a la visualización se ha realizado también una pequeña web, alojada en \textit{github pages}, que pretende ser un pequeño resumen vertical de las partes que nos han parecido de mayor relevancia. Dado que algunas veces existen problemas de insertado a la hora de introducir páginas propias de \textit{PowerBi} en sitios externos al mismo hemos decidido realizar esta opción para evitar problemas.
 
 \section{Documentación}\label{docs}
 
-La documentación se ha realizado de manera progresiva siempre que se podía se añadían partes de la misma y siempre preguntando sobre las cosa que no estaban claras a los tutores, que han ayudado convenientemente a la realización de la misma. Se han realizado dos envíos a los tutores antes del envío final para su corrección .
+La documentación se ha realizado de manera progresiva siempre que se podía se añadían partes de la misma y siempre preguntando sobre mejoras o partes que no estaban claras a los tutores, que han ayudado convenientemente a la realización de la misma. Se han realizado dos envíos a los tutores antes del envío final para su corrección .
 
 \section{Dificultades encontradas}\label{inicio-proyecto}
 
-Durante el desarrollo 
+ \hl{TERMINAR DE REDACTAR}
 
-Una de las partes más importantes del proyecto, en cuestión de tiempo, ha sido la de familiarizarse con los conceptos científicos que requería el mismo. 
+Una de las partes más importantes del proyecto, en cuestión de tiempo, ha sido la de familiarizarse con los conceptos científicos que requería el mismo. Quizás es necesario algo de autocrítica en este punto dado que una parte importante del tiempo se ha ido aquí en desventaja de otras partes. 
 
- \hl{SEGUIR AQUI}
+Existen en los datos una gran falta de homogeneidad. A pesar de que la página del ayuntamiento de Madrid está bastante detallada y correctamente explicada los datos varían a lo largo de los años, no solo en formatos sino también en diferentes aspectos. 
 
+Existen problemas como por ejemplo el renombrado de calles los cuáles se deben intuir por que no aparecen por ningún lado especificados. Éste último error se dió con el caso de \textit{estación plaza fernandez ladreda} y \textit{plaza elíptica}, en algunas mediciones vienen determinadas como dos estaciones distintas. Sin embargo, en los datos para la interpretación de los ficheros de medición ambas tienen el código 56. Esto es debido a que sufrió un cambio de nombre. Si este tipo de cambios no se especifican para el usuario que se encuentra analizando los datos resulta muy costoso en terminos de tiempo el averiguarlo.
+
+Respecto a los datos más actuales los de 2019, existen errores de magnitud como por ejemplo no existen los datos para \ce{PM10} en ninguna de las medidas. Esto es debido a un error que los técnicos deben subsanar, como ya se ha informado. Por otro lado hubiera sido interesante el comparar el cese de Madrid Central, en junio de 2019, para comprobar si realmente ha afectado a los niveles pero actualmente solo se encuentra disponible un mes desde que la normativa finalizó. Esto es debido a que a fecha de presentación de este trabajo, septiembre de 2019, todavía no está disponible el mes de agosto. 
+
+Algunos otros contratiempos encontrados han sido con \textit{Mapbox}. Desde aquí se ha intentado poner con atención al cliente de este sotware, por el momento sin respuesta, ya que no esta funcionando como debiera. El problema radica en que los mapas básicos que ofrece \textit{PowerBi} no permite realizar mapas de calor, entre otros, que resultan muy útiles para observar la contaminación. \textit{Mapbox} es de pago pero permite una versión gratuita limitada por el número peticiones que se realizan cada hora. Actualmente la configuración, que se realiza mediante un token privado, funciona a días. 
+ 
 
 \section{Agradecimientos}\label{reconocimientos}
-Me gustaría añadir este pequeño apartado ya que afortunadamente han sido muchas las personas que se han visto involucradas en el proyecto de manera indirecta. 
+Este pequeño apartado a modo de agradecimiento a las siguientes personas que han contribuido de manera directa o indirecta al proyecto.
 \begin{itemize}
-	\item \textit{Jorge Gomez}, \textit{Javi Santana} (fundadores de \textbf{tinybird}): además del acceso a la \textit{beta} de la aplicación se han prestado a responder de manera altruista todas las preguntas que he realizado sobre la misma.
+	\item \textit{Jorge Gomez}, \textit{Javi Santana} (fundadores de \textbf{tinybird}): además del acceso a la \textit{beta} de la aplicación se han prestado a responder de manera altruista todas las preguntas que se han realizado sobre la misma.
 	\item \textit{José Amador Viejo} (Director general de control ambiental, \textbf{Ayto de Madrid}): ha respondido sin ningún problema a las dudas sobre legislación que se han realizado.
-	\item \textit{Juan Barcena del Rieg} (Portavoz de \textbf{Ecologistas en acción}): se han intercambiado varios correos, sobre todo para la parte legislativa y también de la parte ambiental.
-	\item \textit{Javier Di Deco Sampedro} (Data Scientist en \textbf{Piperlab}): existe un \href{https://twitter.com/datoxnitro_bot}{bot de twitter} realizado por la mencionada empresa que publica en tiempo real los niveles de contaminación por dióxido de nitrógeno de la ciudad de Madrid. Se envió un mensaje a la empresa para aprender las metodologías empleadas en el desarrollo del \textit{bot} y Javier me atendió de manera amable y eficaz.
+	\item \textit{Juan Barcena del Riego} (Portavoz de \textbf{Ecologistas en acción}): se han intercambiado varios correos, sobre todo para la parte legislativa y también de la parte ambiental.
+	\item \textit{Javier Di Deco Sampedro} (Data Scientist en \textbf{Piperlab}): existe un \href{https://twitter.com/datoxnitro_bot}{bot de twitter} realizado por la mencionada empresa que publica en tiempo real los niveles de contaminación por dióxido de nitrógeno de la ciudad de Madrid. Se envió un mensaje a la empresa para aprender las metodologías empleadas en el desarrollo del \textit{bot} y Javier nos atendió de manera amable y eficaz.
 	\item \textit{Brenda Valverde}, actual periodista de \textbf{Newtral} mantuvimos una interesante conversación de carácter periodístico sobre contaminación ambiental en general y Madrid central en particular de la que se obtuvieron diversas fuentes para recopilar información. Es posible seguir su cuenta de twitter \href{https://twitter.com/brbrebren}{aquí}.
 	\item \textit{Carlos E.Vivaracho Pascual} (tutor académico, \textbf{Universidad de Valladolid}): siempre atento durante el desarrollo del proyecto y poniendo las cosas fáciles cuando había incertidumbre.
     \item \textit{Fernando Cuenca Cabezas} (tutor de empresa, \textbf{Minsait}): cómplice de algunas de las decisiones del proyecto siempre se ha prestado a la colaboración durante todo del desarrollo. Además ha resultado fundamental para abordar diversas cuestiones técnicas.

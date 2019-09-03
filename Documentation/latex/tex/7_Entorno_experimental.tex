@@ -206,7 +206,7 @@ Datawrapper (ver figura \ref{datawrapper}) es otra herramienta que nos ayuda a a
     
         \imagen{datawrapper}{\footnotesize{Detalle \textit{Datawrapper}. Fuente: Elaboración propia.}\label{datawrapper}}
  
-A continuaciónn, en las tablas 7.9 y 7.9, se expone la tipología de las variables en su conjunto. Aunque es posible que no se utilicen todas, sí es necesario introducir aquí todas las variables para establecer una relación con lo descrito en páginas anteriores.
+A continuación, en las tablas 7.9 y 7.9, se expone la tipología de las variables en su conjunto. Aunque es posible que no se utilicen todas, sí es necesario introducir aquí todas las variables para establecer una relación con lo descrito en páginas anteriores.
 
     %DATOS HORARIOS
     \begin{table}[H]
@@ -253,20 +253,17 @@ A continuaciónn, en las tablas 7.9 y 7.9, se expone la tipología de las variab
 	\end{center}
 \end{table}
 
-Para conocer más a fondo nuestros datos algunas estadísticas básicas de este tipo que debemos calcular para nuestro conjunto de datos son la media, mediana, el rango y la desviación estándar. La media y la mediana son medidas de la ubicación de un conjunto de valores. La moda es el valor que ocurre con mayor frecuencia en el conjunto de datos. El rango o la desviación estándar son medidas de la dispersión de los datos. Examinar estas mediciones nos dará una idea más precisa de la naturaleza de nuestros datos.
+Para conocer más a fondo nuestros datos algunas estadísticas básicas de este tipo que podemos calcular para nuestro conjunto de datos son la media, mediana, el rango y la desviación estándar. Son muy interesantes para este estudio los promedios y la media de los gases contaminantes además de los máximos. En numerosas ocasiones organismos como la OMS \cite{oms_1} dictaminan episodios de contaminación en función de la media cada\textit{ x} período horario. Cada contaminante tiene sus medidas y cada organismo dictamina su correcta interpretación.
 
- \hl{Este parrafo de arriba QUE EH}
  
-
-
 \section{Transformación de datos}
-Tras explorar y entender los datos es hora de transformarlos de acuerdo a nuestros objetivos finales. Es cierto que se han utilizado diferentes lenguajes de programación pero en todos se han seguido patrones comunes común a la hora de transformar los datos.
+Tras explorar y entender los datos es hora de transformarlos de acuerdo a nuestros objetivos finales. Es cierto que se han utilizado diferentes lenguajes de programación pero en todos se han seguido patrones comunes a la hora de transformar los datos.
 
-Algunas características comunes de la transformación de los datos han sido el renombramiento de columnas, el establecer el tipo de dato adecuado por columnas para realizar operaciones y evitar problemas a la hora de realizar operaciones, el intercambiar las columnas de validación para establecer los datos que son correctos o el agrupar por contenido para obtener una determinada gráfica.
+Algunas características comunes de la transformación de los datos han sido el renombramiento de columnas, el establecer el tipo de dato adecuado por columnas para realizar operaciones y evitar problemas a la hora de realizar operaciones, el intercambiar las columnas de validación para establecer los datos que son correctos o el agrupar por contenido para obtener una determinada gráfica. Además se han limpiado las columnas no válidas, se han desechado las que no iban a usarse y se han agrupado las columnas de tipo fecha. 
 
- \hl{Este parrafo de arriba QUE EH}
+Por otro lado, en algunas ocasiones los cálculos de promedios, medias o recuentos se han realizado directamente sobre \textit{PowerBi.} Los niveles marcados por la OMS en algunas ocasiones son fijos por lo que también se han añadido de manera manual cuando ha sido necesario. 
 
-Vamos a poner un ejemplo del procedimiento a seguir para \href{https://tinybird.co//}{Tinybird.co}. Lo primero que hay que hacer es cargar los datos. Como hemos nombrado se trata de una aplicación en beta por lo tanto el entorno gráfico no está disponible todavía para subir cantidades  grandes de datos por lo que he creado un script en bash que a través de un bucle sube todos los archivos. 
+Vamos a poner un ejemplo del procedimiento a seguir para \href{https://tinybird.co//}{Tinybird.co}. Lo primero que hay que hacer es cargar los datos. Como hemos nombrado se trata de una aplicación en beta por lo tanto el entorno gráfico no está disponible todavía para subir cantidades  grandes de datos por lo que se ha creado un script en bash que a través de un bucle sube todos los archivos. 
 
 \lstset{breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
@@ -286,11 +283,11 @@ curl -F "csv=@${month}_mo18.csv" \
 done
 \end{lstlisting}
 
-Una vez tenemos los datos cargados (ver figura \ref{tiny1}) es el momento de transformar los datos. 
+Una vez tenemos los datos cargados (ver figura \ref{tiny1}) es el momento de transformar los datos de acuerdo a nuestro estudio particular. 
 
 \imagen{tinybird1}{\footnotesize{Datos cargados en \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny1}}
 
-En este caso queremos observar si existen patrones anuales en los datos de la cantidad de \ce{CO2} para después comprobar la misma hipótesis de manera semanal y por horas. Lo primero que hacemos es seleccionar de nuestro conjunto de datos lo que nos hace falta, además transformamos la fecha (ya que recordamos que la fecha viene en nuestro fichero de datos original separada en tres columnas diferentes) para una mejor visualización (ver figura \ref{tiny2}).
+En este caso queremos observar si existen patrones anuales en los datos de la cantidad de \ce{NO2} para después comprobar la misma hipótesis de manera semanal y por horas. Lo primero que hacemos es seleccionar de nuestro conjunto de datos lo que nos hace falta, además transformamos la fecha (ya que recordamos que la fecha viene en nuestro fichero de datos original separada en tres columnas diferentes) para una mejor visualización (ver figura \ref{tiny2}).
 
 \imagen{tinybird2}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny2}}
 
@@ -302,46 +299,125 @@ Para terminar agrupamos y ordenamos por lo que nos hace falta para nuestro anál
 
 \imagen{tinybird4}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny4}}
 
- \hl{Explicar python}
+ En el caso de python, cuyo archivo final se ha utilizado para la visualización interactiva, el proceso ha sido muy similar con la peculiaridad de que se han añadido los datos de las estaciones de medida al fichero final. En este caso, como ya he nombrado, se han escogido los datos de 2014 a 2018. Se han seleccionado los datos directamente desde la web para evitar inconsistencias. Hemos tenido que lidiar con los archivos en \textit{.txt}, ya que algunos años solo aparecían en este formato. Hemos hecho un \textit{merge} de los datos de las estaciones junto con los datos de los gases para establecer por estación los tipos de gases medidos. De esta manera se ha logrado enriquecer la visualización añadiendo correspondencia por zonas y estaciones.
+ 
+ 
+ \begin{itemize}
+ 	\item Zona 1
+ 	 \begin{itemize}
+ 		\item Mendez Álvaro
+ 		\item Arganzuela
+ 		\item Carlos V
+ 		\item Parque del Retiro
+ 		\item Escuelas Aguirre
+ 		\item Plaza del Carmen
+ 		\item Paseo de Recoletos
+ 		\item Plaza de España
+ 		\item Manuel Becerra
+ 		\item Barrio Salamanca
+ 		\item Castellana
+ 		\item Gregorio Marañon
+ 		\item Cuatro Caminos
+ 		\item Ciudad Universitaria
+ 		\item Avenida Ramón y Cajal
+ 		\item Plaza Castilla
+ 		\item Barrio del Pilar
+ 	\end{itemize}
+ 	\item Zona 2
+ 	 \begin{itemize}
+ 		\item Moratalaz
+ 		\item Vallecas
+ 		\item Santa Eugenia
+ 		\item Ensanche de Vallecas
+ 	\end{itemize}
+ 	\item Zona 3
+ 	 \begin{itemize}
+ 		\item Arturo Soria
+ 		\item Campo de las Naciones
+ 		\item Juan Carlos I
+ 		\item Urbanización Embajada
+ 		\item Barajas Pueblo
+ 		\item San Chinarro
+ 		\item Tres Olivos Plaza
+ 	\end{itemize}
+ 	\item Zona 4
+ 	 \begin{itemize}
+ 		\item El Pardo
+ 		\item Casa de Campo
+ 		\item Alto de Extremadura
+ 	\end{itemize}
+ 	\item Zona 5
+ 	 \begin{itemize}
+ 		\item Farolillo
+ 		\item Cuatro Vientos
+ 		\item Plaza Fernández Ladreda (Elíptica)
+ 		\item Villaverde
+ 	\end{itemize}
+ \end{itemize}
+
+ 
 
 \section{Visualización de datos}
 Una vez que tenemos los datos transformados de manera adecuada ya podemos concentrarnos en la parte visual. En este trabajo la parte visual está dividia en varias partes, por un lado en todas las gráficas que hemos empleado para explorar los datos; segundo, en una visualización final a modo de dashboard realizada con \textit{PowerBi};  y en una pequeña web resumen de resultados.
 
 
-Siguiendo con el ejemplo nombrado en el apartado anterior y cargando los datos en vega podemos obtener la visualización de acuerdo a nuestro objetivo. En este caso hemos calculado la media de \ce{NO2} anual junto con los máximos (ver figura \ref{NO22018}) repartido por meses.
+Siguiendo con el ejemplo nombrado en el apartado anterior y cargando los datos en \textit{vega} podemos obtener la visualización de acuerdo a nuestro objetivo. En este caso hemos calculado la media de \ce{NO2} por mes (en naranja) junto con los máximos (en azul)  del año 2019, concretamente de enero a julio. En la siguiente figura \ref{NO22019} podemos ver el gráfico de líneas.
 
-%\imagen{NO22019}{\footnotesize{Detalle \ce{NO2} 2018. Fuente: Elaboración propia.}\label{NO22018}}
- \hl{Aqui poner datos actualizados de 2019}
- 
-También lo mismo pero por día de la semana (ver figura \ref{ejemploJulio}), en este caso par el mes de julio.
+\imagen{NO22019}{\footnotesize{Detalle \ce{NO2} 2019. Fuente: Elaboración propia.}\label{NO22019}}
+
+
+También lo mismo pero por día de la semana (ver figura \ref{ejemploJulio}), en este caso para el mes de julio y con un gráfico de barras.
 
 \imagen{ejemploJulio}{\footnotesize{Detalle \ce{NO2} 2019 (julio). Fuente: Elaboración propia.}\label{ejemploJulio}}
 
 
-Y lo mismo pero por horas, en este caso para el 12 de julio (ver figura \ref{ejemplo01julio}).
-\imagen{ejemplo01julio}{\footnotesize{Detalle \ce{NO2} 2019 (12 julio). Fuente: Elaboración propia.}\label{ejemplo01julio}}
+Y lo mismo pero por horas, en este caso para el 1 de julio (ver figura \ref{ejemplo01julio}) y con un gráfico de puntos.
+\imagen{ejemplo01julio}{\footnotesize{Detalle \ce{NO2} 2019 (1 julio). Fuente: Elaboración propia.}\label{ejemplo01julio}}
 
-La parte de la visualización en \textbf{PowerBi} es más interactiva y resulta muy sencilla de utilizar.  Una vez transformados los datos mediante python (descrito en el apartado anterior) se cargan los datos. En este caso he cargado los datos de 2014 a 2018, ya que he considerado que terminar el período anual completo era mejor para el análisis. 
+Con estas tres figuras anteriores ya comenzamos a ver patrones en los datos de los cuales hablaremos en la parte de resultados.
 
-He realizado distintas páginas dentro de PowerBi en las que podemos ver diferentes tipos de gráficos.
+La parte de la visualización en \textbf{PowerBi} es más interactiva y refleja una parte de los datos, 2014 a 2018, desde el punto de vista de la OMS y los gases que esta organización refleja como más perjudiciales para la salud.  Una vez transformados los datos y con el fichero limpio se cargan los datos. He realizado distintas páginas dentro de \textit{PowerBi }en las que podemos ver diferentes tipos de gráficos.
 
 \begin{itemize}
-	\item Página 1: 
+	\item \textbf{Página 1}: Portada del trabajo
+	\item \textbf{Página 2}: Resumen de todos los contaminantes por zonas y años. De este modo se puede ver la variación a lo largo del tiempo de todos los contaminantes principales.
+	\item \textbf{Página 3} (ver figura \ref{PowerBi2}): Esta página-resumen es la misma que la anterior pero en esta ocasión nos centramos tan solo en  \ce{NO2} y se expone la variabilidad por días de la semana pudiendo ver de manera rápida los días más afectados.
+	\imagen{pagina2PowerBi.png}{\footnotesize{Detalle gráfico por día de la semana. Fuente: Elaboración propia.}\label{PowerBi2}}
+
+	\item \textbf{Página 4}: \textit{límites anuales (OMS)},	se exponen aquí la media de las partículas por millón de \ce{PM2,5} y \ce{PM10} , además de  \ce{NO2}.  La línea azul refleja el nivel recomendado por la OMS. Es posible filtar por zonas y ver en las gráficas de barras donde se superan los niveles. Se ve que se respetan los niveles en casi todos los casos y en otros vemos que se supera lo establecido por la OMS.
 	
-	\item Página 2: 
-	 \imagen{powerBi2}{\footnotesize{Detalle \textit{page} en \textit{PowerBi} carga. Fuente: Elaboración propia.}}
+	\item \textbf{Página 5} (ver figura \ref{pagina5}):  \textit{límites diarios (OMS)}, en este caso volvemos a escoger las partículas por millón de \ce{PM2,5} y \ce{PM10} , además de \ce{NO2}. Es importante conocer aquí que dependiendo del contaminante se establecen unos límites distintos por la OMS. En este caso se establecen los límites por día. La línea azul refleja ese límite y los gráficos de color naraja la media diaria para esos valores seleccionados. Es posible también filtrar por zonas y estaciones. 
+	
+	\imagen{pagina5}{\footnotesize{Detalle límite diario OMS. Fuente: Elaboración propia.}\label{pagina5}}
+	
+	\item \textbf{Página 6}: nos centramos en los dos contaminantes más criticos según la OMS, el ozono (\ce{O3}) y el dióxido de nitrógeno (\ce{NO2}). La OMS recomienda un máximo para la media cada ocho horas. Se reflejan en los gráficos ambos contaminantes respectivamente en el primer y segundo gráfico. Como se puede ver superamos con creces los niveles de \ce{O3}.
+	
+	\imagen{pagina6}{\footnotesize{Detalles \ce{O3} y \ce{NO2}  . Fuente: Elaboración propia.}\label{pagina6}}
+	
+	\item \textbf{Página 7}: El procolo anticontaminación es superado en numerosas ocasiones por los diferentes niveles que son los que ponen en alerta al Ayuntamiento. En este informe podemos ver el número de veces que se supera por zonas. El objetivo es poder filtrar con detalle por zona, estación y período.  
+	
+	\item \textbf{Página 8}: La media de \ce{NO2} es la que se utiliza para ver si se han superado esos niveles de los que hablábamos. En esta ocasión podemos ver dos gráficos de líneas que nos sirven para comparar entre estaciones y por período/fecha si se han superado los niveles.
+	
+	\item \textbf{Página 9} (ver figura \ref{MapaNO2}): Es posible ver aquí otra interpretación de la página anterior. En esta ocasión se representa la  acumulación de \ce{NO2} por zonas y horas de manera visual. Concretamente se hace uso de un mapa utilizando un \textit{plugin} de mapbox. 
+	
+	En color amarillo los que ya han superado ese 180 (preaviso), en color rojo los que han superado el 200 (aviso) y en color verde los que no llegan a esos límites. La acumulación cambia y, tal y como recogen los informes del ayuntamiento, se produce a medida que el tráfico aumenta por lo que tiene un efecto tardío.
+	
+	\imagen{MapaNO2}{\footnotesize{Detalle mapa \ce{NO2} (\textit{MapBox}). Fuente: Elaboración propia.}\label{MapaNO2}}
+	
+	\item \textbf{Página 10} (ver figura \ref{NivelProtocolo}): para terminar un mapa de calor que indica el nivel del protocolo para los preavisos (mayor de 180). Sigue la línea del mapa anterior y es posible filtar por zona, hora del día y período.
+	
+	\imagen{NivelProtocolo}{\footnotesize{Detalle nivel protocolo (\textit{MapBox}). Fuente: Elaboración propia.}\label{NivelProtocolo}}
+	
+	\item \textbf{Páginas extra}: también se ha experimentado con otro tipo de gráficos (en este caso siempre con niveles de \ce{NO2}) en los que se puede ver de manera simple, cual es la zona más afectada por tamaño de las palabras, figura \ref{nubePalabras}, en un gráfico de palabras; o dependiendo de la estación/año, figura \ref{powerBitamanos}, en un gráfico de rectángulos. También es posible ver cuáles son los días por semana que más cantidad promedio tienen, figura \ref{powerBidias}, y además si se han superado los avisos. Las posibilidades son infinitas.
+	
+		\imagen{nubePalabras}{\footnotesize{Ejemplo gráfico nube de palabras.}\label{nubePalabras}}
+	
+	
+	\imagen{powerBitamanos}{\footnotesize{Ejemplo gráfico por tamaño/año. Fuente: Elaboración propia.}\label{powerBitamanos}}
 	
 
-	\item Página 3: 
-		\imagen{powerBi3}{\footnotesize{Detalle \textit{page} en \textit{PowerBi} carga. Fuente: Elaboración propia.}}
-	\item Página 4: 
+	\imagen{powerBidias}{\footnotesize{Ejemplo gráfico por días y zonas. Fuente: Elaboración propia.}\label{powerBidias}}
+	
 \end{itemize}
 
-Después también se ha experimentado con otro tipo de gráficos en los que se puede ver de manera clara según el año, figura \ref{tamanos}, cual es la zona más afectada, o en el conjunto completo del período seleccionado (2014-2018) cuál es la zona más afectada, figura \ref{nubePalabras}.
 
-      \imagen{powerBi1}{\footnotesize{Ejemplo gráfico por tamaño. Fuente: Elaboración propia.}\label{tamanos}}
-      
-         \imagen{nubePalabras}{\footnotesize{Ejemplo gráfico nube de palabras.}\label{nubePalabras}}
-      
-
-     

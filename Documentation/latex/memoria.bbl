@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,6 +14,11 @@ Calidad del aire ambiente (exterior) y salud.
 Sistema de vigilancia de la calidad del aire del ayuntamiento de madrid.
 \newblock URL \url{http://www.mambiente.madrid.es/sica/scripts/index.php}.
 
+\bibitem[aut()]{auto_judicial}
+Y van tres: un tercer auto judicial mantiene las multas en madrid central.
+\newblock URL
+  \url{https://www.elconfidencial.com/espana/2019-07-19/tercer-auto-judicial-mantiene-multas-madrid-central_2134295/}.
+
 \bibitem[bbc()]{bbc_ciudades}
 ¿cómo serán las ciudades del futuro? - {BBC} news mundo.
 \newblock URL
@@ -24,6 +29,12 @@ Big data para ciudades inteligentes, los datos para mejorar los servicios en
   las ciudades.
 \newblock URL
   \url{https://blog.ferrovial.com/es/2017/10/big-data-ciudades-inteligentes-servicios/}.
+
+\bibitem[bru()]{bruselas_}
+Bruselas lleva a españa a la justicia europea por la contaminación en madrid
+  y barcelona.
+\newblock URL
+  \url{https://www.elconfidencial.com/mundo/europa/2019-07-25/bruselas-espana-justicia-europea-contaminacion_2144223/}.
 
 \bibitem[for()]{formatos}
 Formatos - portal de datos abiertos del ayuntamiento de madrid.
@@ -48,9 +59,30 @@ Report: London no safer for all its {CCTV} cameras.
 \newblock URL
   \url{https://www.csmonitor.com/World/Europe/2012/0222/Report-London-no-safer-for-all-its-CCTV-cameras}.
 
+\bibitem[mam()]{mambiente}
+Portal web de calidad del aire del ayuntamiento de madrid.
+\newblock URL \url{http://www.mambiente.madrid.es/opencms/opencms/calaire/}.
+
+\bibitem[oms({\natexlab{a}})]{oms_1}
+{OMS} {\textbar} las guías sobre la calidad del aire de la oms y otras fuentes
+  de información, {\natexlab{a}}.
+\newblock URL
+  \url{https://www.who.int/phe/health_topics/outdoorair/databases/air_quality/es/index1.html}.
+
+\bibitem[oms({\natexlab{b}})]{oms_2}
+Ambient (outdoor) air quality and health, {\natexlab{b}}.
+\newblock URL
+  \url{https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health}.
+
 \bibitem[por()]{portal_datosabiertos_madrid}
 Portal de datos abiertos del ayuntamiento de madrid.
 \newblock URL \url{https://datos.madrid.es/portal/site/egob/}.
+
+\bibitem[pro()]{protocolo}
+Protocolo de actuación para episodios de contaminación por dióxido de
+  nitrógeno - ayuntamiento de madrid.
+\newblock URL
+  \url{https://www.madrid.es/portales/munimadrid/es/Inicio/Medidas-especiales-de-movilidad/Protocolo-de-contaminacion/Protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextoid=fd8718cea863c410VgnVCM1000000b205a0aRCRD&vgnextchannel=00b3cf7588c97610VgnVCM2000001f4a900aRCRD}.
 
 \bibitem[sta()]{state_global_air_2018}
 State of global air 2018: Over 7 billion people face unsafe air.
@@ -73,6 +105,20 @@ Wayback machine.
 \newblock URL
   \url{https://web.archive.org/web/20120414062644/http://www.magrama.gob.es/imagenes/es/PNMCA_tcm7-181205.pdf}.
 
+\bibitem[20Minutos()]{20minutos_europa_2019}
+20Minutos.
+\newblock Europa podría denunciar a españa ante la justicia por la baja
+  calidad del aire en madrid y barcelona.
+\newblock URL
+  \url{https://www.20minutos.es/noticia/3712752/0/comision-europea-denunciar-espana-justicia-baja-calidad-aire-madrid-barcelona/}.
+
+\bibitem[ambiente()]{ambiente_contaminacion_estudio}
+Medio ambiente.
+\newblock La contaminación aumenta la mortalidad a corto plazo en madrid y
+  barcelona, según un macroestudio.
+\newblock URL
+  \url{https://www.eldiario.es/sociedad/contaminacion-mortalidad-Madrid-Barcelona-macroestudio_0_934056760.html}.
+
 \bibitem[Apache-Github(2004)]{apache}
 Apache-Github.
 \newblock Apache license 2.0, 2004.
@@ -83,6 +129,22 @@ Ben Balter.
 \newblock Open source license usage on github.com, 2015.
 \newblock URL
   \url{https://github.com/blog/1964-open-source-license-usage-on-github-com}.
+
+\bibitem[Calderón-Garcidueñas et~al.()Calderón-Garcidueñas,
+  González-Maciel, Mukherjee, Reynoso-Robles, Pérez-Guillé, Gayosso-Chávez,
+  Torres-Jardón, Cross, Ahmed, Karloukovski, and
+  Maher]{calderon_garciduenas_combustion_2019}
+Lilian Calderón-Garcidueñas, Angélica González-Maciel, Partha~S. Mukherjee,
+  Rafael Reynoso-Robles, Beatriz Pérez-Guillé, Carlos Gayosso-Chávez,
+  Ricardo Torres-Jardón, Janet~V. Cross, Imad A.~M. Ahmed, Vassil~V.
+  Karloukovski, and Barbara~A. Maher.
+\newblock Combustion- and friction-derived magnetic air pollution nanoparticles
+  in human hearts.
+\newblock 176:\penalty0 108567.
+\newblock ISSN 0013-9351.
+\newblock \doi{10.1016/j.envres.2019.108567}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0013935119303640}.
 
 \bibitem[Casado~Reinaldos()]{casado_reinaldos_big_2018}
 Alejandro Casado~Reinaldos.
