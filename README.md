@@ -77,9 +77,6 @@ Development of an environment model for the analysis of air pollution/air qualit
 │ 
 └───|- /Data Visualization
 │        └─── /Examples
-│          |-- img1
-│          |-- img2
-│          |-- img3
 │
 │        └─── /PowerBi
 │          |-- calidad_aire.pbix
@@ -104,7 +101,7 @@ Development of an environment model for the analysis of air pollution/air qualit
 │        └─── /images
 │
 │        |-- index.html 
-│        |-- README.md (github pages/landing page of the project)
+│        |-- README.md (github pages/landing page with some results)
 │     
 │-- LICENSE.md
 │-- README.md (main)

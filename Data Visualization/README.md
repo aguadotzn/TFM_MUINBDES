@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains some screenshots as examples (_/examples_ folder) about the most useful data visualization that I made with the code. It also contains the **Power BI** file with the main data visualization. 
+>This folder contains some screenshots as examples (_/examples_ folder) about the most useful data visualization that I made with the code (Vega, R or Python). It also contains the **Power BI** file with the main data visualization. 
 
 ![Schema](/Documentation/images/portada.png)
 
@@ -14,7 +14,7 @@ You need to download the [Power BI](https://powerbi.microsoft.com/) software bef
 
 ## Preview
 
-![Schema](/Documentation/images/avg2018.gif)
+![Schema](/Documentation/images/examplePowerBi.gif)
 
 ## Author
 
