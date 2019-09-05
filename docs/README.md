@@ -3,7 +3,7 @@
 **Air quality studio of Madrid city**.
 
 
->This folder contains a landing page with the main results of the project. 
+>This folder contains a landing page with a summary of the project. 
 
 You can visit the page [here](https://aguadotzn.github.io/TFM_MUINBDES/).
 ## Author
