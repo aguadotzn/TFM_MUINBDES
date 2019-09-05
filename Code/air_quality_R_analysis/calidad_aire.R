@@ -26,6 +26,8 @@ contaminante = c("Dióxido de Azufre","Monóxido de Carbono","Monóxido de Nitr�
 # Width of columns
 width <- c(8,2,2,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6)
 
+# TRANSFORM DATA ***********************************************
+
 # Create a dataframe 
 # Invalid measures ("00.00N") are overwritten with "NA".
 for (file in files){
@@ -42,11 +44,6 @@ for (file in files){
     #print('Load...')
   }
 }
-
-# With this line we can know the number of wrong measures per column
-#na_count <- sapply(calidad_aire, function(y) sum(is.na(y)))
-
-# TRANSFORM DATA ***********************************************
 
 #Delete V
 for (i in 8:31) {
@@ -95,6 +92,9 @@ df_calidad_aire <- calidad_aire
 # Summary of the data by each column
 #str(df_calidad_aire)
 
+# With this line we can know the number of wrong measures per column
+#na_count <- sapply(calidad_aire, function(y) sum(is.na(y)))
+
 # With this line we can review the columns and see the (different) values
 levels(df_calidad_aire$estacion)
 #levels(df_calidad_aire$contaminante)
@@ -102,6 +102,8 @@ levels(df_calidad_aire$estacion)
 
 # See the first 20 lines
 # head(df_calidad_aire, n=20)
+
+# VISUALIZE DATA ***********************************************
 
 
 #Measuring code execution time in R (END)
