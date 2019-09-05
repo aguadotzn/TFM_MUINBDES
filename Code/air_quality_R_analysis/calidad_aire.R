@@ -12,9 +12,8 @@ setwd("/Users/adrianaguado/Documents/WorkspaceDataScience/TFM_MUINBDES/Code/data
 #LIBRARIES
 library("ggplot2")
 
-# LOAD DATA ***********************************************
 start.time <- Sys.time() #Measuring code execution time in R (START)
-
+# LOAD DATA *************************************************
 # List name of the files 
 files <- list.files(pattern = ".*mo1[1-9].txt")
 
@@ -26,8 +25,7 @@ contaminante = c("Dióxido de Azufre","Monóxido de Carbono","Monóxido de Nitr�
 # Width of columns
 width <- c(8,2,2,2,2,2,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6)
 
-# TRANSFORM DATA ***********************************************
-
+# TRANSFORM DATA **************************************************
 # Create a dataframe 
 # Invalid measures ("00.00N") are overwritten with "NA".
 for (file in files){
@@ -70,11 +68,11 @@ calidad_aire$values <- apply(calidad_aire[ , cols ] , 1 , paste , collapse = ","
 # Order by timestamp, estación y contaminante
 calidad_aire <- calidad_aire[order(calidad_aire$timestamp, calidad_aire$estacion, calidad_aire$contaminante),]
 
-# EXPORT DATA ***********************************************
+# EXPORT DATA **************************************************
 # If we want we can export the data just in case we want to visualize it with other tools. For instance: PowerBi or Tableau
 write.csv(calidad_aire, file = "calidad_aire.csv", row.names = FALSE)
 
-# EXPLORE DATA ***********************************************
+# EXPLORE DATA **************************************************
 colName <- names(calidad_aire) # Name of columns
 rowNumber <- dim.data.frame(calidad_aire) # Number of rows 
 colNumber <- dim.data.frame(calidad_aire) # Number of columns 
