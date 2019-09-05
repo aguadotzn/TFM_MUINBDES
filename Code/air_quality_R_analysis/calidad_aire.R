@@ -57,8 +57,11 @@ for (i in 8:31) {
 calidad_aire <- transform(calidad_aire, estacion=as.factor(estacion), contaminante=as.factor(contaminante), tecnica=as.factor(tecnica), periodo=as.factor(periodo), timestamp=as.Date(timestamp, format("%d/%m/%y")))
 calidad_aire[,8:31] <- sapply(calidad_aire[,8:31], as.numeric)
 
-# We create a timestamp column: dd/mm/aa
-calidad_aire$timestamp <- apply(calidad_aire, ano=paste(dia, mes, ano, sep="/"))
+# We create a timestamp column: dd/mm/yy
+ts <- c( 'dia' , 'mes' , 'ano')
+calidad_aire$timestamp <- apply(calidad_aire[ , ts ] , 1 , paste , collapse = "/")
+# If we want to substitute the values of day,month,year we can use the lines below:
+#calidad_aire$timestamp <- apply(calidad_aire, ano=paste(dia, mes, ano, sep="/"))
 #colnames(calidad_aire)[5]<-"timestamp"
 #calidad_aire<-calidad_aire[,!names(calidad_aire) %in% c("mes", "dia")]
 
@@ -72,7 +75,7 @@ calidad_aire <- calidad_aire[order(calidad_aire$timestamp, calidad_aire$estacion
 
 # EXPORT DATA ***********************************************
 # If we want we can export the data just in case we want to visualize it with other tools. For instance: PowerBi or Tableau
-# write.csv(calidad_aire, file = "calidad_aire.csv", row.names = FALSE)
+write.csv(calidad_aire, file = "calidad_aire.csv", row.names = FALSE)
 
 # EXPLORE DATA ***********************************************
 colName <- names(calidad_aire) # Name of columns
