@@ -21,13 +21,13 @@
 	<div id="header">
 		<span class="logo icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></span>
 		<h1>ESTUDIO DE LA CALIDAD DEL <br> AIRE EN LA CIUDAD DE MADRID.</h1>
-		</br>
+		<!-- </br>
 		<section>
 			<p href="" class="typewrite" data-period="2000"
 				data-type='[ "La mala calidad del aire provoca 428.000 muertes en Europa.", "31.000 en España.", "Coste de 45.000 millones anuales. El 3.5% PIB (España). ", "¿Es hora de actuar?" ]'>
 			</p>
 		</section>
-		<br>
+		<br> -->
 		<p style="font-size: 10px">Para una mejor experiencia se recomienda su visualización a través de un ordenador.
 		</p>
 		<p style="font-size: 10px">Desarrollado por <a href="http://www.aguadotzn.com">Adrián Aguado</a>.</p>
@@ -660,6 +660,7 @@
 						href="https://www.youtube.com/watch?v=PVOOhGJKJyA">nubes de asfalto</a>.
 				</p>
 			</section>
+			<span class="ir-arriba fa fa-arrow-up"></span>
 			<ul class="icons">
 				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/aguadotzn/TFM_MUINBDES/"
 						class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -678,6 +679,25 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>$('#gestiongrafica-titulo-titulo').hidden = true</script>
+	<script>
+		$(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+	</script>
 </body>
 
 </html>
