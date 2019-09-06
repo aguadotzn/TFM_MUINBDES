@@ -1,6 +1,6 @@
 \capitulo{4}{Técnicas y herramientas}
 
-Esta parte de la memoria tiene como objetivo presentar las tecnologías y las herramientas de desarrollo que se han utilizado para llevar a cabo el proyecto. Se han estudiado diferentes alternativas de metodologías, herramientas, y se pretende aquí realizar un resumen de los aspectos más destacados, incluyendo comparativas entre las distintas opciones y, en caso de ser necesario, una pequeña justificación de las elecciones realizadas. 
+Esta parte de la memoria tiene como objetivo presentar las tecnologías y las herramientas de desarrollo que se han utilizado para llevar a cabo el proyecto. 
 
 \section{Metodologías}\label{metodologias}
 En este apartado se describen las metodologías utilizadas para el desarrollo del proyecto.
@@ -25,7 +25,7 @@ Se trata de una herramienta muy útil en espacios donde los grupos de trabajo ti
 
 
 En resumen, Scrum propone seguir un proceso de desarrollo iterativo e incremental a través de una serie de iteraciones denominadas \textit{sprints} y de revisiones. 
-Hablando en términos personales, obtuve el \textit{título certificado de Scrum Master} el pasado mes de abril y es una metodología que aplico a diario durante el trabajo y que particularmente me apasiona. Si bien es cierto, siguiendo la teoría, que es necesario tener en cuenta que esta metodología fue pensada para trabajar en equipo por lo que en este trabajo se ha intentado emular de la mejor forma posible dadas las circunstancias: seguimiento de un \emph{board} (ver figura \ref{BoardExample1}), reuniones puntuales con los tutores, \emph{sprints} quincenales\ldots
+Hablando en términos personales, obtuve el \textit{título certificado de Scrum Master} el pasado mes de abril. Es una metodología que aplico a diario durante el trabajo y que particularmente me apasiona. Si bien es cierto, siguiendo la teoría, que es necesario tener en cuenta que esta metodología fue pensada para trabajar en equipo por lo que en este trabajo se ha intentado emular de la mejor forma posible dadas las circunstancias: seguimiento de un \emph{board} (ver figura \ref{BoardExample1}), reuniones puntuales con los tutores, \emph{sprints} quincenales\ldots
 
 \imagen{BoardExample1}{\footnotesize{\emph{Board} de tareas empleado durante el proyecto. Fuente:  Elaboración propia.}\label{BoardExample1}}
 
@@ -107,10 +107,10 @@ Python es muy popular debido a su sencilla integración con otras plataformas y 
  \href{https://pandas.pydata.org/}{pandas} o \href{https://bokeh.org/}{bokeh} entre otras.
 
   \subsection{R}\label{tecnologias_R}
-  \href{r-project.org}{R} es un entorno y un lenguaje de programación enfocado en el análisis estadístico de los más utilizados en el campo de la minería de datos que pueden aplicarse a gran variedad de disciplinas. De nuevo es software libre y es uno de los lenguajes de programación más utilizados en investigación científica.
+  \href{r-project.org}{R} es un entorno y un lenguaje de programación enfocado en el análisis estadístico de los más utilizados en el campo de la minería de datos que pueden aplicarse a gran variedad de disciplinas. De nuevo es software libre y es uno de los lenguajes de programación más utilizados en investigación científica. Boxplot o ggplot2 son algunas librerías para realizar gráficos
   
  \subsection{Tinybird}
-\href{https://tinybird.co//}{Tinybird.co} es un \textbf{aplicación en beta} que gracias a un cúmulo de circustancias hemos tenido la suerte de probar en este proyecto. Se trata de una aplicación que utiliza lenguaje \textit{SQL} para realizar consultas sobre datasets. Es decir, dado un \textit{dataset} se crean diversos \textit{pipelines}, esa es la denominación que le dan, con los que podemos analizar, transformar y limpiar los datos de acuerdo a nuestros objetivos. Parece una especie de \textit{notebook} de jupyter aunque no lo es dado que no posee tal cantidad de opciones. 
+\href{https://tinybird.co/}{Tinybird.co} es un \textbf{aplicación en beta} que gracias a un cúmulo de circustancias hemos tenido la suerte de probar en este proyecto. Se trata de una aplicación que utiliza lenguaje \textit{SQL} para realizar consultas sobre datasets. Es decir, dado un \textit{dataset} se crean diversos \textit{pipelines}, esa es la denominación que le dan, con los que podemos analizar, transformar y limpiar los datos de acuerdo a nuestros objetivos. Parece una especie de \textit{notebook} de jupyter aunque no lo es dado que no posee tal cantidad de opciones. 
 
 Una vez tenemos los datos preprocesados podemos establecer un \textit{endpoint} a través del cuál es posible acceder de manera externa mediante \textit{API REST}. Después es muy fácil consumirlo desde, por ejemplo, un apicación web llamando a ese endpoint y acediendo a los datos ya limpios y listos para visualizarlos. 
 

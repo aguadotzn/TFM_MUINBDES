@@ -32,37 +32,36 @@ La parte de visualización comprende varias partes:
 
 \begin{itemize}
 	\item La parte final del \textit{dashboard}, realizada con \textit{PowerBI}.
-	\item Todas las gráficas internas que se han realizado en los diferentes lenguajes de programación, con ayuda de diferentes bibliotecas, y con la finalidad última de explorar los datos o ayudarse a las explicaciones.
-	\item El uso de otras herramientas, ya nombradas, mediante las cuales también se han realizado gráficas. Ya sea de apoyo a la memoria, como explicación añadida a la web o para demostrar ciertas afirmaciones.
+	\item Todas las gráficas internas que se han realizado en los diferentes lenguajes de programación, presentes en esta memoria o en la web. La finalidad última de éstas gráficas es la de explorar los datos o poder hablar con cierto criterio sobre los datos .
+	\item El uso de otras herramientas, ya nombradas, mediante las cuales también se han realizado gráficas. Una vez con los ficheros modificados es sencillo obtener gráficas.
+	\item La  web a modo de visualización-resumen.
 \end{itemize}
 
 En general ha sido una parte costosa en términos de tiempo. Además se han intentado seguir guías de estilo \cite{visualisation_2016} adecuadas o tener en cuenta gamas de colores aptas realizando la visualización de la mejor manera posible. 
 
 \section{Desarrollo web}\label{dweb}
 
-Como complemento a la visualización se ha realizado también una pequeña web, alojada en \textit{github pages}, que pretende ser un pequeño resumen vertical de las partes que nos han parecido de mayor relevancia. Dado que algunas veces existen problemas de insertado a la hora de introducir páginas propias de \textit{PowerBi} en sitios externos al mismo hemos decidido realizar esta opción para evitar problemas.
+Como complemento a la visualización se ha realizado también una pequeña web, alojada en \textit{github pages}, que pretende ser un pequeño resumen vertical de las partes que nos han parecido de mayor relevancia. Dado que algunas veces existen problemas de insertado a la hora de introducir páginas propias de \textit{PowerBi} se ha tomado esta decisión.
 
 \section{Documentación}\label{docs}
 
-La documentación se ha realizado de manera progresiva siempre que se podía se añadían partes de la misma y siempre preguntando sobre mejoras o partes que no estaban claras a los tutores, que han ayudado convenientemente a la realización de la misma. Se han realizado dos envíos a los tutores antes del envío final para su corrección .
+La documentación se ha realizado de manera progresiva. Siempre que se podía se añadían partes de la misma  preguntando sobre mejoras a los tutores, que han ayudado convenientemente a la realización de la misma. Se han realizado dos envíos a los tutores antes del envío final para su corrección.
 
 \section{Dificultades encontradas}\label{inicio-proyecto}
 
- \hl{TERMINAR DE REDACTAR}
-
-Una de las partes más importantes del proyecto, en cuestión de tiempo, ha sido la de familiarizarse con los conceptos científicos que requería el mismo. Quizás es necesario algo de autocrítica en este punto dado que una parte importante del tiempo se ha ido aquí en desventaja de otras partes. 
+Una de las partes más importantes del proyecto, en cuestión de tiempo, ha sido la de familiarizarse con los conceptos científicos y legislativos que requería el mismo. Quizás es necesario algo de autocrítica en este punto dado que una parte importante del tiempo se ha ido aquí en desventaja de otras fases. 
 
 Existen en los datos una gran falta de homogeneidad. A pesar de que la página del ayuntamiento de Madrid está bastante detallada y correctamente explicada los datos varían a lo largo de los años, no solo en formatos sino también en diferentes aspectos. 
 
-Existen problemas como por ejemplo el renombrado de calles los cuáles se deben intuir por que no aparecen por ningún lado especificados. Éste último error se dió con el caso de \textit{estación plaza fernandez ladreda} y \textit{plaza elíptica}, en algunas mediciones vienen determinadas como dos estaciones distintas. Sin embargo, en los datos para la interpretación de los ficheros de medición ambas tienen el código 56. Esto es debido a que sufrió un cambio de nombre. Si este tipo de cambios no se especifican para el usuario que se encuentra analizando los datos resulta muy costoso en terminos de tiempo el averiguarlo.
+Existen problemas como por ejemplo el renombrado de calles los cuáles se deben intuir por que no aparecen por ningún lado especificados. Éste último error se dió con el caso de \textit{estación Plaza Fernandez Ladreda} y \textit{estación Plaza Elíptica}, en algunas mediciones vienen determinadas como dos estaciones distintas. Sin embargo, en los datos para la interpretación de los ficheros de medición ambas tienen el código 56. Esto es debido a que sufrió un cambio de nombre. Si este tipo de cambios no se especifican al usuario que se encuentra analizando los datos resulta muy costoso en terminos de tiempo el averiguar donde está el fallo.
 
-Respecto a los datos más actuales los de 2019, existen errores de magnitud como por ejemplo no existen los datos para \ce{PM10} en ninguna de las medidas. Esto es debido a un error que los técnicos deben subsanar, como ya se ha informado. Por otro lado hubiera sido interesante el comparar el cese de Madrid Central, en junio de 2019, para comprobar si realmente ha afectado a los niveles pero actualmente solo se encuentra disponible un mes desde que la normativa finalizó. Esto es debido a que a fecha de presentación de este trabajo, septiembre de 2019, todavía no está disponible el mes de agosto. 
+Respecto a los datos más actuales los de 2019, existen errores de magnitud como por ejemplo no existen los datos para \ce{PM10} en ninguna de las medidas. Esto es debido a un error que los técnicos deben subsanar, como ya se ha informado. Por otro lado hubiera sido interesante el comparar el cese de \textit{Madrid Central}, en junio de 2019, para comprobar si realmente ha afectado a los niveles totales. Lamentablemente actualmente solo se encuentra disponible un mes desde que la normativa finalizó. Esto es debido a que a fecha de presentación de este trabajo, septiembre de 2019, todavía no está disponible el mes de agosto. Además no existe una fecha fija en la que los técnicos cargan los datos en la web y se tardan en corregir los errores.
 
-Algunos otros contratiempos encontrados han sido con \textit{Mapbox}. Desde aquí se ha intentado poner con atención al cliente de este sotware, por el momento sin respuesta, ya que no esta funcionando como debiera. El problema radica en que los mapas básicos que ofrece \textit{PowerBi} no permite realizar mapas de calor, entre otros, que resultan muy útiles para observar la contaminación. \textit{Mapbox} es de pago pero permite una versión gratuita limitada por el número peticiones que se realizan cada hora. Actualmente la configuración, que se realiza mediante un token privado, funciona a días. 
+Algunos otros contratiempos encontrados han sido con \textit{Mapbox}. Desde aquí se ha intentado contactar con atención al cliente de este sotware, por el momento sin respuesta, ya que no esta funcionando como debiera. El problema radica en que los mapas básicos que ofrece \textit{PowerBi} no permite realizar mapas de calor, entre otros, que resultan muy útiles para observar la contaminación. \textit{Mapbox} es de pago pero permite una versión gratuita limitada por el número peticiones que se realizan cada hora a la \textit{API}. Actualmente la configuración, que se realiza mediante un \textit{token} de identificación privado, funciona a días. 
  
 
 \section{Agradecimientos}\label{reconocimientos}
-Este pequeño apartado a modo de agradecimiento a las siguientes personas que han contribuido de manera directa o indirecta al proyecto.
+Este pequeño apartado es a modo de agradecimiento a las siguientes personas que han contribuido de manera directa o indirecta al proyecto.
 \begin{itemize}
 	\item \textit{Jorge Gomez}, \textit{Javi Santana} (fundadores de \textbf{tinybird}): además del acceso a la \textit{beta} de la aplicación se han prestado a responder de manera altruista todas las preguntas que se han realizado sobre la misma.
 	\item \textit{José Amador Viejo} (Director general de control ambiental, \textbf{Ayto de Madrid}): ha respondido sin ningún problema a las dudas sobre legislación que se han realizado.

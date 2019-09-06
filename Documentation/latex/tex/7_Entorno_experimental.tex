@@ -1,11 +1,11 @@
 \capitulo{7}{Entorno experimental}
 
-En esta sección se va a exponer de manuscrita el entorno con el que se ha realizado el estudio. 
+En esta sección se va a exponer el entorno con el que se ha realizado el estudio. 
 
 
 \section{Esquema}
 
-A modo de introducción se han seguido cuatro partes principales en el desarrollo técnico del proyecto en las que se han utilizado diferentes técnicas. Los siguientes esquemas (ver figuras \ref{diagramtechA} y \ref{diagramtechB}) describen de manera la línea a seguir en el proyecto.
+A modo de introducción se han seguido cuatro partes principales en el desarrollo técnico del proyecto en las que se han utilizado diferentes habilidades. Los siguientes esquemas (ver figuras \ref{diagramtechA} y \ref{diagramtechB}) describen de manera la línea a seguir en el proyecto.
 
    \imagen{diagramtechA}{\footnotesize{Detalle diagrama desarrollo (Partes 1 y 2). Fuente: Elaboración propia.}\label{diagramtechA}}
     \imagen{diagramtechB}{\footnotesize{Detalle diagrama desarrollo (Partes 3 y 4). Fuente: Elaboración propia.}\label{diagramtechB}}
@@ -20,7 +20,7 @@ Este portal dispone de un amplio catálogo de datos que puede ser descargado a t
 Por lo tanto los tres tipos de ficheros que podemos descargar son los siguientes:
 
 \begin{itemize}
-	\item \textbf{Datos de calidad del aire horarios}: en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos diarios} por anualidades de 2001 a 2019. 
+	\item \textbf{Datos de calidad del aire diarios}: en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos diarios} por anualidades de 2001 a 2019. 
 	\item \textbf{Datos de calidad del aire horarios:} en este conjunto de datos se puede obtener la información recogida por las estaciones de control de calidad del aire, con los \textbf{datos horarios} por anualidades de 2001 a 2019. Los datos horarios de las magnitudes corresponden a la media aritmética de los valores diezminutales que se registran cada hora.
 	\item \textbf{Datos de calidad del aire en tiempo real:} En este conjunto de datos se puede obtener la información actualizada en tiempo real.
 \end{itemize}
@@ -38,7 +38,7 @@ Los principales aspectos a destacar de la fuente de datos serían:
 	\item Cada campo tiene asignado un determinado número de dígitos. 
 	\item Todos los campos contienen datos numéricos ya sean identificadores o medidas.
 	\item Hay que precisar que las medidas válidas están marcadas con una V y las medidas no válidas están marcadas con una N. Tan solo serán validas las que contienen la V.
-	\item Los datos anteriores a 2010 presentan algunos errores y los formatos están delimitados
+	\item Los datos anteriores a 2010 presentan algunos errores, meses vacío y los formatos están delimitados-
 \end{itemize}
 
 La tabla 7.5 contiene los código de interpretación de los \textbf{datos horarios}. Tres apuntes importantes:
@@ -111,6 +111,62 @@ La tabla 7.6 contiene los código de interpretación de los \textbf{datos diario
 
 
 Como ya hemos nombrado anteriormente, el Sistema de Vigilancia está formado por 24 estaciones remotas automáticas que recogen la información básica para la vigilancia atmosférica. Poseen los analizadores necesarios para la medida correcta de los niveles de gases y de partículas. La localización de las estaciones de control también se encuentra para su libre descarga, este caso se permiten los ficheros \textit{.xls}, \textit{.csv} y \textit{.geo}. La tabla 7.7 contiene los datos para la correcta interpretación de los ficheros.
+
+Recordemos que las estaciones se agrupan por zonas:
+
+\begin{itemize}
+	\item Zona 1
+	\begin{itemize}
+		\item Mendez Álvaro
+		\item Arganzuela
+		\item Carlos V
+		\item Parque del Retiro
+		\item Escuelas Aguirre
+		\item Plaza del Carmen
+		\item Paseo de Recoletos
+		\item Plaza de España
+		\item Manuel Becerra
+		\item Barrio Salamanca
+		\item Castellana
+		\item Gregorio Marañon
+		\item Cuatro Caminos
+		\item Ciudad Universitaria
+		\item Avenida Ramón y Cajal
+		\item Plaza Castilla
+		\item Barrio del Pilar
+	\end{itemize}
+	\item Zona 2
+	\begin{itemize}
+		\item Moratalaz
+		\item Vallecas
+		\item Santa Eugenia
+		\item Ensanche de Vallecas
+	\end{itemize}
+	\item Zona 3
+	\begin{itemize}
+		\item Arturo Soria
+		\item Campo de las Naciones
+		\item Juan Carlos I
+		\item Urbanización Embajada
+		\item Barajas Pueblo
+		\item San Chinarro
+		\item Tres Olivos Plaza
+	\end{itemize}
+	\item Zona 4
+	\begin{itemize}
+		\item El Pardo
+		\item Casa de Campo
+		\item Alto de Extremadura
+	\end{itemize}
+	\item Zona 5
+	\begin{itemize}
+		\item Farolillo
+		\item Cuatro Vientos
+		\item Plaza Fernández Ladreda (Elíptica)
+		\item Villaverde
+	\end{itemize}
+\end{itemize}
+
 
 
 %TABLA ESTACIONES
@@ -253,7 +309,11 @@ A continuación, en las tablas 7.9 y 7.9, se expone la tipología de las variabl
 	\end{center}
 \end{table}
 
-Para conocer más a fondo nuestros datos algunas estadísticas básicas de este tipo que podemos calcular para nuestro conjunto de datos son la media, mediana, el rango y la desviación estándar. Son muy interesantes para este estudio los promedios y la media de los gases contaminantes además de los máximos. En numerosas ocasiones organismos como la OMS \cite{oms_1} dictaminan episodios de contaminación en función de la media cada\textit{ x} período horario. Cada contaminante tiene sus medidas y cada organismo dictamina su correcta interpretación.
+Para conocer más a fondo nuestros datos algunas estadísticas básicas de este tipo que podemos calcular para nuestro conjunto de datos son la media, mediana, máximos, mínimos o distribuciones. 
+
+\imagen{Restadisticas.png}{\footnotesize{Ejemplo estadísticas con R de algunas horas. Fuente: Elaboración propia.}\label{tiny1}} 
+
+Son muy interesantes para este estudio los promedios y la media de los gases contaminantes además de los máximos. En numerosas ocasiones organismos como la OMS \cite{oms_1} dictaminan episodios de contaminación en función de la media cada \textit{x} período horario. Cada contaminante tiene sus medidas y cada organismo dictamina su correcta interpretación.
 
  
 \section{Transformación de datos}
@@ -300,65 +360,9 @@ Para terminar agrupamos y ordenamos por lo que nos hace falta para nuestro anál
 \imagen{tinybird4}{\footnotesize{Detalle \textit{tinybird}. Fuente: Elaboración propia.}\label{tiny4}}
 
  En el caso de python, cuyo archivo final se ha utilizado para la visualización interactiva, el proceso ha sido muy similar con la peculiaridad de que se han añadido los datos de las estaciones de medida al fichero final. En este caso, como ya he nombrado, se han escogido los datos de 2014 a 2018. Se han seleccionado los datos directamente desde la web para evitar inconsistencias. Hemos tenido que lidiar con los archivos en \textit{.txt}, ya que algunos años solo aparecían en este formato. Hemos hecho un \textit{merge} de los datos de las estaciones junto con los datos de los gases para establecer por estación los tipos de gases medidos. De esta manera se ha logrado enriquecer la visualización añadiendo correspondencia por zonas y estaciones.
- 
- 
- \begin{itemize}
- 	\item Zona 1
- 	 \begin{itemize}
- 		\item Mendez Álvaro
- 		\item Arganzuela
- 		\item Carlos V
- 		\item Parque del Retiro
- 		\item Escuelas Aguirre
- 		\item Plaza del Carmen
- 		\item Paseo de Recoletos
- 		\item Plaza de España
- 		\item Manuel Becerra
- 		\item Barrio Salamanca
- 		\item Castellana
- 		\item Gregorio Marañon
- 		\item Cuatro Caminos
- 		\item Ciudad Universitaria
- 		\item Avenida Ramón y Cajal
- 		\item Plaza Castilla
- 		\item Barrio del Pilar
- 	\end{itemize}
- 	\item Zona 2
- 	 \begin{itemize}
- 		\item Moratalaz
- 		\item Vallecas
- 		\item Santa Eugenia
- 		\item Ensanche de Vallecas
- 	\end{itemize}
- 	\item Zona 3
- 	 \begin{itemize}
- 		\item Arturo Soria
- 		\item Campo de las Naciones
- 		\item Juan Carlos I
- 		\item Urbanización Embajada
- 		\item Barajas Pueblo
- 		\item San Chinarro
- 		\item Tres Olivos Plaza
- 	\end{itemize}
- 	\item Zona 4
- 	 \begin{itemize}
- 		\item El Pardo
- 		\item Casa de Campo
- 		\item Alto de Extremadura
- 	\end{itemize}
- 	\item Zona 5
- 	 \begin{itemize}
- 		\item Farolillo
- 		\item Cuatro Vientos
- 		\item Plaza Fernández Ladreda (Elíptica)
- 		\item Villaverde
- 	\end{itemize}
- \end{itemize}
-
- 
 
 \section{Visualización de datos}
-Una vez que tenemos los datos transformados de manera adecuada ya podemos concentrarnos en la parte visual. En este trabajo la parte visual está dividia en varias partes, por un lado en todas las gráficas que hemos empleado para explorar los datos; segundo, en una visualización final a modo de dashboard realizada con \textit{PowerBi};  y en una pequeña web resumen de resultados.
+Una vez que tenemos los datos transformados de manera adecuada ya podemos concentrarnos en la parte visual. En este trabajo la parte visual está dividia en varias partes, por un lado en todas las gráficas que hemos empleado para explorar los datos; segundo, en una visualización final a modo de \textit{dashboard} realizada con \textit{PowerBi}; y, por último, en una pequeña web resumen de datos interesantes.
 
 
 Siguiendo con el ejemplo nombrado en el apartado anterior y cargando los datos en \textit{vega} podemos obtener la visualización de acuerdo a nuestro objetivo. En este caso hemos calculado la media de \ce{NO2} por mes (en naranja) junto con los máximos (en azul)  del año 2019, concretamente de enero a julio. En la siguiente figura \ref{NO22019} podemos ver el gráfico de líneas.
@@ -398,7 +402,7 @@ La parte de la visualización en \textbf{PowerBi} es más interactiva y refleja 
 	
 	\item \textbf{Página 8}: La media de \ce{NO2} es la que se utiliza para ver si se han superado esos niveles de los que hablábamos. En esta ocasión podemos ver dos gráficos de líneas que nos sirven para comparar entre estaciones y por período/fecha si se han superado los niveles.
 	
-	\item \textbf{Página 9} (ver figura \ref{MapaNO2}): Es posible ver aquí otra interpretación de la página anterior. En esta ocasión se representa la  acumulación de \ce{NO2} por zonas y horas de manera visual. Concretamente se hace uso de un mapa utilizando un \textit{plugin} de mapbox. 
+	\item \textbf{Página 9} (ver figura \ref{MapaNO2}): Es posible ver aquí otra interpretación de la página anterior. En esta ocasión se representa la  acumulación de \ce{NO2} por zonas y horas de manera visual. Concretamente se hace uso de un mapa utilizando un \textit{plugin} de \textit{mapbox}. 
 	
 	En color amarillo los que ya han superado ese 180 (preaviso), en color rojo los que han superado el 200 (aviso) y en color verde los que no llegan a esos límites. La acumulación cambia y, tal y como recogen los informes del ayuntamiento, se produce a medida que el tráfico aumenta por lo que tiene un efecto tardío.
 	
@@ -408,15 +412,12 @@ La parte de la visualización en \textbf{PowerBi} es más interactiva y refleja 
 	
 	\imagen{NivelProtocolo}{\footnotesize{Detalle nivel protocolo (\textit{MapBox}). Fuente: Elaboración propia.}\label{NivelProtocolo}}
 	
-	\item \textbf{Páginas extra}: también se ha experimentado con otro tipo de gráficos (en este caso siempre con niveles de \ce{NO2}) en los que se puede ver de manera simple, cual es la zona más afectada por tamaño de las palabras, figura \ref{nubePalabras}, en un gráfico de palabras; o dependiendo de la estación/año, figura \ref{powerBitamanos}, en un gráfico de rectángulos. También es posible ver cuáles son los días por semana que más cantidad promedio tienen, figura \ref{powerBidias}, y además si se han superado los avisos. Las posibilidades son infinitas.
-	
+	\item \textbf{Páginas extra}: también se ha experimentado con otro tipo de gráficos (en este caso siempre con niveles de \ce{NO2}) en los que se puede ver de manera simple, cual es la zona más afectada por tamaño de las palabras, figura \ref{nubePalabras}, en un gráfico de palabras; o dependiendo de la estación/año, figura \ref{powerBitamanos}, en un gráfico de rectángulos. 
 		\imagen{nubePalabras}{\footnotesize{Ejemplo gráfico nube de palabras.}\label{nubePalabras}}
 	
 	
 	\imagen{powerBitamanos}{\footnotesize{Ejemplo gráfico por tamaño/año. Fuente: Elaboración propia.}\label{powerBitamanos}}
 	
-
-	\imagen{powerBidias}{\footnotesize{Ejemplo gráfico por días y zonas. Fuente: Elaboración propia.}\label{powerBidias}}
 	
 \end{itemize}
 

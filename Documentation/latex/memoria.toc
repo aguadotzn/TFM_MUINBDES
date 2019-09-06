@@ -34,13 +34,13 @@
 \contentsline {section}{\numberline {4.2}Herramientas}{34}{section.4.2}% 
 \contentsline {subsection}{Pycharm}{34}{section*.25}% 
 \contentsline {subsubsection}{Alternativas estudiadas}{34}{section*.26}% 
-\contentsline {subsection}{Jupyter Notebooks}{35}{section*.27}% 
+\contentsline {subsection}{Jupyter Notebooks}{34}{section*.27}% 
 \contentsline {subsection}{Conda}{35}{section*.28}% 
 \contentsline {subsection}{R studio}{35}{section*.29}% 
 \contentsline {subsection}{Visual Studio code}{35}{section*.30}% 
 \contentsline {subsection}{Firefox for developers}{35}{section*.31}% 
 \contentsline {section}{\numberline {4.3}Herramientas de visualizaci\IeC {\'o}n de datos}{35}{section.4.3}% 
-\contentsline {subsection}{Power BI}{36}{section*.32}% 
+\contentsline {subsection}{Power BI}{35}{section*.32}% 
 \contentsline {subsubsection}{Alternativas estudiadas}{36}{section*.33}% 
 \contentsline {subsection}{CartoDB}{36}{section*.34}% 
 \contentsline {subsection}{Vega}{36}{section*.35}% 
@@ -77,30 +77,31 @@
 \contentsline {chapter}{Entorno experimental}{49}{chapter*.53}% 
 \contentsline {section}{\numberline {7.1}Esquema}{49}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}Fuente datos origen}{50}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}Exploraci\IeC {\'o}n}{55}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}Transformaci\IeC {\'o}n de datos}{58}{section.7.4}% 
+\contentsline {section}{\numberline {7.3}Exploraci\IeC {\'o}n}{56}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}Transformaci\IeC {\'o}n de datos}{59}{section.7.4}% 
 \contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de datos}{62}{section.7.5}% 
 \contentsline {chapter}{Resultados}{70}{chapter*.54}% 
 \contentsline {section}{\numberline {8.1}Pre\IeC {\'a}mbulo}{70}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}Resultados generales}{71}{section.8.2}% 
-\contentsline {section}{\numberline {8.3}Preguntas anal\IeC {\'\i }ticas}{76}{section.8.3}% 
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{82}{chapter*.55}% 
-\contentsline {section}{\numberline {9.1}Conclusiones proyecto}{82}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Conclusiones personales}{82}{section.9.2}% 
-\contentsline {section}{\numberline {9.3}L\IeC {\'\i }neas de trabajo futuras}{82}{section.9.3}% 
-\contentsline {part}{Ap\IeC {\'e}ndices}{83}{section.9.3}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{84}{appendix*.58}% 
-\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{89}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Introducci\IeC {\'o}n}{89}{section.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Planificaci\IeC {\'o}n temporal}{89}{section.Alph1.2}% 
-\contentsline {subsection}{Desarrollo con Scrum}{89}{section*.59}% 
-\contentsline {subsubsection}{Mayo/Junio 2019}{92}{section*.60}% 
-\contentsline {subsubsection}{Sprint 0: 15/06/2019 - 01/07/2019}{92}{section*.61}% 
-\contentsline {subsection}{Sprint 1: 01/07/2019- 15/07/2019 (ver figura \ref {sprint1_img})}{93}{section*.62}% 
-\contentsline {subsection}{Sprint 2: 15/07/2019- 31/07/2019(ver figura \ref {sprint2_img})}{94}{section*.63}% 
-\contentsline {subsection}{Sprint 3: 31/07/2019 - 15/08/2019 (ver figura \ref {sprint3_img})}{96}{section*.64}% 
-\contentsline {subsection}{Sprint 4: 15/08/2019 - 31/08/2019 (ver figura \ref {sprint4_img})}{97}{section*.65}% 
-\contentsline {subsection}{Sprint 5: 31/08/2019- 06/09/2019 (ver figura \ref {sprint5_img})}{98}{section*.66}% 
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n final}{100}{section*.67}% 
-\contentsline {section}{\numberline {A.3}Viabilidad legal}{100}{section.Alph1.3}% 
-\contentsline {section}{\numberline {A.4}Links Importantes}{101}{section.Alph1.4}% 
+\contentsline {section}{\numberline {8.3}Preguntas anal\IeC {\'\i }ticas}{75}{section.8.3}% 
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{81}{chapter*.55}% 
+\contentsline {section}{\numberline {9.1}Conclusiones proyecto}{81}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Conclusiones derivadas del estudio}{81}{section.9.2}% 
+\contentsline {section}{\numberline {9.3}Conclusiones personales}{82}{section.9.3}% 
+\contentsline {section}{\numberline {9.4}L\IeC {\'\i }neas de trabajo futuras}{82}{section.9.4}% 
+\contentsline {part}{Ap\IeC {\'e}ndices}{84}{section.9.4}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{85}{appendix*.58}% 
+\contentsline {appendix}{\chapternumberline {A}Plan de Proyecto Software}{90}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Introducci\IeC {\'o}n}{90}{section.Alph1.1}% 
+\contentsline {section}{\numberline {A.2}Planificaci\IeC {\'o}n temporal}{90}{section.Alph1.2}% 
+\contentsline {subsection}{Desarrollo con Scrum}{90}{section*.59}% 
+\contentsline {subsubsection}{Mayo/Junio 2019}{93}{section*.60}% 
+\contentsline {subsubsection}{Sprint 0: 15/06/2019 - 01/07/2019}{93}{section*.61}% 
+\contentsline {subsection}{Sprint 1: 01/07/2019- 15/07/2019 (ver figura \ref {sprint1_img})}{94}{section*.62}% 
+\contentsline {subsection}{Sprint 2: 15/07/2019- 31/07/2019(ver figura \ref {sprint2_img})}{95}{section*.63}% 
+\contentsline {subsection}{Sprint 3: 31/07/2019 - 15/08/2019 (ver figura \ref {sprint3_img})}{97}{section*.64}% 
+\contentsline {subsection}{Sprint 4: 15/08/2019 - 31/08/2019 (ver figura \ref {sprint4_img})}{98}{section*.65}% 
+\contentsline {subsection}{Sprint 5: 31/08/2019- 06/09/2019 (ver figura \ref {sprint5_img})}{99}{section*.66}% 
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n final}{101}{section*.67}% 
+\contentsline {section}{\numberline {A.3}Viabilidad legal}{101}{section.Alph1.3}% 
+\contentsline {appendix}{\chapternumberline {B}Links proyecto}{103}{appendix.Alph2}% 
