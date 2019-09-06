@@ -12,7 +12,10 @@ setwd("/Users/adrianaguado/Documents/WorkspaceDataScience/TFM_MUINBDES/Code/data
 #LIBRARIES
 # You need to install the packages in Rstudio.
 # https://www.r-bloggers.com/installing-r-packages/
-#library("ggplot2")
+# If you execute any library and receive the error message "Error in library(XX): there is no package called 'XX'".
+# you must first install it and then execute library(XX).
+library("ggplot2")
+library("tidyverse")
 
 start.time <- Sys.time() #Measuring code execution time in R (START)
 # LOAD DATA *************************************************
@@ -106,7 +109,7 @@ summary(df_calidad_aire)
 # VISUALIZE DATA ***********************************************
 # Some examples of visualizations
 
-# Boxplot for NO2. Contaminante = 8
+# Boxplot. In this case for Contaminante = 8 (NO2)
 j=1
 for (i in levels(df_calidad_aire$contaminante==8)){
   print(df_calidad_aire$contaminante)
@@ -114,32 +117,34 @@ for (i in levels(df_calidad_aire$contaminante==8)){
   j=j+1
 }
 
-# Libraries
-library(tidyverse)
-library(hrbrthemes)
+# ggplot. We  calculate here the worst hours per year. Notice hx correspond with the hour
+ggplot(data = df_calidad_aire) +
+  xlab("Year") +
+  ylab("Total value per hour") +
+  scale_y_continuous(limits=c(0,max(df_calidad_aire$h2,na.rm=TRUE))) +  
+  geom_bar(mapping = aes(x = ano, y = h1), stat = "identity")
 
-# Load dataset from github
-
-# plot
-p <- df_calidad_aire %>%
-  filter( h1<300 ) %>%
-  ggplot( aes(x=h2)) +
-  geom_histogram( binwidth=3, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
-  ggtitle("Bin size = 3") +
-  theme_ipsum() +
-  theme(
-    plot.title = element_text(size=15)
+# ggplot. We calculate here, at 8:00, the worst months. Notice hx correspond with the hour.
+ggplot(data = df_calidad_aire) +
+  #filter( df_calidad_aire$contaminante==8 ) %>%
+  xlab("Month") +
+  ylab("Total value") +
+  stat_summary(
+    mapping = aes(x = mes, y = h8),
+    fun.ymin = min,
+    fun.ymax = max,
+    fun.y = median
   )
-p
 
-ValorLimiteAnual <- 40
-ggplot(df_calidad_aire,aes(x=timestamp,y=values,color=values)) +
+# ggplot. Experimenting with anual values 
+anual_limit<- 40
+ggplot(df_calidad_aire,aes(x=ano,y=values,color=values)) +
   geom_point() +
   theme(axis.text.x =element_text(angle=0)) +
   ggtitle("Gráfico de NO2") +
-  xlab(label="Fecha") +
-  ylab(label="Valor NO2") + 
-  geom_hline(yintercept = ValorLimiteAnual)
+  xlab(label="YEar") +
+  ylab(label="NO2 value") + 
+  geom_hline(yintercept = anual_limit)
 
 
 
@@ -147,8 +152,6 @@ ggplot(df_calidad_aire,aes(x=timestamp,y=values,color=values)) +
 end.time <- Sys.time()
 time.taken <- end.time - start.time
 #time.taken
-
-
 
 
 
