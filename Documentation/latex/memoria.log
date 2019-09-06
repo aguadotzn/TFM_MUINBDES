@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.5)  6 SEP 2019 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.5)  6 SEP 2019 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1957,8 +1957,8 @@ LaTeX Info: Redefining \% on input line 50.
 LaTeX Info: Redefining \. on input line 111.
 LaTeX Info: Redefining \% on input line 111.
  [52]
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
  [53]
 Overfull \hbox (16.05836pt too wide) in paragraph at lines 175--219
  [] 
@@ -2176,31 +2176,32 @@ LaTeX Info: Redefining \% on input line 90.
 <./img/junjul2019.png, id=1203, 1122.1925pt x 378.41376pt>
 File: ./img/junjul2019.png Graphic file (type png)
 <use ./img/junjul2019.png>
-Package pdftex.def Info: ./img/junjul2019.png  used on input line 103.
+Package pdftex.def Info: ./img/junjul2019.png  used on input line 105.
 (pdftex.def)             Requested size: 332.09775pt x 111.9833pt.
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
- [77 <./img/junjul2019.png>]
-<./img/plazacarmen.png, id=1211, 633.36626pt x 323.2075pt>
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+ [77]
+<./img/plazacarmen.png, id=1210, 633.36626pt x 323.2075pt>
 File: ./img/plazacarmen.png Graphic file (type png)
 <use ./img/plazacarmen.png>
-Package pdftex.def Info: ./img/plazacarmen.png  used on input line 107.
+Package pdftex.def Info: ./img/plazacarmen.png  used on input line 109.
 (pdftex.def)             Requested size: 332.09775pt x 169.47441pt.
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [78 <./img/plazacarmen.png>]
-<./img/EscuelasAguirre.png, id=1223, 935.495pt x 437.635pt>
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
+ [78 <./img/junjul2019.png> <./img/plazacarmen.png>]
+<./img/EscuelasAguirre.png, id=1221, 935.495pt x 437.635pt>
 File: ./img/EscuelasAguirre.png Graphic file (type png)
 <use ./img/EscuelasAguirre.png>
-Package pdftex.def Info: ./img/EscuelasAguirre.png  used on input line 124.
+Package pdftex.def Info: ./img/EscuelasAguirre.png  used on input line 126.
 (pdftex.def)             Requested size: 332.09775pt x 155.35817pt.
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [79 <./img/EscuelasAguirre.png>]
 File: ./img/NO22019.png Graphic file (type png)
 <use ./img/NO22019.png>
-Package pdftex.def Info: ./img/NO22019.png  used on input line 135.
+Package pdftex.def Info: ./img/NO22019.png  used on input line 137.
 (pdftex.def)             Requested size: 332.09775pt x 209.48114pt.
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
- [79 <./img/EscuelasAguirre.png>])
+)
 LaTeX Info: Redefining \. on input line 530.
 LaTeX Info: Redefining \% on input line 530.
  [80]
@@ -2724,17 +2725,11 @@ LaTeX Info: Redefining \% on input line 26.
 (./tex/A_Plan_proyecto.aux) (./tex/B_Links_proyecto.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 555.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 555.
-
-
-Package rerunfilecheck Warning: File `memoria.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `memoria.out':
-(rerunfilecheck)             Before: 4482263FCD8AE1309305DE002EB9279E;3754
-(rerunfilecheck)             After:  E34064CDE26305A0A16CC2935C21E537;3776.
+Package rerunfilecheck Info: File `memoria.out' has not changed.
+(rerunfilecheck)             Checksum: E34064CDE26305A0A16CC2935C21E537;3776.
 Package rerunfilecheck Info: File `memoria.brf' has not changed.
-(rerunfilecheck)             Checksum: 38B1773CBB3F25E8FBDE9077C202B239;3405.
+(rerunfilecheck)             Checksum: DC6A26A082354AA7464F7BE7B7E7F56B;3405.
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2745,7 +2740,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  27954 strings out of 492616
  472978 string characters out of 6129482
- 662079 words of memory out of 5000000
+ 662123 words of memory out of 5000000
  31081 multiletter control sequences out of 15000+600000
  549401 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2877,7 +2872,7 @@ ist/fonts/type1/public/cbfonts/grmi1095.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/cbfonts/grmn1095.pfb></usr/local/texlive/2019/texmf-dist/fo
 nts/type1/public/cbfonts/grxn1095.pfb></usr/local/texlive/2019/texmf-dist/fonts
 /type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on memoria.pdf (114 pages, 9524313 bytes).
+Output written on memoria.pdf (114 pages, 9524822 bytes).
 PDF statistics:
  1733 PDF objects out of 2073 (max. 8388607)
  1450 compressed objects within 15 object streams
