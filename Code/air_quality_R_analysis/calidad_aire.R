@@ -10,7 +10,9 @@
 setwd("/Users/adrianaguado/Documents/WorkspaceDataScience/TFM_MUINBDES/Code/data/hourly_data")
 
 #LIBRARIES
-library("ggplot2")
+# You need to install the packages in Rstudio.
+# https://www.r-bloggers.com/installing-r-packages/
+#library("ggplot2")
 
 start.time <- Sys.time() #Measuring code execution time in R (START)
 # LOAD DATA *************************************************
@@ -69,8 +71,8 @@ calidad_aire$values <- apply(calidad_aire[ , cols ] , 1 , paste , collapse = ","
 calidad_aire <- calidad_aire[order(calidad_aire$timestamp, calidad_aire$estacion, calidad_aire$contaminante),]
 
 # EXPORT DATA **************************************************
-# If we want we can export the data just in case we want to visualize it with other tools. For instance: PowerBi or Tableau
-write.csv(calidad_aire, file = "calidad_aire.csv", row.names = FALSE)
+# If we want we can export the data just in case we want to visualize it with other tools. For instance: PowerBi 
+#write.csv(calidad_aire, file = "formatted_data/calidad_aire.csv", row.names = FALSE)
 
 # EXPLORE DATA **************************************************
 colName <- names(calidad_aire) # Name of columns
@@ -85,7 +87,7 @@ colNumber <- dim.data.frame(calidad_aire) # Number of columns
 df_calidad_aire <- calidad_aire
 
 # Summary of the data (Length, min, max, mean, median)
-#summary(df_calidad_aire)
+summary(df_calidad_aire)
 
 # Summary of the data by each column
 #str(df_calidad_aire)
@@ -93,8 +95,8 @@ df_calidad_aire <- calidad_aire
 # With this line we can know the number of wrong measures per column
 #na_count <- sapply(calidad_aire, function(y) sum(is.na(y)))
 
-# With this line we can review the columns and see the (different) values
-levels(df_calidad_aire$estacion)
+# With this lines we can review the columns and see the (different) values
+#levels(df_calidad_aire$estacion)
 #levels(df_calidad_aire$contaminante)
 #levels(df_calidad_aire$tecnica)
 
@@ -102,6 +104,43 @@ levels(df_calidad_aire$estacion)
 # head(df_calidad_aire, n=20)
 
 # VISUALIZE DATA ***********************************************
+# Some examples of visualizations
+
+# Boxplot for NO2. Contaminante = 8
+j=1
+for (i in levels(df_calidad_aire$contaminante==8)){
+  print(df_calidad_aire$contaminante)
+  boxplot(df_calidad_aire[df_calidad_aire$contaminante==8,8:31], main=contaminante[j], outline = FALSE)
+  j=j+1
+}
+
+# Libraries
+library(tidyverse)
+library(hrbrthemes)
+
+# Load dataset from github
+
+# plot
+p <- df_calidad_aire %>%
+  filter( h1<300 ) %>%
+  ggplot( aes(x=h2)) +
+  geom_histogram( binwidth=3, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
+  ggtitle("Bin size = 3") +
+  theme_ipsum() +
+  theme(
+    plot.title = element_text(size=15)
+  )
+p
+
+ValorLimiteAnual <- 40
+ggplot(df_calidad_aire,aes(x=timestamp,y=values,color=values)) +
+  geom_point() +
+  theme(axis.text.x =element_text(angle=0)) +
+  ggtitle("Gráfico de NO2") +
+  xlab(label="Fecha") +
+  ylab(label="Valor NO2") + 
+  geom_hline(yintercept = ValorLimiteAnual)
+
 
 
 #Measuring code execution time in R (END)
