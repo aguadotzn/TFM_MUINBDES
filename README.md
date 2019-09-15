@@ -68,16 +68,12 @@ Development of an environment model for the analysis of air pollution/air qualit
 │        └─── /air_quality_R_analysis
 │          └─── /formatted_data
 │          |-- calidad_aire.R
-│ 
-│        └─── /extra
 │
 │        |-- README.md (code)
 │ 
 └───|- /Data Visualization
-│        └─── /Random examples
 │
 │        └─── /PowerBi
-│          |-- calidad_aire.pbix
 │
 │        |-- README.md (data visualization)
 │ 
