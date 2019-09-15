@@ -22,7 +22,7 @@ Final thesis of my Master's degree ([Business Intelligence and Big Data in Cyber
 
 
 ## Description
-Development of an environment model for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited by control stations distributed in different parts of the city. Both the ingestion, processing, exploitation and visualization of the data are contemplated, to answer analytical questions on the selected subject. 
+Development of an environment model for the analysis of air pollution/air quality levels in Madrid, which allows information to be better exploited by control stations distributed in different parts of the city. Both the ingestion, processing, exploitation and visualization of the data are contemplated, to answer analytical questions on the selected subject. You can visit the results website [here](https://aguadotzn.github.io/TFM_MUINBDES/) (Sorry, only available in Spanish due to academic purposes).
 
 
 ## Main process schema
